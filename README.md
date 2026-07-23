@@ -42,6 +42,6 @@ No fabricated or interpolated figures; every file's provenance is in `data/MANIF
 
 - [x] Repo scaffold
 - [ ] Research report (deep-research workflow — in progress)
-- [ ] Haryana + ethanol brief (in progress)
+- [x] Haryana + ethanol brief → `report/haryana-food-processing-linkages.md`
 - [ ] Data collection (in progress)
 - [ ] Dashboard build
