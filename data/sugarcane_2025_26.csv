@@ -1,0 +1,21 @@
+metric,value,unit,as_of,source,note
+sugar_production_net,273.9,LMT,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,NFCSF; net of ethanol diversion; +9.6% YoY (254.3 LY)
+avg_recovery,9.56,pct,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,vs 9.37 LY
+mills_participated,541,count,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,520 closed by 14-Apr
+production_maharashtra,98.95,LMT,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,vs 80.10 LY
+production_up,87.45,LMT,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,vs 87.70 LY; recovery 10.20 vs 9.70
+production_karnataka,46.75,LMT,2026-04-14,https://www.chinimandi.com/season-2025-26-indiaa-sugar-production-reaches-to-273-9-lmt-as-season-nears-end/,vs 39.90 LY
+frp_2025_26,355,Rs_per_qtl,2025-26,https://www.chinimandi.com/rising-costs-stagnant-prices-push-cane-arrears-up-15-to-rs-16087-crore/,at 10.25% recovery; +29% since 2019
+sugar_msp,31,Rs_per_kg,frozen since 2019-02,https://www.chinimandi.com/rising-costs-stagnant-prices-push-cane-arrears-up-15-to-rs-16087-crore/,unchanged 7+ years
+production_cost,41.6,Rs_per_kg,2026-02,https://www.chinimandi.com/rising-costs-stagnant-prices-push-cane-arrears-up-15-to-rs-16087-crore/,ISMA estimate
+ex_mill_price,38.5,Rs_per_kg,2026-02,https://www.chinimandi.com/rising-costs-stagnant-prices-push-cane-arrears-up-15-to-rs-16087-crore/,pan-India avg 38-39
+cane_arrears_national,16087,Rs_crore,2026-02,https://www.chinimandi.com/rising-costs-stagnant-prices-push-cane-arrears-up-15-to-rs-16087-crore/,+15% YoY
+arrears_karnataka,4956,Rs_crore,2025-26,https://www.chinimandi.com/sugarcane-dues-to-farmers-rose-32-times-parliamentary-panel-raises-concern/,parliamentary panel; highest state
+arrears_maharashtra_peak,4252,Rs_crore,2025-26,https://www.chinimandi.com/maharashtra-mills-yet-to-pay-rs-4252-crore-frp-to-farmers/,in-season peak; paid down to 298-396 cr by Jun-2026 (99.02% cleared)
+arrears_up,3287,Rs_crore,2025-26,https://www.chinimandi.com/sugarcane-dues-to-farmers-rose-32-times-parliamentary-panel-raises-concern/,vs 321 cr (2024-25) and 24 cr (2023-24)
+arrears_gujarat,1402,Rs_crore,2025-26,https://www.chinimandi.com/sugarcane-dues-to-farmers-rose-32-times-parliamentary-panel-raises-concern/,
+arrears_punjab,535,Rs_crore,2025-26,https://www.chinimandi.com/sugarcane-dues-to-farmers-rose-32-times-parliamentary-panel-raises-concern/,
+arrears_haryana,373,Rs_crore,2025-26,https://www.chinimandi.com/sugarcane-dues-to-farmers-rose-32-times-parliamentary-panel-raises-concern/,
+maharashtra_cane_crushed,1045.63,LMT,2025-26,https://www.chinimandi.com/maharashtra-sugar-mills-clear-99-of-frp-dues-for-2025-26-season-rs-396-crore-still-outstanding/,210 mills; gross FRP payable Rs 40446 cr incl H&T
+ethanol_sugar_allocation,289,crore_litres,ESY 2025-26,https://www.chinimandi.com/nfcsf-urges-govt-to-raise-sugar-msp-to-rs-41-kg-increase-ethanol-prices-approve-additional-sugar-diversion-for-ethanol-production/,~28% share ~34 LMT sugar diversion vs NFCSF ask of 50 LMT
+bheavy_crush_share,56.1,pct,2025-26,https://www.chinimandi.com/nfcsf-urges-govt-for-early-announcement-of-50-lmt-sugar-diversion-target-for-ethanol-in-2025-26-season/,vs 51.4 LY

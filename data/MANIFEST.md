@@ -151,3 +151,5 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
 - **movement_by_mode.csv** — foodgrain movement by rail/road/waterways 2013-14→2019-20 (partial). Source: FCI Handbook 2020, Institute of Food Security (user-supplied PDF).
 
 - **Correction 2026-07-23 (ethanol pricing)**: FCI-rice ethanol was ₹58.50/L in ESY 2024-25, revised to ₹60.32/L in ESY 2025-26 (+3.11%, tracking rice ₹2,250→₹2,320/qtl). The BPCL-floated OMC tender buckets grain ethanol as FCI-rice / DFG (~₹64/L) / maize (₹71.86/L); ESY 2025-26 Cycle-1 mandates 40% FCI-grain sourcing for Q1-Q3. Source: ChiniMandi tender coverage.
+
+- **sugarcane_2025_26.csv** — season 2025-26 sugar/cane statistics (production, recovery, FRP, arrears state-wise, ethanol diversion) from ChiniMandi (NFCSF/ISMA/parliamentary-panel reporting). Secondary source; net-of-diversion mid-April snapshots.
