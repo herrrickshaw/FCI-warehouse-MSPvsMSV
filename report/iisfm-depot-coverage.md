@@ -35,6 +35,8 @@ majority-hired, so "FCI depot data" is really FCI + SWC/CWC/state-agency data.
 | **FCI stocks page** ([fci.gov.in/stocks.php](https://fci.gov.in/stocks.php)) | region/state-wise, weekly | ✅ public | The finest-grained *public* stock series. |
 | **DFPD Foodgrain Bulletin** | state-wise monthly stocks, all-India vs norms | ✅ public | Already collected → `stocks_vs_norms.csv` (bulletin archive links broken site-wide; Nov-2024 PDF recovered via search index). |
 | **data.gov.in** | state-wise procurement/stocks; cotton MSP annexures | ✅ public (sample key caps 10 rows/page) | Already used for `procurement_by_year.csv`. No depot-wise stock dataset found in the catalog. |
+| **e-NAM** ([enam.gov.in/web/dashboard/trade-data](https://enam.gov.in/web/dashboard/trade-data)) — transaction-level mandi trades | APMC-wise traded qty + min/max/modal prices, daily | 🔴 unreachable from this machine | `ECONNREFUSED` on 443 from direct curl, the server-side fetcher, *and* the browser pane (navigation denied) — the host appears geo-fenced to Indian IPs, joining SEBI/IMF/IEA on the blocked list. Not mirrored on data.gov.in (only Agmarknet reported-price feeds are). |
+| **UPAg** ([upag.gov.in](https://upag.gov.in)) — DA&FW unified statistics portal, integrates e-NAM prices | commodity dashboards incl. prices/arrivals | 🟡 partially probed | SPA loads fine from here, but the prices/e-NAM dashboards did not emit public API calls during probing (runtime-config pattern; endpoints not in the JS bundles). A deeper interactive session may still surface them — open follow-up. |
 
 **Bottom line:** depot-level *stock* data for the 173 Phase-5 depots is an internal FCI
 system (IISFM → DOS); the public ladder stops one level up at region/state. Any MSV
@@ -58,6 +60,23 @@ DOS extracts — the plumbing exists, the publication policy doesn't.
   MSV: a volume guarantee for new crops/states inherits this rail-first logistics chain —
   depots without rakepoints (many of the 114 hired Phase-5 sites) can *hold* grain but
   are slow to *evacuate* it.
+
+## 3b. Why e-NAM matters for the MSV design (even while unreachable from here)
+
+e-NAM's trade data is **transaction-based** — actual e-auction clearing prices and traded
+quantities per APMC — where Agmarknet carries mandi-*reported* min/max/modal prices. For a
+deficiency-payment leg (BBY/PDPS-style), the benchmark price is the whole game: MP's
+Bhavantar experience showed reported modal prices can be gamed downward to inflate payouts.
+An MSV/PDP design should therefore benchmark on e-NAM clearing prices wherever an APMC is
+integrated (1,400+ mandis), falling back to Agmarknet only elsewhere. e-NAM also measures
+the *traded volume* per mandi — the private-demand baseline that a state volume guarantee
+would partially displace, i.e., exactly the quantity needed to size a volume cap per crop
+per district.
+
+**Access paths:** the portal and its monthly trade reports work from Indian IPs (browser
+or scripts run locally); from this machine all routes are refused. The Agmarknet feed
+(already wired via data.gov.in) remains the reachable price source; treat e-NAM pulls as
+a to-do for an India-egress environment.
 
 ## 4. Follow-ups
 
