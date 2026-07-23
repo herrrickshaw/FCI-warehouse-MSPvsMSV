@@ -122,6 +122,29 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
   where source said NA). Cotton (CCI) excluded — production published in bales,
   not tonnes. Rice 2024-25 share understated (partial procurement).
 
+### wpi_commodity_monthly.csv (2,873 rows)
+`date, commodity, index, wpi_weight, source` — monthly WPI (base 2011-12=100),
+Apr-2012 → Apr-2026, 16 commodities (paddy, wheat, maize, jowar, bajra, rice
+non-basmati; arhar, gram, moong, urad, masur, rajma; mustard seed, soybean,
+groundnut seed; sugar) + `wpi_all` (All-commodities headline). Source: OEA
+eaindustry.nic.in `indx_download_1112/monthly_index_202606.xls` (raw copy in
+`raw/wpi_monthly_1112.xls`). Collected 2026-07-23 for the holding-economics study.
+
+### msp_series.csv (234 rows)
+`year, crop, msp_rs_qtl, season, source` — CACP MSP series, crop years 2010-11 →
+2026-27, 13 MSP crops + sugarcane FRP (`sugarcane_frp`, ₹/qtl at benchmark
+recovery — not an MSP). Source: cacp.da.gov.in/Home/MSP backing dataset
+(`raw/cacp_msp.json`, site updated 13.05.2026); last 5 years cross-checked against
+DES "MSP Statement as on 12.12.2025" (`raw/msp_statement.pdf`). Note: CACP tags by
+crop year, DES by marketing season (offset +1) — e.g. wheat crop-year 2024-25 =
+RMS 2025-26 = ₹2,425. Rajma has no MSP (absent).
+
+### holding_economics_summary.csv / holding_horizon_returns.csv / holding_episodes.csv
+Outputs of `holding_economics.py` (WPI CAGR vs carrying cost; harvest-buy
+12/24/36-month return distributions; post-crash episode outcomes). Carry model
+rates (CWC FY24-25 commodity tariff in `raw/cwc_commodity_tariff_2425.pdf`, SBI
+PML interest, loss norms) are cited in `report/holding-economics.md`.
+
 ## Blocked / broken sources (and workarounds used)
 - **dfpd.gov.in Food Grain Bulletin archive**: the archive pages render but every
   download link is empty (verified in a real browser, not just curl) and the site's
@@ -170,3 +193,5 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
   millet MSP proxied by jowar; niryat.gov.in geo-fenced (values-only anyway).
 
 - **mandi_vs_msp_20260723.csv** — mandi modal medians vs MSP 2025-26 per crop, full Agmarknet daily feed 23-Jul-2026 (17,247 records via fixed agri-commodity-tracker collector); % of market reports below MSP.
+
+- **pds_procurement_offtake_stocks_1987.csv** — 38-year series 1987-88→2024-25: rice/wheat procurement, offtake, stocks (Economic Survey Statistical Appendix Table 26, user-supplied PDF). Cross-validates DFPD series; 2024-25 rice 544.8 LMT official (supersedes derived 557.6). Stocks column basis differs from DFPD 1-Jan snapshots (year-end basis incl. paddy in rice terms) — do not conflate.
