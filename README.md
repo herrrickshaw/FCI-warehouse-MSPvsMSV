@@ -44,4 +44,4 @@ No fabricated or interpolated figures; every file's provenance is in `data/MANIF
 - [x] Research report → `report/msp-vs-msv-main-report.md`
 - [x] Haryana + ethanol brief → `report/haryana-food-processing-linkages.md`
 - [x] Data collection → `data/` (6 CSVs + MANIFEST)
-- [ ] Dashboard build
+- [x] Dashboard → `dashboard/index.html` (self-contained, light/dark, table views)
