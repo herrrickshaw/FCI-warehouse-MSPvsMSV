@@ -1,0 +1,4 @@
+year,commodity,allocated_lmt,lifted_lmt,rate_rs_per_qtl,source,note
+ESY 2024-25,rice,24.0,,2250,https://www.pib.gov.in/PressReleasePage.aspx?PRID=2101827,"OMSS(D) 2024-25 policy: FCI rice to ethanol distilleries at fixed Rs 2250/qtl pan-India, quantity 'not exceeding 24 LMT' (ceiling, not lifted quantity)"
+ESY 2025-26,rice,72.0,,2320,"DFPD revised modalities as reported (chinimandi.com, ruralvoice.in, bioenergytimes.com); DFPD order not directly retrievable",cap 72 LMT = 52 LMT already allocated + 20 LMT additional; Rs 2320/qtl w.e.f. 01.11.2025 to 30.06.2026; SECONDARY SOURCE
+2024-25 (OMSS sales Aug-Nov 2024),rice,,5.45,2250,"https://dfpd.gov.in/WriteReadData/FoodBulletinUploadDocuments/8e0ba45f-affc-4309-8a2d-f6c8d01156b7_Foodgrain%20Bulletin%20fot%20November,%202024.pdf","rice sold under OMSS(D) Aug-Nov 2024 (5,45,124 t) - buyer mix incl. ethanol distilleries not separately published in bulletin"
