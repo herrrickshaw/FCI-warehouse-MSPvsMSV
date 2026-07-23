@@ -143,3 +143,5 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
   2024-25), 2236215 (RMS 2026-27 targets), 2125722 (RMS 2025-26 progress).
 - **data.gov.in**: public sample API key works but throttles hard (HTTP 429);
   fetched with 10-row pages + backoff. Resource UUIDs recorded per row in `source`.
+
+- **Patch 2026-07-23**: rice 2024-25 row replaced with derived full-season rice-equivalent (832.17 LMT paddy x 0.67 outturn = 557.55 LMT, share 37.1%); the collected 189.14 LMT was a season-to-date stub. Derivation, not a reported figure.

@@ -41,7 +41,7 @@ No fabricated or interpolated figures; every file's provenance is in `data/MANIF
 ## Status
 
 - [x] Repo scaffold
-- [ ] Research report (deep-research workflow — in progress)
+- [x] Research report → `report/msp-vs-msv-main-report.md`
 - [x] Haryana + ethanol brief → `report/haryana-food-processing-linkages.md`
-- [ ] Data collection (in progress)
+- [x] Data collection → `data/` (6 CSVs + MANIFEST)
 - [ ] Dashboard build
