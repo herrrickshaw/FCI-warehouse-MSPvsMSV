@@ -153,3 +153,20 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
 - **Correction 2026-07-23 (ethanol pricing)**: FCI-rice ethanol was ₹58.50/L in ESY 2024-25, revised to ₹60.32/L in ESY 2025-26 (+3.11%, tracking rice ₹2,250→₹2,320/qtl). The BPCL-floated OMC tender buckets grain ethanol as FCI-rice / DFG (~₹64/L) / maize (₹71.86/L); ESY 2025-26 Cycle-1 mandates 40% FCI-grain sourcing for Q1-Q3. Source: ChiniMandi tender coverage.
 
 - **sugarcane_2025_26.csv** — season 2025-26 sugar/cane statistics (production, recovery, FRP, arrears state-wise, ethanol diversion) from ChiniMandi (NFCSF/ISMA/parliamentary-panel reporting). Secondary source; net-of-diversion mid-April snapshots.
+
+### trade_price_parity.csv (67 rows) — added 2026-07-23
+`commodity, flow, fy, qty_lmt, value_inr_cr, value_usd_mn, value_unit, unit_value_usd_per_t, unit_value_inr_per_qtl, fx_rate, domestic_ref_price_inr_per_qtl, ref_price_type, parity_gap_pct, source, note`
+- Export/import qty+value (DGCI&S via APEDA agriexchange JSON APIs + tradestat.commerce.gov.in)
+  for FY2023-24→2025-26: basmati/non-basmati rice, wheat, maize, millets, other coarse
+  cereals, pulses (aggregate + tur/urad/masur/yellow-peas/chana/moong split), groundnut,
+  sugar, vegetable oils (aggregate + crude palm/RBD palmolein/crude soy/crude sun).
+- Unit values computed value÷qty from the same source table; `fx_rate` = rate implied by
+  the source's own ₹/$ columns (FY26 ≈ 88.5, NOT the ~86 convention). `parity_gap_pct`
+  vs 2025-26 MSPs (rice vs paddy-MSP-derived cost 3850; sugar vs ex-mill 3850;
+  groundnut in-shell basis noted per row). FY2025-26 = full-year provisional.
+- Rebuild: `python3 data/build_trade_parity.py` (inputs pinned in the script; raw API
+  captures in `data/raw_trade/*.json`). Analysis: `report/trade-price-parity.md`.
+- Gaps: refined soy/sun oil lines not pulled; pulses-export basket not HS-split;
+  millet MSP proxied by jowar; niryat.gov.in geo-fenced (values-only anyway).
+
+- **mandi_vs_msp_20260723.csv** — mandi modal medians vs MSP 2025-26 per crop, full Agmarknet daily feed 23-Jul-2026 (17,247 records via fixed agri-commodity-tracker collector); % of market reports below MSP.

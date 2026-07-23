@@ -193,25 +193,36 @@
   <p>Domestic administered prices float inside a boundary set by world prices. The rules of
   thumb per crop class:</p>
   <ul>
-    <li><strong>Rice — export parity above MSP in normal years.</strong> India supplies
-    ~40% of world rice trade; when non-basmati export prices exceed MSP-derived cost, private
-    trade absorbs surplus at no fiscal cost. The 2022–24 export bans and duties <em>deliberately
-    broke</em> this parity to hold domestic prices down — the mirror-image intervention to
-    procurement, executed on the sell side of the boundary.</li>
-    <li><strong>Wheat — the marginal case.</strong> Indian wheat is export-viable only in
-    world-price spikes (2021-22: record 433 LMT procurement <em>and</em> record exports,
-    followed by the May 2022 ban within a fortnight of a heatwave). MSP sits close to import
-    parity, so both boundaries are policy-active.</li>
-    <li><strong>Pulses and edible oils — import parity below MSP.</strong> Landed tur, urad,
-    masur, yellow peas, and palm/soy oil routinely undercut MSP. A volume guarantee for
-    these crops <em>without tariff coordination</em> is fiscally endless: the state would buy
-    at MSP while imports set the market price below it, forever. Duty policy and MSV are one
-    instrument here, not two.</li>
+    <li><strong>Rice — exports clear the market, not the government's stock.</strong>
+    DGCI&amp;S unit values put non-basmati exports at <strong>−12% to +2%</strong> of the
+    MSP-derived cost of rice across FY24–26 (FY26: record 15.0 MMT at ~$390/t after the
+    Sep–Oct 2024 ban unwind; basmati earns +100–140%). Private exporters at market paddy
+    prices clear ~40% of world trade — but the <em>state's</em> costlier procured stock
+    cannot exit at these unit values without loss, which is why its disposal runs through
+    discounted ethanol (₹2,320) and OMSS instead. The 2022–24 bans were the same boundary
+    managed in the other direction.</li>
+    <li><strong>Maize — export parity below MSP, ethanol above it.</strong> Indian maize
+    FOB is ~$220–245/t ≈ ₹1,890–2,110/qtl against a ₹2,400 MSP. Exports cannot absorb an
+    MSV purchase; the ethanol loop (NAFED delivery to distilleries at ₹2,291/qtl, blending
+    mandate demand) is the channel that can — and already does.</li>
+    <li><strong>Pulses — the parity sign just flipped hard.</strong> DGCI&amp;S FY26:
+    tur lands at CIF <strong>₹5,659/qtl — 29% below its ₹8,000 MSP</strong> (from +10%
+    <em>above</em> in FY25); masur −23%, chana −15%, yellow peas −44% vs gram MSP. Tariffs
+    are visibly chasing the gap (chana and masur to 10%, yellow peas to 30%) while
+    tur/urad stay duty-free to Mar-2026 under the Mozambique–Myanmar–Malawi pacts. A
+    pulses MSV without tariff coordination is fiscally endless — duty policy and the
+    volume guarantee are one instrument, not two. Edible oils are the extreme case:
+    FY26 CIF undercuts MSP-linked crush economics by 30–40% even after duty, on a
+    $19.5&nbsp;bn import bill.</li>
+    <li><strong>Wheat — the marginal case.</strong> Export-viable only in world-price
+    spikes (2021-22: record procurement <em>and</em> record exports, then the May 2022 ban
+    a fortnight after a heatwave). Both boundaries are policy-active.</li>
   </ul>
-  <div class="note">A product-level parity table (APEDA export unit values and DGCI&amp;S
-  import unit values against MSP, by crop and year) is being compiled as a companion dataset
-  — <span class="mono">data/trade_price_parity.csv</span> in the repository. The qualitative
-  boundaries above are stable; the table adds the per-year magnitudes.</div>
+  <div class="note">Rice, pulses, and oils figures: DGCI&amp;S/APEDA unit values, FY24–26
+  (FY26 full-year provisional) — the complete 67-row table is
+  <span class="mono">data/trade_price_parity.csv</span> in the repository, with per-row
+  sources, fx rates, and basis notes. Maize FOB is a trade-market quote (early 2026,
+  secondary).</div>
 </div></section>
 
 <section><div class="col">
@@ -268,17 +279,35 @@
     partially self-finances.</li>
   </ul>
 
-  <h3>The ratio, tuned per crop</h3>
+  <h3>The grain book: what the state would buy, and where it would sell</h3>
+  <p>Priced against the market as it stands <strong>today</strong> — every mandi report in
+  the country on 23 July 2026 (17,247 Agmarknet records), medians per crop against
+  2025-26 MSPs:</p>
   <div class="tablewrap"><table>
-    <caption>RECOMMENDED MSV RATIO (θ) BY CROP CLASS · SYNTHESIS OF VERIFIED FINDINGS</caption>
-    <tr><th>Crop class</th><th class="num">θ</th><th>Disposal channel (pre-contracted)</th><th>Rationale</th></tr>
-    <tr><td>Rice, wheat</td><td class="num">0.30–0.40</td><td>PDS/NFSA + OMSS + ethanol</td><td>hold, don't extend — stocks already exceed norms 2×</td></tr>
-    <tr class="hl"><td>Pulses (tur, urad, masur, gram)</td><td class="num">0.20–0.30</td><td>dal-mill e-auctions, PDS pilot, buffer</td><td>storable; NAFED cost-efficient <em>relative</em> to FCI; 100% tur/urad/masur commitment already legislated to 2028-29 — cap it instead</td></tr>
-    <tr class="hl"><td>Maize, millets</td><td class="num">0.15–0.25</td><td>ethanol (NAFED/NCCF ₹2,291/qtl loop), feed, ICDS/PDS millet mandates</td><td>the complete MSV circuit already running — formalize it</td></tr>
-    <tr><td>Oilseeds</td><td class="num">0.10 + PDP</td><td>own-account crushing (HAFED model)</td><td>import parity below MSP — θ must stay small; pair with duty policy; deficiency payments do the rest</td></tr>
-    <tr><td>Cotton</td><td class="num">0.15 floor</td><td>CCI → mills</td><td>convert the zero-or-everything cycle into a standing floor</td></tr>
-    <tr><td>Perishables</td><td class="num">0</td><td>—</td><td>PDP benchmarked on e-NAM clearing prices + contracted processor offtake (Operation Greens' own conclusion); the state cannot hold tomatoes</td></tr>
+    <caption>THE MSV GRAIN BOOK · MANDI MEDIANS 23 JUL 2026 · MSP 2025-26 · ₹/QTL</caption>
+    <tr><th>Crop</th><th class="num">θ</th><th class="num">MSP<br>(buys at)</th><th class="num">Mandi today<br>(% reports &lt; MSP)</th><th>Sells to → at</th></tr>
+    <tr class="hl"><td><b>Bajra</b></td><td class="num">0.20</td><td class="num">2,775</td><td class="num">2,382 <span class="small">(92%)</span></td><td>PDS/ICDS millet mandates; feed mills</td></tr>
+    <tr class="hl"><td><b>Ragi</b></td><td class="num">0.20</td><td class="num">4,886</td><td class="num">3,550 <span class="small">(93%)</span></td><td>state PDS (Karnataka model)</td></tr>
+    <tr class="hl"><td><b>Jowar</b></td><td class="num">0.20</td><td class="num">3,699</td><td class="num">3,400 <span class="small">(56%)</span></td><td>PDS + feed</td></tr>
+    <tr class="hl"><td><b>Maize</b></td><td class="num">0.15–0.25</td><td class="num">2,400</td><td class="num">2,200 <span class="small">(75%)</span></td><td>ethanol distilleries → ₹2,291 (NAFED loop); feed. Export FOB ≈ ₹1,890–2,110 — not a channel</td></tr>
+    <tr class="hl"><td><b>Tur</b></td><td class="num">0.20–0.30</td><td class="num">8,000</td><td class="num">7,531 <span class="small">(70%)</span></td><td>dal-mill e-auctions (NAFED buffer model). Import CIF ₹5,659 (−29% vs MSP), duty-free to Mar-2026 — duty coordination is a precondition</td></tr>
+    <tr class="hl"><td><b>Moong</b></td><td class="num">0.20–0.30</td><td class="num">8,768</td><td class="num">6,901 <span class="small">(84%)</span></td><td>dal mills; PDS pulse pilot</td></tr>
+    <tr class="hl"><td><b>Groundnut</b></td><td class="num">0.10–0.15</td><td class="num">7,263</td><td class="num">7,000 <span class="small">(55%)</span></td><td>own-account crushing (HAFED oil-mill model); HPS exports viable</td></tr>
+    <tr><td>Wheat</td><td class="num">0.30 hold</td><td class="num">2,425</td><td class="num">2,500 <span class="small">(19%)</span></td><td>OMSS to millers → ₹2,550 reserve; NFSA</td></tr>
+    <tr><td>Paddy/rice</td><td class="num">0.35 hold</td><td class="num">2,369</td><td class="num">2,385 <span class="small">(36%)</span></td><td>NFSA ₹300; ethanol ₹2,320; OMSS ₹2,250–2,800. Export FOB ≈ ₹2,910–3,080 vs ₹3,535 state cost — exit blocked</td></tr>
+    <tr><td>Gram</td><td class="num">dormant</td><td class="num">5,650</td><td class="num">5,900 <span class="small">(22%)</span></td><td>—</td></tr>
+    <tr><td>Urad</td><td class="num">dormant</td><td class="num">7,800</td><td class="num">8,800 <span class="small">(31%)</span></td><td>—</td></tr>
+    <tr><td>Mustard / soybean</td><td class="num">dormant</td><td class="num">5,950 / 5,328</td><td class="num">7,400 / 7,050 <span class="small">(4% / 2%)</span></td><td>—</td></tr>
+    <tr><td>Cotton</td><td class="num">0.15 floor</td><td class="num">7,710</td><td class="num">8,400 <span class="small">(23%)</span></td><td>CCI → mills (dormant today)</td></tr>
+    <tr><td>Perishables</td><td class="num">0</td><td class="num">—</td><td class="num">—</td><td>deficiency payments on e-NAM clearing prices + contracted processors</td></tr>
   </table></div>
+  <p>Read the highlighted rows: <strong>the grains MSV would actually buy today are the
+  millets (bajra, ragi, jowar), maize, tur, moong, and groundnut</strong> — the crops where
+  a majority of mandi reports sit below MSP right now. Mustard, soybean, urad, gram, and
+  cotton trade <em>above</em> MSP today: their θ costs nothing while dormant. That is the
+  self-limiting property of the design — the volume guarantee spends only where and when
+  distress exists, and every buy-row has a named sell-channel at a stated price before the
+  first quintal moves.</p>
 
   <h3>Three design rules the evidence keeps repeating</h3>
   <ol>
@@ -318,8 +347,9 @@
   offtake by scheme, storage capacity, production-vs-procurement, IISFM Phase-5 depots).
   Full citations, per-claim verification votes, and every CSV:
   <span class="mono">github.com/herrrickshaw/FCI-warehouse-MSPvsMSV</span>.
-  Trade-parity table (APEDA/DGCI&amp;S) in progress at time of publication. Figures carry
-  season vintages; the ₹4,000 economic-cost rung is order-of-magnitude. This is research
-  synthesis, not investment or policy advice.</p>
+  Mandi medians: full Agmarknet daily feed, 23 Jul 2026 (17,247 records, data.gov.in).
+  Trade parity: DGCI&amp;S/APEDA unit values FY24–26 (67-row table in the repository).
+  Figures carry season vintages; the ₹4,000 economic-cost rung is order-of-magnitude.
+  This is research synthesis, not investment or policy advice.</p>
 </div></footer>
 </div>
