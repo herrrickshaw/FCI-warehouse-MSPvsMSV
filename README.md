@@ -1,5 +1,7 @@
 # FCI Warehouse · MSP vs MSV
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/herrrickshaw/FCI-warehouse-MSPvsMSV/blob/main/notebooks/fci_msp_msv_analysis.ipynb)
+
 Research + data project evaluating India's foodgrain procurement system and whether a
 **Minimum Support Volume (MSV)** guarantee — government committing to buy a minimum *quantity*
 of each crop — could extend effective price support beyond rice and wheat, where the
@@ -23,6 +25,26 @@ of each crop — could extend effective price support beyond rice and wheat, whe
 6. **Ethanol precedent** — FCI rice & NAFED/NCCF maize supplied to distilleries for the
    ethanol blending programme: evidence that policy can create industrial offtake for
    state-procured grain, and the conditions it requires.
+
+## Dashboard highlights
+
+**The one-picture argument** — MSP is announced for 23+ crops, sustained procurement volume exists for two:
+
+![Procurement as % of production by crop](dashboard/screenshots/coverage_gap.png)
+
+**Procurement trend & stocks vs buffer norms** — record buying, stocks pulling away from need:
+
+![Rice & wheat procurement; central pool stocks vs norms](dashboard/screenshots/trend_and_stocks.png)
+
+**Where the grain goes & who supplies it** — offtake by channel (incl. OMSS sales to processors) and Punjab-heavy wheat concentration:
+
+![Offtake by channel; wheat procurement by state](dashboard/screenshots/offtake_and_states.png)
+
+**The physical ceiling** — covered storage capacity, the hard constraint on any volume guarantee:
+
+![Storage capacity by agency](dashboard/screenshots/storage_capacity.png)
+
+Full dashboard: [`dashboard/index.html`](dashboard/index.html) (self-contained — clone and open, or serve locally; `?theme=dark` forces dark mode). Full-page views: [light](dashboard/screenshots/full_light.png) · [dark](dashboard/screenshots/full_dark.png). Reproduce the charts in Colab via the badge above.
 
 ## Layout
 
