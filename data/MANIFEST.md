@@ -145,3 +145,7 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
   fetched with 10-row pages + backoff. Resource UUIDs recorded per row in `source`.
 
 - **Patch 2026-07-23**: rice 2024-25 row replaced with derived full-season rice-equivalent (832.17 LMT paddy x 0.67 outturn = 557.55 LMT, share 37.1%); the collected 189.14 LMT was a season-to-date stub. Derivation, not a reported figure.
+
+- **iisfm_phase5_depots.csv** — all 173 IISFM Phase-5 "balanced depots" (zone/region/district/depot/type/agency + vendor install status). Source: disfm.iisfm.nic.in/Hardware_Support/IISFM_Phase-5.htm (Excel-export frameset, expired cert). 12 rows have shifted columns (agency-office rows).
+- **ap_buffer_godowns.csv** — 177 AP buffer godowns with lat-longs, APSCSCL reserved + total capacity (32.09/19.56 LMT). Source: user-supplied APSCSCL roster PDF.
+- **movement_by_mode.csv** — foodgrain movement by rail/road/waterways 2013-14→2019-20 (partial). Source: FCI Handbook 2020, Institute of Food Security (user-supplied PDF).
