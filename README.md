@@ -67,3 +67,7 @@ No fabricated or interpolated figures; every file's provenance is in `data/MANIF
 - [x] Haryana + ethanol brief → `report/haryana-food-processing-linkages.md`
 - [x] Data collection → `data/` (6 CSVs + MANIFEST)
 - [x] Dashboard → `dashboard/index.html` (self-contained, light/dark, table views)
+
+## Published essay
+
+**The Price of Grain** — the administered price ladder, farmer coverage, trade parity, and the MSP+MSV ratio framework: [report/pricing-msp-msv-published.html](report/pricing-msp-msv-published.html) (also live as a Claude artifact).

@@ -1,0 +1,325 @@
+<title>The Price of Grain: MSP, MSV, and the Arithmetic of the Indian Grain State</title>
+<style>
+  :root {
+    --paper:#fbf9f5; --ink:#211e19; --ink-2:#5d564b; --jute:#7d6a4e;
+    --stencil:#1a6b45; --stencil-soft:#e7f0ea; --hair:#e3ddd1; --band:#f4f0e8;
+    --warn:#a34b22; --tab:#f7f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      --paper:#161410; --ink:#ece7dd; --ink-2:#a89e8e; --jute:#b09a77;
+      --stencil:#46a878; --stencil-soft:#1d2b23; --hair:#2e2a24; --band:#1d1a15;
+      --warn:#d97b4d; --tab:#1b1815;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#161410; --ink:#ece7dd; --ink-2:#a89e8e; --jute:#b09a77;
+    --stencil:#46a878; --stencil-soft:#1d2b23; --hair:#2e2a24; --band:#1d1a15;
+    --warn:#d97b4d; --tab:#1b1815;
+  }
+  :root[data-theme="light"] {
+    --paper:#fbf9f5; --ink:#211e19; --ink-2:#5d564b; --jute:#7d6a4e;
+    --stencil:#1a6b45; --stencil-soft:#e7f0ea; --hair:#e3ddd1; --band:#f4f0e8;
+    --warn:#a34b22; --tab:#f7f4ee;
+  }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--paper); color:var(--ink);
+    font:18px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; }
+  .mono { font-family:"SF Mono",Menlo,Consolas,monospace; }
+  .wrap { max-width:100%; }
+  .col { max-width:70ch; margin:0 auto; padding:0 22px; }
+  header.masthead { border-bottom:3px double var(--hair); padding:56px 0 36px; }
+  .eyebrow { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px;
+    letter-spacing:.18em; text-transform:uppercase; color:var(--stencil); }
+  h1 { font-size:clamp(30px,5vw,46px); line-height:1.12; font-weight:600;
+    text-wrap:balance; margin:14px 0 16px; }
+  .dek { font-size:20px; line-height:1.5; color:var(--ink-2); text-wrap:balance; }
+  .byline { margin-top:22px; font-family:"SF Mono",Menlo,Consolas,monospace;
+    font-size:12px; color:var(--jute); }
+  section { padding:40px 0 8px; }
+  .secno { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:13px;
+    color:var(--stencil); letter-spacing:.12em; }
+  h2 { font-size:27px; line-height:1.2; margin:6px 0 18px; font-weight:600; text-wrap:balance; }
+  h3 { font-size:20px; margin:26px 0 10px; font-weight:600; }
+  p { margin:0 0 16px; }
+  p.lead { font-size:19px; }
+  a { color:var(--stencil); text-decoration-thickness:1px; text-underline-offset:2px; }
+  strong { font-weight:600; }
+  .band { background:var(--band); border-top:1px solid var(--hair);
+    border-bottom:1px solid var(--hair); padding:34px 0; margin:30px 0; }
+  figure { margin:0; }
+  figcaption { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px;
+    color:var(--ink-2); margin-top:14px; line-height:1.6; }
+  /* price ladder */
+  .ladder { display:flex; flex-direction:column; gap:0; max-width:640px; margin:0 auto; }
+  .rung { display:grid; grid-template-columns:110px 1fr; gap:16px; align-items:center;
+    padding:13px 0; border-bottom:1px solid var(--hair); }
+  .rung:last-child { border-bottom:none; }
+  .rung .price { font-family:"SF Mono",Menlo,Consolas,monospace; font-size:17px;
+    font-weight:700; text-align:right; font-variant-numeric:tabular-nums; }
+  .rung .what { font-size:15.5px; line-height:1.45; }
+  .rung .what b { display:block; font-size:16px; }
+  .rung .tagbuy, .rung .tagsell, .rung .taggive, .rung .taghold {
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:10.5px; letter-spacing:.14em;
+    text-transform:uppercase; padding:1px 7px; border-radius:2px; margin-left:6px; }
+  .tagbuy  { background:var(--stencil-soft); color:var(--stencil); }
+  .tagsell { background:var(--tab); color:var(--jute); border:1px solid var(--hair); }
+  .taggive { background:var(--tab); color:var(--warn); border:1px solid var(--hair); }
+  .taghold { background:var(--tab); color:var(--ink-2); border:1px solid var(--hair); }
+  /* tables */
+  .tablewrap { overflow-x:auto; margin:18px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  caption { text-align:left; font-family:"SF Mono",Menlo,Consolas,monospace;
+    font-size:12px; color:var(--ink-2); padding-bottom:10px; letter-spacing:.06em; }
+  th { text-align:left; font-family:"SF Mono",Menlo,Consolas,monospace; font-size:12px;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2);
+    border-bottom:2px solid var(--ink); padding:8px 12px 8px 0; }
+  td { padding:9px 12px 9px 0; border-bottom:1px solid var(--hair); vertical-align:top; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums;
+    font-family:"SF Mono",Menlo,Consolas,monospace; font-size:14px; }
+  tr.hl td { background:var(--stencil-soft); }
+  .small { font-size:14px; color:var(--ink-2); }
+  /* formula card */
+  .formula { background:var(--tab); border:1px solid var(--hair); border-left:3px solid var(--stencil);
+    padding:18px 22px; margin:20px 0; font-size:16.5px; }
+  .formula .mono { font-size:15px; }
+  .note { border-left:3px solid var(--jute); padding:2px 0 2px 18px; color:var(--ink-2);
+    font-size:16px; margin:20px 0; }
+  footer { border-top:3px double var(--hair); margin-top:56px; padding:28px 0 60px;
+    font-size:14px; color:var(--ink-2); }
+  ul, ol { padding-left:24px; margin:0 0 16px; }
+  li { margin-bottom:8px; }
+</style>
+
+<div class="wrap">
+<header class="masthead"><div class="col">
+  <div class="eyebrow">Policy analysis · Indian agriculture · July 2026</div>
+  <h1>The Price of Grain</h1>
+  <p class="dek">How India prices its harvest — for farmers, for ration shops, for distilleries,
+  for the world market — and why pairing the Minimum Support <em>Price</em> with a Minimum
+  Support <em>Volume</em> is the design that creates value on both sides of the ledger.</p>
+  <div class="byline">FCI-warehouse-MSPvsMSV · verified-source synthesis · figures carry season vintages</div>
+</div></header>
+
+<section><div class="col">
+  <div class="secno">§ 1</div>
+  <h2>One kilogram of rice, five government prices</h2>
+  <p class="lead">India does not have <em>a</em> price of grain. It has a ladder of administered
+  prices, each one a policy lever, and the gaps between the rungs are where every subsidy,
+  every incentive, and every distortion in the system lives.</p>
+</div>
+<div class="band"><div class="col">
+  <figure>
+    <div class="ladder">
+      <div class="rung"><div class="price mono">₹4,000<span class="small">/qtl*</span></div>
+        <div class="what"><b>FCI economic cost of rice <span class="taghold">holds at</span></b>
+        MSP + procurement incidentals + milling + freight + storage + interest. What a quintal actually costs the state by the time it sits in a godown.</div></div>
+      <div class="rung"><div class="price mono">₹3,535</div>
+        <div class="what"><b>Paddy MSP in rice terms <span class="tagbuy">buys at</span></b>
+        KMS 2025-26 common paddy MSP ₹2,369/qtl ÷ 0.67 milling outturn. The farmer-side guarantee, converted to the commodity the state stores.</div></div>
+      <div class="rung"><div class="price mono">₹2,800</div>
+        <div class="what"><b>OMSS reserve price — private trade <span class="tagsell">sells at</span></b>
+        What a private processor pays at FCI's weekly e-auction (Jan 2025 tiering).</div></div>
+      <div class="rung"><div class="price mono">₹2,320</div>
+        <div class="what"><b>Rice for ethanol distilleries <span class="tagsell">sells at</span></b>
+        Fixed pan-India rate, ESY 2025-26 (was ₹2,250). Every quintal moves at ~₹1,700 below economic cost — an off-books transfer to the blending programme.</div></div>
+      <div class="rung"><div class="price mono">₹2,250</div>
+        <div class="what"><b>OMSS to states &amp; Bharat-brand channel <span class="tagsell">sells at</span></b>
+        ₹2,250 for state governments (12 LMT cap), ₹2,400 for NAFED/NCCF milling into Bharat Rice/Atta.</div></div>
+      <div class="rung"><div class="price mono">₹300</div>
+        <div class="what"><b>NFSA central issue price <span class="taggive">gives at</span></b>
+        ₹3/kg rice under the Act — and ₹0 under PMGKAY free-grain. The terminal rung: 90% of offtake exits here.</div></div>
+    </div>
+    <figcaption>The rice ladder, 2025-26 vintages. *Economic cost is order-of-magnitude
+    (DFPD/FCI cost heads); every other rung is a notified rate. The state buys at rung 2,
+    carries to rung 1, and disposes at rungs 3–6 — the vertical gaps are the food subsidy.</figcaption>
+  </figure>
+</div></div>
+<div class="col">
+  <p>Three features of this ladder define Indian farm pricing:</p>
+  <ul>
+    <li><strong>The buy rung is a promise, not a market.</strong> MSP is announced for 23+
+    crops each season on CACP cost formulas (A2+FL +50%), but it binds only where a
+    procurement machine stands behind it — which is rungs, mandis, and godowns, not gazette
+    notifications.</li>
+    <li><strong>The sell rungs are policy dials.</strong> OMSS reserve prices, the ethanol
+    rate, and issue prices move by executive order — sometimes twice a season (rice-for-ethanol:
+    ₹2,800 → ₹2,250 in one January). Government adjusts the <em>disposal</em> price to steer
+    private demand the way a central bank adjusts repo.</li>
+    <li><strong>Parallel ladders exist per crop.</strong> Sugarcane runs the same
+    architecture in mirror image: a statutory floor mills must pay (FRP ₹355/qtl, +29% since
+    2019) against a frozen output price (sugar MSP ₹31/kg since Feb 2019) — a policy-made
+    squeeze that produced ₹16,087 crore of farmer arrears by February 2026.</li>
+  </ul>
+</div></section>
+
+<section><div class="col">
+  <div class="secno">§ 2</div>
+  <h2>What the farmer actually receives</h2>
+  <p>The distance between announced price and received price is the central empirical fact
+  of the system. Three measurements, all from verified official series:</p>
+  <h3>Coverage — who sells at MSP at all</h3>
+  <p>Among households that actually <em>sold</em> the crop, 13% of paddy sellers and 16% of
+  wheat sellers sold to a procurement agency (NSS 70th round unit data; the famous "6%"
+  figure divides by <em>all</em> agricultural households). Official season counts: ~1.19
+  crore paddy farmers paid in KMS 2024-25; 25.1 lakh wheat farmers in RMS 2025-26. For the
+  other twenty-one MSP crops, coverage is a few percent in the best year and zero in most.</p>
+  <h3>Volume — the share of the harvest the promise reaches</h3>
+  <div class="tablewrap"><table>
+    <caption>PROCUREMENT AS % OF PRODUCTION · LATEST FULL YEAR PER CROP</caption>
+    <tr><th>Crop</th><th class="num">Share</th><th>Agency</th><th>Reading</th></tr>
+    <tr class="hl"><td>Rice</td><td class="num">37.1%</td><td>FCI + states</td><td>standing operation</td></tr>
+    <tr class="hl"><td>Wheat</td><td class="num">22.6%</td><td>FCI + states</td><td>standing operation</td></tr>
+    <tr><td>Ragi</td><td class="num">14.8%</td><td>states (PDS mandates)</td><td>scheme-driven</td></tr>
+    <tr><td>Mustard</td><td class="num">8.8%</td><td>NAFED/PSS</td><td>crash-year episodes</td></tr>
+    <tr><td>Jowar / bajra / moong</td><td class="num">4–8%</td><td>mixed</td><td>episodic</td></tr>
+    <tr><td>Gram, sunflower, groundnut, masur</td><td class="num">&lt;2%</td><td>NAFED/PSS</td><td>token</td></tr>
+    <tr><td>Tur, urad, soybean, maize</td><td class="num">≈0%</td><td>—</td><td>notification only</td></tr>
+  </table></div>
+  <h3>Reliability — the variance that breaks sowing decisions</h3>
+  <p>Year-to-year coefficient of variation of procured volume: rice 24%, wheat 21% — versus
+  gram 80%, tur 109%, bajra 110%, maize 120%, urad 143%, soybean 163%. Cotton is the pure
+  case: 124 lakh bales bought in 2019-20, <strong>zero</strong> in 2021-22 and 2022-23, ~100
+  lakh again in 2024-25. For a farmer choosing what to sow, a guarantee with 120%
+  variance is not a guarantee; it is a lottery whose ticket is a season's income.</p>
+  <div class="note">This is the precise sense in which "MSP for 23 crops" is really one
+  guarantee, one semi-guarantee, and twenty-one lotteries — and why the binding reform
+  variable is <em>volume</em>, not price.</div>
+</div></section>
+
+<section><div class="col">
+  <div class="secno">§ 3</div>
+  <h2>The trade boundary: export and import parity</h2>
+  <p>Domestic administered prices float inside a boundary set by world prices. The rules of
+  thumb per crop class:</p>
+  <ul>
+    <li><strong>Rice — export parity above MSP in normal years.</strong> India supplies
+    ~40% of world rice trade; when non-basmati export prices exceed MSP-derived cost, private
+    trade absorbs surplus at no fiscal cost. The 2022–24 export bans and duties <em>deliberately
+    broke</em> this parity to hold domestic prices down — the mirror-image intervention to
+    procurement, executed on the sell side of the boundary.</li>
+    <li><strong>Wheat — the marginal case.</strong> Indian wheat is export-viable only in
+    world-price spikes (2021-22: record 433 LMT procurement <em>and</em> record exports,
+    followed by the May 2022 ban within a fortnight of a heatwave). MSP sits close to import
+    parity, so both boundaries are policy-active.</li>
+    <li><strong>Pulses and edible oils — import parity below MSP.</strong> Landed tur, urad,
+    masur, yellow peas, and palm/soy oil routinely undercut MSP. A volume guarantee for
+    these crops <em>without tariff coordination</em> is fiscally endless: the state would buy
+    at MSP while imports set the market price below it, forever. Duty policy and MSV are one
+    instrument here, not two.</li>
+  </ul>
+  <div class="note">A product-level parity table (APEDA export unit values and DGCI&amp;S
+  import unit values against MSP, by crop and year) is being compiled as a companion dataset
+  — <span class="mono">data/trade_price_parity.csv</span> in the repository. The qualitative
+  boundaries above are stable; the table adds the per-year magnitudes.</div>
+</div></section>
+
+<section><div class="col">
+  <div class="secno">§ 4</div>
+  <h2>The MSP + MSV ratio: one number, tuned per crop</h2>
+  <p class="lead">Define <strong>θ (the MSV ratio)</strong>: the share of a crop's marketed
+  surplus the government commits — in advance, before sowing — to purchase at MSP.
+  Today θ is an accident of infrastructure: ~0.4 for rice, ~0.3 for wheat, ~0 for
+  everything else. The reform is to make θ an explicit, published policy variable.</p>
+
+  <h3>Why a partial ratio creates outsized farmer value</h3>
+  <div class="formula">
+    Farmer revenue per unit: <span class="mono">R = θ·MSP + (1−θ)·P<sub>mkt</sub></span><br>
+    Revenue variance: <span class="mono">Var(R) = (1−θ)²·Var(P<sub>mkt</sub>)</span>
+  </div>
+  <p>Variance falls with the <em>square</em> of the ratio: a θ of just 0.3 removes 51% of
+  price-revenue variance; θ = 0.5 removes 75%. The first tranche of guaranteed volume does
+  most of the stabilization work — because what destroys farm incomes is the crash-year tail,
+  and a pre-committed volume floor is exactly a put option on that tail. Three further
+  farmer-side effects compound it:</p>
+  <ul>
+    <li><strong>Credit:</strong> a government purchase commitment is bankable collateral;
+    kisan-credit pricing against an assured θ·MSP cash flow beats pricing against a lottery.</li>
+    <li><strong>Sowing signal:</strong> announced <em>before</em> sowing, per-district
+    volume caps steer acreage the way Haryana's ₹7,000/acre diversion payments have failed
+    to — because they change expected revenue, not just add a side payment.</li>
+    <li><strong>Bargaining floor:</strong> even the (1−θ) share sold privately clears
+    nearer MSP when traders know the state stands ready at the margin — the documented
+    mandi-price support effect of procurement presence.</li>
+  </ul>
+
+  <h3>Why a capped ratio creates government value</h3>
+  <div class="formula">
+    Fiscal exposure: <span class="mono">C = θ·Q·(MSP + carrying − disposal price)</span> — bounded ex-ante by the cap.<br>
+    Against: open-ended MSP-for-all ≈ ₹3.4 lakh crore/yr (+95% on the food subsidy).
+  </div>
+  <ul>
+    <li><strong>The exposure is capped and known at budget time</strong> — unlike the
+    sugarcane FRP model, where an uncapped statutory obligation with no viability check
+    manufactured ₹16,087 crore of arrears, or uncapped bajra buying that ended in
+    loss-making resale.</li>
+    <li><strong>The purchased volume is a merchant book, not a write-off.</strong> The state
+    already monetizes stock through four proven channels: OMSS e-auctions to processors
+    (71+ LMT wheat in 2023-24), the ethanol programme (52–72 LMT rice; a tender clause now
+    <em>mandates</em> 40% FCI-grain sourcing for distillery supplies), Bharat-brand retail,
+    and PDS/welfare offtake. MSV extends a working disposal machine to new crops — pulses to
+    dal mills, maize to feed and distilleries, millets to PDS/ICDS mandates.</li>
+    <li><strong>Storage physics is respected.</strong> Public capacity (~777 LMT covered)
+    caps feasible procurement at roughly 30% of the ~261 MT marketed surplus of the major
+    crops. θ per crop is chosen <em>inside</em> that envelope — the constraint becomes a
+    design input instead of a crisis.</li>
+    <li><strong>Counter-cyclical release earns the spread.</strong> Buy at MSP in the glut,
+    release through OMSS in the tight year: the state's buffer function, done deliberately,
+    partially self-finances.</li>
+  </ul>
+
+  <h3>The ratio, tuned per crop</h3>
+  <div class="tablewrap"><table>
+    <caption>RECOMMENDED MSV RATIO (θ) BY CROP CLASS · SYNTHESIS OF VERIFIED FINDINGS</caption>
+    <tr><th>Crop class</th><th class="num">θ</th><th>Disposal channel (pre-contracted)</th><th>Rationale</th></tr>
+    <tr><td>Rice, wheat</td><td class="num">0.30–0.40</td><td>PDS/NFSA + OMSS + ethanol</td><td>hold, don't extend — stocks already exceed norms 2×</td></tr>
+    <tr class="hl"><td>Pulses (tur, urad, masur, gram)</td><td class="num">0.20–0.30</td><td>dal-mill e-auctions, PDS pilot, buffer</td><td>storable; NAFED cost-efficient <em>relative</em> to FCI; 100% tur/urad/masur commitment already legislated to 2028-29 — cap it instead</td></tr>
+    <tr class="hl"><td>Maize, millets</td><td class="num">0.15–0.25</td><td>ethanol (NAFED/NCCF ₹2,291/qtl loop), feed, ICDS/PDS millet mandates</td><td>the complete MSV circuit already running — formalize it</td></tr>
+    <tr><td>Oilseeds</td><td class="num">0.10 + PDP</td><td>own-account crushing (HAFED model)</td><td>import parity below MSP — θ must stay small; pair with duty policy; deficiency payments do the rest</td></tr>
+    <tr><td>Cotton</td><td class="num">0.15 floor</td><td>CCI → mills</td><td>convert the zero-or-everything cycle into a standing floor</td></tr>
+    <tr><td>Perishables</td><td class="num">0</td><td>—</td><td>PDP benchmarked on e-NAM clearing prices + contracted processor offtake (Operation Greens' own conclusion); the state cannot hold tomatoes</td></tr>
+  </table></div>
+
+  <h3>Three design rules the evidence keeps repeating</h3>
+  <ol>
+    <li><strong>Announce θ·Q before sowing; never after.</strong> Post-harvest volume
+    decisions are politics; pre-sowing volume commitments are policy.</li>
+    <li><strong>Contract the exit before the entry.</strong> Every quintal procured under
+    MSV has a named disposal channel — a standing e-auction calendar, a blending-mandate
+    allocation, a PDS quota — priced and published. The July 2023 ethanol pause showed what
+    happens to processor trust when the exit is discretionary.</li>
+    <li><strong>Budget the rung-gap openly.</strong> Selling at ₹2,320 what costs ₹4,000 is
+    a legitimate policy transfer — when it appears as a line item, not as FCI balance-sheet
+    sediment.</li>
+  </ol>
+</div></section>
+
+<section><div class="col">
+  <div class="secno">§ 5</div>
+  <h2>The value split, stated plainly</h2>
+  <p><strong>For the farmer</strong>, MSP+MSV converts an announced price into a bankable
+  quantity: three-quarters of revenue variance removed at θ = 0.5, credit access against a
+  sovereign cash flow, and a sowing-time signal that actually moves acreage.</p>
+  <p><strong>For the government</strong>, it converts an open-ended moral commitment into a
+  budgeted, storage-feasible position with four working monetization channels — at roughly a
+  third of the fiscal cost of a universal legal MSP, with the crash-year tail (the part that
+  causes farm distress and its politics) covered first.</p>
+  <p><strong>The one-line design:</strong> <em>MSP without volume is a promise; MSV without
+  disposal is a warehouse fire in slow motion. The instrument that works is a pre-announced
+  volume ratio with a pre-sold exit.</em></p>
+</div></section>
+
+<footer><div class="col">
+  <p><b>Sources &amp; method.</b> Synthesis of a 102-agent adversarially-verified research run
+  (23/25 claims confirmed 3-0 or 2-1; DFPD Annual Report 2024-25, PIB Year-End Review 2025,
+  IEG WP379/WP420, RAS 2021, data.gov.in Rajya Sabha annexures), the Haryana
+  forward/backward-linkage brief (HAFED, OMSS, BPCL ethanol tenders via ChiniMandi), ChiniMandi
+  sugar-season 2025-26 statistics, and the project's own datasets (procurement, stocks vs norms,
+  offtake by scheme, storage capacity, production-vs-procurement, IISFM Phase-5 depots).
+  Full citations, per-claim verification votes, and every CSV:
+  <span class="mono">github.com/herrrickshaw/FCI-warehouse-MSPvsMSV</span>.
+  Trade-parity table (APEDA/DGCI&amp;S) in progress at time of publication. Figures carry
+  season vintages; the ₹4,000 economic-cost rung is order-of-magnitude. This is research
+  synthesis, not investment or policy advice.</p>
+</div></footer>
+</div>
