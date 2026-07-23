@@ -149,3 +149,5 @@ kept in this directory: `bulletin_nov2024.pdf`, `dgi_raw/*.json`, `es_*.pdf`, `p
 - **iisfm_phase5_depots.csv** — all 173 IISFM Phase-5 "balanced depots" (zone/region/district/depot/type/agency + vendor install status). Source: disfm.iisfm.nic.in/Hardware_Support/IISFM_Phase-5.htm (Excel-export frameset, expired cert). 12 rows have shifted columns (agency-office rows).
 - **ap_buffer_godowns.csv** — 177 AP buffer godowns with lat-longs, APSCSCL reserved + total capacity (32.09/19.56 LMT). Source: user-supplied APSCSCL roster PDF.
 - **movement_by_mode.csv** — foodgrain movement by rail/road/waterways 2013-14→2019-20 (partial). Source: FCI Handbook 2020, Institute of Food Security (user-supplied PDF).
+
+- **Correction 2026-07-23 (ethanol pricing)**: FCI-rice ethanol was ₹58.50/L in ESY 2024-25, revised to ₹60.32/L in ESY 2025-26 (+3.11%, tracking rice ₹2,250→₹2,320/qtl). The BPCL-floated OMC tender buckets grain ethanol as FCI-rice / DFG (~₹64/L) / maize (₹71.86/L); ESY 2025-26 Cycle-1 mandates 40% FCI-grain sourcing for Q1-Q3. Source: ChiniMandi tender coverage.
