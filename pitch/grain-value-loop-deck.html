@@ -1,0 +1,320 @@
+<title>The Grain Value Loop — Integrated Rice Biorefinery Pitch</title>
+<style>
+  :root{
+    --paper:#f7f5ef; --panel:#fffefb; --ink:#1b2019; --ink2:#55605108;
+    --ink-2:#54604f; --ink-3:#8a917f; --hair:#e2ddd0; --line:#cfc9ba;
+    --green:#2f7a4f; --green-d:#1f5637; --gold:#b7791f; --gold-soft:#f3ead6;
+    --blue:#3b6ea5; --green-soft:#e6efe7; --band:#efece2;
+  }
+  @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --line:#343829; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a;
+    --gold-soft:#241f12; --blue:#6aa0d6; --green-soft:#17251b; --band:#1b1e16;
+  }}
+  :root[data-theme="dark"]{
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --line:#343829; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a;
+    --gold-soft:#241f12; --blue:#6aa0d6; --green-soft:#17251b; --band:#1b1e16;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--band);color:var(--ink);
+    font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+  .mono{font-family:"SF Mono",Menlo,Consolas,monospace}
+  .deck{max-width:1000px;margin:0 auto;padding:22px 16px 80px}
+  .slide{background:var(--paper);border:1px solid var(--hair);border-radius:14px;
+    padding:44px 48px;margin-bottom:20px;min-height:540px;position:relative;
+    box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column}
+  .slide::before{content:attr(data-n)" / 12";position:absolute;top:20px;right:26px;
+    font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--ink-3);letter-spacing:.1em}
+  .eyebrow{font-family:"SF Mono",Menlo,monospace;font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--green)}
+  h1{font-size:clamp(30px,5.2vw,50px);line-height:1.08;font-weight:600;text-wrap:balance;margin:16px 0}
+  h2{font-size:clamp(22px,3.4vw,30px);line-height:1.16;font-weight:600;text-wrap:balance;margin:6px 0 18px}
+  h3{font-size:15px;font-family:"SF Mono",Menlo,monospace;text-transform:uppercase;
+    letter-spacing:.08em;color:var(--gold);margin:18px 0 8px;font-weight:700}
+  p{margin:0 0 12px}.lead{font-size:19px;color:var(--ink-2)}
+  strong{font-weight:600}
+  .cover{background:linear-gradient(150deg,var(--green-d),var(--green));color:#fff;border:none}
+  .cover .eyebrow,.cover h3{color:#dff0e5}
+  .cover h1{color:#fff}.cover p{color:#eaf3ec}
+  .cover::before{color:#bcd8c6}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .card{background:var(--panel);border:1px solid var(--hair);border-radius:10px;padding:16px 18px}
+  .card .k{font-family:"SF Mono",Menlo,monospace;font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+  .card .v{font-size:27px;font-weight:600;margin:3px 0}
+  .card .s{font-size:13px;color:var(--ink-2)}
+  .accent{color:var(--green)}.gold{color:var(--gold)}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:6px 0}
+  th{text-align:left;font-family:"SF Mono",Menlo,monospace;font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-3);border-bottom:2px solid var(--line);padding:7px 10px 7px 0}
+  td{padding:7px 10px 7px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;font-family:"SF Mono",Menlo,monospace;font-size:13px}
+  tr.hl td{background:var(--green-soft)}
+  ul{margin:0 0 12px;padding-left:20px}li{margin-bottom:7px}
+  .flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:14px 0}
+  .step{flex:1;min-width:120px;background:var(--panel);border:1px solid var(--hair);padding:12px 14px;position:relative}
+  .step:not(:last-child){border-right:none}
+  .step .t{font-weight:600;font-size:15px}.step .d{font-size:12.5px;color:var(--ink-2)}
+  .arrow{color:var(--gold);font-size:20px;align-self:center;padding:0 4px}
+  .pill{display:inline-block;font-family:"SF Mono",Menlo,monospace;font-size:11px;
+    padding:2px 8px;border-radius:20px;background:var(--gold-soft);color:var(--gold);margin:2px 4px 2px 0}
+  .foot{margin-top:auto;padding-top:16px;font-size:12px;color:var(--ink-3);font-family:"SF Mono",Menlo,monospace}
+  .big{font-size:clamp(40px,8vw,76px);font-weight:600;line-height:1;color:var(--green)}
+  .note{border-left:3px solid var(--gold);padding:2px 0 2px 16px;color:var(--ink-2);font-size:15px;margin:12px 0}
+  @media(max-width:680px){.grid2,.grid3{grid-template-columns:1fr}.slide{padding:30px 24px}.step{border-right:1px solid var(--hair)!important}}
+</style>
+<div class="deck">
+
+<!-- 1 COVER -->
+<section class="slide cover" data-n="01">
+  <div class="eyebrow">Investment &amp; policy concept · India · 2026</div>
+  <h1>The Grain Value Loop</h1>
+  <p class="lead" style="max-width:60ch">An integrated rice biorefinery model that turns the byproducts India's
+  government already procures — and currently gives away — into edible oil, food-grade derivatives, energy,
+  and exports. Feedstock the state owns; demand the state can contract.</p>
+  <div style="margin-top:26px" class="grid3">
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">
+      <div class="k" style="color:#cfe6d7">Import substitution</div><div class="v" style="color:#fff">₹21,000 cr</div><div class="s" style="color:#dff0e5">per year, across crops</div></div>
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">
+      <div class="k" style="color:#cfe6d7">Bran given away today</div><div class="v" style="color:#fff">₹7,650 cr</div><div class="s" style="color:#dff0e5">in free CMR byproduct</div></div>
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)">
+      <div class="k" style="color:#cfe6d7">Capital subsidy</div><div class="v" style="color:#fff">35–50%</div><div class="s" style="color:#dff0e5">PMFME · PMKSY · PLISFPI</div></div>
+  </div>
+  <div class="foot">FCI-warehouse-MSPvsMSV · figures verified against DFPD, DGCI&amp;S, MoFPI, real project DPRs</div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="slide" data-n="02">
+  <div class="eyebrow">The paradox</div>
+  <h2>India imports what it grows — and gifts the feedstock</h2>
+  <p class="lead">The government procures ~550 LMT of rice and ~300 LMT of wheat a year, then hands the
+  milling byproducts to private millers for free and imports the finished derivative.</p>
+  <div class="grid2" style="margin-top:14px">
+    <div class="card"><h3>What the state does today</h3>
+      <ul><li>Procures paddy at MSP, hands it to CMR millers</li>
+      <li>Millers keep <strong>~180 LMT husk + ~65 LMT bran</strong> — the ₹7,650 cr byproduct giveaway</li>
+      <li>Sells surplus grain raw (OMSS) at ~2–4% trader margin, often at a loss</li></ul></div>
+    <div class="card"><h3>What the state imports</h3>
+      <ul><li><strong>56% of edible oil</strong> (~₹1.65 lakh cr/yr) — while #1 in rice-bran oil</li>
+      <li><strong>67 LMT of pulses</strong>, vital wheat gluten, specialty starch, Vitamin-E, silica</li>
+      <li>The <em>derivative</em> — while holding the raw material</li></ul></div>
+  </div>
+  <div class="note">World's #1 rice-bran-oil producer, yet imports more than half its cooking oil. The same
+  pattern repeats for gluten, starch, protein, and nutraceuticals across every crop the state procures.</div>
+  <div class="foot">Sources: DFPD Annual Report 2024-25 · DGCI&amp;S FY26 · NITI Aayog edible-oil</div>
+</section>
+
+<!-- 3 INSIGHT -->
+<section class="slide" data-n="03">
+  <div class="eyebrow">The insight</div>
+  <h2>Value density rises ~1,000× from grain to derivative</h2>
+  <p class="lead">The margin is in the cascade, not the commodity — the sugarcane model (sugar + ethanol +
+  power + CBG) ported to grain.</p>
+  <div class="flow">
+    <div class="step"><div class="t">Paddy</div><div class="d">₹24/kg (MSP)</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="t">Milled rice + bran + husk</div><div class="d">the split the state gives away</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="t">Rice-bran oil</div><div class="d">₹105/kg</div></div>
+    <div class="arrow">→</div>
+    <div class="step" style="border-color:var(--gold)"><div class="t gold">Oryzanol / Vit-E</div><div class="d">₹1,200–17,700/kg</div></div>
+  </div>
+  <div class="grid3" style="margin-top:16px">
+    <div class="card"><div class="k">Commodity floor</div><div class="v accent">₹7–40/kg</div><div class="s">flour, feed, husk, power — where the state operates now</div></div>
+    <div class="card"><div class="k">Industrial mid</div><div class="v accent">₹40–110/kg</div><div class="s">RBO, silica, starch, gluten, dal, besan</div></div>
+    <div class="card"><div class="k">Molecular tail</div><div class="v gold">₹350–17,700/kg</div><div class="s">wax, protein, oryzanol, tocotrienols</div></div>
+  </div>
+  <div class="foot">The state captures the bottom tier and gifts the top three. Source: byproduct product-tree (39 products)</div>
+</section>
+
+<!-- 4 THE PROJECT -->
+<section class="slide" data-n="04">
+  <div class="eyebrow">The project</div>
+  <h2>An integrated rice biorefinery — one complex, many streams</h2>
+  <div class="grid2">
+    <div>
+      <p>A cooperative/PPP-hosted complex, sited in an operational Mega Food Park, that takes government CMR
+      paddy and runs the full cascade instead of milling and selling raw:</p>
+      <div style="margin-top:10px">
+        <span class="pill">Rice mill</span><span class="pill">Bran stabilisation</span>
+        <span class="pill">RBO solvent extraction</span><span class="pill">RBO refinery</span>
+        <span class="pill">Oryzanol / wax recovery</span><span class="pill">Husk-fired power</span>
+        <span class="pill">Husk-ash → silica</span><span class="pill">Broken rice → poha/murmura</span>
+        <span class="pill">Fortified rice kernels</span><span class="pill">DORB → feed</span>
+      </div>
+    </div>
+    <div class="card"><h3>Why integrated</h3>
+      <ul><li><strong>Husk powers the process</strong> (already standard mill practice) — energy self-sufficient</li>
+      <li><strong>DORB feed credit</strong> makes the oil cheap (₹60 vs ₹105/kg)</li>
+      <li>One feedstock stream → 8+ revenue lines</li>
+      <li>The distillery/mill is the natural aggregation host</li></ul></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)">Edible oil first (import substitution at ₹105/kg),
+  fuel only from the non-edible residual — India must diverge from the US "distillers-oil-to-biodiesel" model.</div>
+  <div class="foot">Grounded in NCDC cooperative rice-mill DPR + SEA (30 MT existing crush capacity)</div>
+</section>
+
+<!-- 5 RAW MATERIAL -->
+<section class="slide" data-n="05">
+  <div class="eyebrow">Raw material · prices &amp; sources</div>
+  <h2>Feedstock the state already owns</h2>
+  <table>
+    <tr><th>Input</th><th class="n">Indicative price</th><th>Source / basis</th></tr>
+    <tr class="hl"><td>Paddy (common)</td><td class="n">₹2,369/qtl</td><td>MSP KMS 2025-26 · govt CMR procurement (~832 LMT)</td></tr>
+    <tr><td>Rice bran</td><td class="n">₹2,000/qtl (₹20/kg)</td><td>NCDC DPR · to oil extractors; 16–22% oil</td></tr>
+    <tr><td>Rice husk</td><td class="n">₹2,000/MT</td><td>NCDC DPR · fuel-grade; ~20% of paddy</td></tr>
+    <tr><td>Broken rice</td><td class="n">₹1,500/qtl</td><td>NCDC DPR · poha/starch/ethanol feedstock</td></tr>
+    <tr class="hl"><td>De-oiled bran (DORB)</td><td class="n">₹15/kg (credit)</td><td>feed byproduct — the credit that makes RBO viable</td></tr>
+  </table>
+  <div class="grid2" style="margin-top:12px">
+    <div class="card"><h3>Aggregation model</h3>
+      <p style="font-size:14px">PACS / FPO / cooperative societies — <em>already the paddy-procurement centres</em> —
+      aggregate paddy + bran. The feedstock chain exists; it is currently dispersed to 100,000+ private mills.</p></div>
+    <div class="card"><h3>Scale available to government</h3>
+      <p style="font-size:14px">~832 LMT CMR paddy → ~40 LMT government-touchable bran (41% of national) →
+      ~6.4 LMT RBO at full capture.</p></div>
+  </div>
+  <div class="foot">Prices: NCDC "Establishment of Rice Mill" DPR (Chhattisgarh) · DFPD MSP · vintage noted</div>
+</section>
+
+<!-- 6 ECONOMICS -->
+<section class="slide" data-n="06">
+  <div class="eyebrow">Unit economics · from real DPRs</div>
+  <h2>Margin and IRR — ranked, government-DPR-backed</h2>
+  <table>
+    <tr><th>Product</th><th class="n">Net margin</th><th class="n">IRR</th><th>DPR source</th></tr>
+    <tr class="hl"><td>Poha / murmura</td><td class="n">10–15%</td><td class="n">&lt;3y payback</td><td>NIFTEM-T PMFME ✓</td></tr>
+    <tr class="hl"><td>RBO solvent extraction</td><td class="n">8–15%</td><td class="n">—</td><td>IMARC/EIRI</td></tr>
+    <tr class="hl"><td>Rice mill (anchor)</td><td class="n">8.5–15%</td><td class="n">19%</td><td>NCDC ✓</td></tr>
+    <tr><td>Maize wet-milling (starch)</td><td class="n">12–20%</td><td class="n">22–28%</td><td>industry</td></tr>
+    <tr><td>Dal mill</td><td class="n">~5.3%</td><td class="n">25–31%</td><td>RACP + NIFTEM ✓</td></tr>
+    <tr><td>Roller flour mill</td><td class="n">3–5.5%</td><td class="n">20–29%</td><td>RACP ✓</td></tr>
+  </table>
+  <div class="note"><strong>Margin ≠ return.</strong> The staples show thin 3–5% margins but <strong>19–31% IRR</strong>
+  — low capex, fast turnover. The "process, don't sell raw" case rests on return-on-capital, not margin-on-sales.</div>
+  <div class="foot">Sources: NCDC · Rajasthan RACP (Grant Thornton) · NIFTEM-Thanjavur PMFME · IMARC — verified/reported labelled</div>
+</section>
+
+<!-- 7 SCHEMES -->
+<section class="slide" data-n="07">
+  <div class="eyebrow">Schemes · the funding stack</div>
+  <h2>35–50% of capital comes from MoFPI</h2>
+  <div class="grid3">
+    <div class="card"><h3>PMFME</h3><div class="v accent">35%</div>
+      <div class="s">credit-linked capital subsidy, max ₹10 L/unit · <strong>micro</strong> units (RBO, dal, poha, besan)</div></div>
+    <div class="card"><h3>PMKSY</h3><div class="v accent">35–50%</div>
+      <div class="s">grants for clusters, cold chain, agro-processing (50% NE/difficult) · <strong>the integrated complex</strong></div></div>
+    <div class="card"><h3>PLISFPI</h3><div class="v accent">6-yr</div>
+      <div class="s">incentive on incremental sales + branding-abroad · <strong>large branded</strong> (RBO brand, exports)</div></div>
+  </div>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card"><h3>Mega Food Park infrastructure</h3>
+      <p style="font-size:14px"><strong>23 operational parks</strong> (of 41), ~₹120 cr each with ~₹50 cr PMKSY grant —
+      ready common facilities (power, cold chain, warehousing, effluent) to plug into, not build.</p></div>
+    <div class="card"><h3>The subsidy is a margin multiplier</h3>
+      <p style="font-size:14px">Anchor DPR: ₹80 L cost → ₹16 L subsidy + ₹52 L loan + ₹12 L own. The 19% project IRR
+      becomes a much higher return on the ₹12 L actually invested. Capital-heavy units (RBO, silica, wet-milling)
+      gain the most from a 35–50% grant.</p></div>
+  </div>
+  <div class="foot">Sources: pmfme.mofpi.gov.in · PMKSY FAQs · mofpi.gov.in/PLISFPI · MoFPI 41-MFP list (31.01.2023)</div>
+</section>
+
+<!-- 8 MARKETS -->
+<section class="slide" data-n="08">
+  <div class="eyebrow">Markets · three demand tiers</div>
+  <h2>Demand the government can contract</h2>
+  <div class="grid3">
+    <div class="card" style="border-top:3px solid var(--green)"><h3 style="color:var(--green)">Captive · surest</h3>
+      <ul style="font-size:13.5px"><li><strong>Fortified rice kernels</strong> — <strong>₹17,082 cr program</strong> to 2028, 100% GoI-funded; ~3.5–4 LMT/yr standing demand</li>
+      <li>Fortified atta · Vitamin-E fortificant from own bran</li></ul></div>
+    <div class="card" style="border-top:3px solid var(--gold)"><h3>Domestic growth</h3>
+      <ul style="font-size:13.5px"><li><strong>RBO</strong> — India #1 market, $1.39 bn; +exports $104.5 mn</li>
+      <li>Poha/murmura (snacks 14.5% CAGR) · besan</li><li>Maize starch $4.1 bn · wheat gluten</li></ul></div>
+    <div class="card" style="border-top:3px solid var(--blue)"><h3 style="color:var(--blue)">Export-led</h3>
+      <ul style="font-size:13.5px"><li><strong>Basmati ₹50,000 cr</strong> (FY25, +15.7%, ₹82/kg)</li>
+      <li>Plant protein (14% CAGR) · spices ₹39,994 cr · green silica (Tata ₹775 cr)</li></ul></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)">The offtake is <strong>contractable, not consumer-dependent</strong>:
+  food-processing supply agreements + fortification mandates + institutional (PDS/ICDS) offtake form a demand
+  backbone independent of the retail shelf — the ethanol-blending-mandate lever, applied to processed grain.</div>
+  <div class="foot">Sources: APEDA FY25 (basmati ₹50k cr) · DFPD FRK program · DGCI&amp;S · industry market reports — verified/reported labelled</div>
+</section>
+
+<!-- 9 SAVINGS -->
+<section class="slide" data-n="09">
+  <div class="eyebrow">The prize · import substitution</div>
+  <h2>₹21,000 cr/yr across the crops the state holds</h2>
+  <table>
+    <tr><th>Stream</th><th class="n">Import ₹/t (DGCI&amp;S)</th><th class="n">Savings ₹ cr/yr</th><th>Offtake</th></tr>
+    <tr class="hl"><td>Rice bran oil</td><td class="n">97,970</td><td class="n">7,544</td><td>frying/HoReCa + fortification</td></tr>
+    <tr><td>Pulses (dal margin)</td><td class="n">50,888–74,163</td><td class="n">~7,000</td><td>dal millers + PDS</td></tr>
+    <tr><td>Cottonseed oil</td><td class="n">98,766</td><td class="n">1,975</td><td>food processing</td></tr>
+    <tr><td>Maize starch</td><td class="n">37,170</td><td class="n">1,115</td><td>food/pharma/paper</td></tr>
+    <tr><td>Husk → silica</td><td class="n">86,730</td><td class="n">867</td><td>tyre/industrial</td></tr>
+    <tr><td>Protein · gluten · Vit-E · lecithin</td><td class="n">115k–17.7m</td><td class="n">~1,900</td><td>processors + export</td></tr>
+  </table>
+  <div class="grid3" style="margin-top:12px">
+    <div class="card"><div class="k">High-confidence tiers</div><div class="v accent">₹18–21k cr</div><div class="s">oil + pulses + industrial mid</div></div>
+    <div class="card"><div class="k">On feedstock the state</div><div class="v accent">already owns</div><div class="s">via CMR procurement</div></div>
+    <div class="card"><div class="k">Through offtake it can</div><div class="v accent">contract</div><div class="s">not hope for</div></div>
+  </div>
+  <div class="foot">Source: consolidated-savings-by-crop · DGCI&amp;S FY26 import unit values · illustrative, additive</div>
+</section>
+
+<!-- 10 MODEL -->
+<section class="slide" data-n="10">
+  <div class="eyebrow">The model · why government-cooperative-PPP</div>
+  <h2>Ring-fence the commercial arm; contract the offtake</h2>
+  <div class="grid2">
+    <div class="card"><h3>Structure</h3>
+      <ul><li><strong>PACS/FPO</strong> aggregates paddy + bran (already the procurement centre)</li>
+      <li><strong>Private partner</strong> builds + runs RBO extraction, silica, power (the capital + know-how)</li>
+      <li><strong>State</strong> provides VGF/PMKSY grant + a fortified-rice / RBO <strong>offtake guarantee</strong></li>
+      <li>Ring-fenced from MSP/buffer policy — the COFCO lesson, not the STC/Thailand failure</li></ul></div>
+    <div class="card"><h3>Why not leave it to private millers</h3>
+      <ul><li>100,000 mills do basic CMR — but won't invest in bran stabilisation, RBO, silica, cogen</li>
+      <li>The integrated <strong>value-added</strong> mill is the PPP white space (verified: largely untried)</li>
+      <li>The offtake guarantee is the revenue backbone — mirrors PEG's silo-hire guarantee</li></ul></div>
+  </div>
+  <div class="note">History's warning (verified): STC→PEC→NCEL failed by trading naked; CWC, AMUL, Kendriya Bhandar
+  succeeded by infrastructure / farmer-ownership / ring-fencing. This is an <em>infrastructure + processing</em>
+  play, not a trading arm.</div>
+  <div class="foot">Sources: PPP rice-mills · PSU-agri-ventures-history · agri-trader-playbook</div>
+</section>
+
+<!-- 11 THE ASK -->
+<section class="slide" data-n="11">
+  <div class="eyebrow">Illustrative pilot</div>
+  <h2>One integrated complex, in an operational food park</h2>
+  <div class="grid3">
+    <div class="card"><div class="k">Anchor: rice mill</div><div class="v">₹80 L</div><div class="s">1 TPH, 19% IRR (NCDC DPR)</div></div>
+    <div class="card"><div class="k">+ RBO extraction</div><div class="v">₹15–40 cr</div><div class="s">8–15% margin, the ₹7,544 cr anchor</div></div>
+    <div class="card"><div class="k">+ poha/murmura line</div><div class="v">₹21 L</div><div class="s">10–15% margin, &lt;3y payback</div></div>
+    <div class="card"><div class="k">+ husk power/silica</div><div class="v">cluster</div><div class="s">energy self-sufficiency + tyre-grade silica</div></div>
+    <div class="card"><div class="k">Capital subsidy</div><div class="v accent">35–50%</div><div class="s">PMKSY cluster + PMFME units</div></div>
+    <div class="card"><div class="k">Offtake secured by</div><div class="v accent">contract</div><div class="s">FRK/PDS + food processors + fortification</div></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)">The proof-points already exist as verified DPRs and operational
+  parks. The novelty is <strong>integration + the offtake guarantee</strong> — assembling proven units into one
+  government-anchored complex that captures the cascade instead of gifting it.</div>
+  <div class="foot">All component economics from real project DPRs; integration is the un-built step</div>
+</section>
+
+<!-- 12 CLOSE -->
+<section class="slide cover" data-n="12" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
+  <div class="eyebrow">The one-line case</div>
+  <h1 style="font-size:clamp(26px,4.6vw,42px)">Stop gifting the byproduct.<br>Contract the demand. Capture the cascade.</h1>
+  <p class="lead" style="color:#eaf3ec;max-width:62ch">India is the world's #1 producer of the raw byproduct and a net importer
+  of the refined derivative — for oil, gluten, starch, protein, and Vitamin-E alike. The feedstock is procured, the
+  subsidy is 35–50%, the parks are built, the DPRs are proven. What's missing is the integrated complex and the
+  offtake guarantee. That is the project.</p>
+  <div class="grid3" style="margin-top:22px">
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)"><div class="k" style="color:#cfe6d7">Savings</div><div class="v" style="color:#fff">₹21k cr/yr</div></div>
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)"><div class="k" style="color:#cfe6d7">Best DPR margin</div><div class="v" style="color:#fff">poha 10–15%</div></div>
+    <div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)"><div class="k" style="color:#cfe6d7">Best DPR IRR</div><div class="v" style="color:#fff">dal 25–31%</div></div>
+  </div>
+  <div class="foot" style="color:#bcd8c6">Full analysis, data &amp; sources: github.com/herrrickshaw/FCI-warehouse-MSPvsMSV · research synthesis, not investment advice</div>
+</section>
+
+</div>
