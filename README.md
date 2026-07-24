@@ -46,6 +46,10 @@ of each crop — could extend effective price support beyond rice and wheat, whe
 
 Full dashboard: [`dashboard/index.html`](dashboard/index.html) (self-contained — clone and open, or serve locally; `?theme=dark` forces dark mode). Full-page views: [light](dashboard/screenshots/full_light.png) · [dark](dashboard/screenshots/full_dark.png). Reproduce the charts in Colab via the badge above.
 
+## Reference
+
+- [GLOSSARY.md](GLOSSARY.md) — every abbreviation used across the reports, expanded and categorised.
+
 ## Layout
 
 | Path | Contents |
