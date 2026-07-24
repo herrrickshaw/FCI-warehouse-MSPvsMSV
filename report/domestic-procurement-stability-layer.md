@@ -53,7 +53,11 @@ bran oil. Yet:
 So India imports edible oil while giving away, and under-extracting, a domestic edible-oil
 source it is already the world leader in. **Aggregating rice bran (and cottonseed) is
 import substitution that requires no new acreage, no new water, no new MSP outlay — only
-collection and crushing.** It is the lowest-hanging fruit in the entire edible-oil deficit.
+collection and crushing.** And the crushing capacity largely *already exists*: the Solvent
+Extractors' Association of India reports **~350 working solvent-extraction plants with
+~30 MT/yr combined oilcake/oilseed processing capacity** ([seaofindia.com](https://seaofindia.com/),
+Jul 2026) — so the binding constraint is bran *collection and routing*, not plant capex.
+It is the lowest-hanging fruit in the entire edible-oil deficit.
 
 ## Why a deficit-crop buffer is economically superior to the cereal buffer
 
