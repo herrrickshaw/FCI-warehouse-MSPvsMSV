@@ -1,0 +1,12 @@
+item,low,central,high,unit,label,basis_source,note
+incremental_RBO_if_bran_stabilized,8,10,14,LMT_oil/yr,derived,"national bran ~179 LMT x 16-18% oil = ~29 LMT theoretical vs ~10.5 LMT actual; capture 45-70% of the ~18 LMT gap",Headline volume. Moves bran from huller-mills/feed/degradation into stabilized modern extraction.
+import_bill_displaced_edible_RBO,8000,10500,15400,Rs_cr/yr,derived,"incremental RBO x import parity Rs 100-110/kg (palm CIF ~$1000/t 2025)",HEADLINE. ~5-9% of the ~Rs 1.6-1.7 lakh cr edible-oil import bill (SEA 2024-25 Rs 1.61 lakh cr).
+biodiesel_from_nonedible_residual,0.5,1.0,1.7,LMT/yr,derived,"acid oil/soapstock/RBFAD ~6% of crude RBO; transesterification ~90-93% yield (ScienceDirect)",SECONDARY. Non-edible residual only; does NOT touch cooking oil.
+diesel_displaced_by_residual_biodiesel,450,900,1500,Rs_cr/yr,derived,"residual biodiesel x ~Rs 90/kg (diesel parity)","Value asymmetry: edible RBO ~Rs 100+/kg vs biodiesel ~Rs 90/L - biodiesel is the residual, not the prize."
+husk_stream_procured_linked,,183,,LMT/yr,derived,"832 LMT paddy x 22% husk","Non-food energy/silica. Fuel value even at Rs 2/kg = ~Rs 3,660 cr; RHA 85-97% silica = higher-value."
+husk_power_potential,,0.9,,MWh/tonne_husk,reported,"~15 MJ/kg x ~22% boiler efficiency (IOPscience); distillery 7 MW co-gen DPRs",Distilleries already husk-fire boilers (environmentclearance grain-distillery DPRs).
+RBO_exmill_cost,55,65,75,Rs/kg,derived,"6 t bran/t oil x Rs 15-19/kg bran (repo bran Rs 19/kg) less DORB credit ~Rs 75k/t + stabilize/extract/refine Rs 20-30k/t",vs import parity Rs 100-110/kg.
+RBO_gross_margin_vs_import,25,40,55,Rs/kg,derived,"import parity Rs 100-110/kg minus ex-mill cost",Positive at any bran price up to ~Rs 19/kg; giveaway is value-destroying for the state.
+byproduct_value_pool_procured_paddy,,20134,,Rs_cr/yr_gross,verified,"omss-processing-returns.md Finding 3 (retained by CMR millers)","Net of milling cost Rs 7,654 cr. This is the feedstock revenue the state gifts away."
+byproduct_value_pool_national,,54000,,Rs_cr/yr_gross,derived,"procured pool x ~2.7 (national paddy 2240 LMT / procured 832 LMT)",Order-of-magnitude national byproduct pool.
+DFG_ethanol_price,,64,,Rs/litre,verified,"OMC procurement ESY 2023-24/24-25 (Business Standard Oct 2024)","Damaged food grain feedstock. Maize Rs 72/L; FCI surplus rice Rs 60.32/L (Rs 60,320/KL ESY25-26)."
