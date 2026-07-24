@@ -1,0 +1,18 @@
+company,entity_type,fy,revenue_cr,ebitda_or_opprofit_cr,ebitda_margin_pct,pat_cr,pat_margin_pct,gross_margin_pct,roce_pct,roe_pct,inventory_note,business,source,source_type,verified
+AWL Agri Business (ex-Adani Wilmar),listed,FY25,63672,2486,3.9,1226,1.9,,18,,inventory 56 days,edible oil + foods (atta/rice/pulses/sugar) + industry essentials,screener.in/company/AWL,screener.in,verified
+AWL Agri Business (ex-Adani Wilmar),listed,FY24,51225,1135,2.2,148,0.3,,21,,inventory 58 days,edible oil + foods + industry essentials,screener.in/company/AWL,screener.in,verified
+ITC Ltd - Agri Business segment,listed segment,FY25,19753,,,,,,,,segment; PBIT up 18% YoY; PBIT margin +368bps YoY,"leaf tobacco, value-added agri exports (spices/coffee/marine), rice/wheat trading & processing",hdfcsky/ITC Q4FY25 media statement,news + company filing,revenue verified; PBIT absolute unverified
+ITC Ltd - Agri Business segment,listed segment,FY24,15802,,,,,,,,FY24 revenue derived from +25% YoY,leaf tobacco + value-added agri,ITC Q4FY25 media statement (derived),company filing,derived/unverified
+ITC Agri segment PBIT (estimate),listed segment,FY25,19753,1600,8.1,,,,,,"EST: agri PBIT hist. margin ~8-9%; +18% YoY on ~1350 FY24 base",agri trading+processing+leaf tobacco,derived estimate,estimate,UNVERIFIED estimate
+KRBL (India Gate basmati),listed,FY25,5594,674,12.0,476,8.5,,12,,inventory 358 days,branded basmati rice processing,screener.in/company/KRBL,screener.in,verified
+KRBL (India Gate basmati),listed,FY24,5385,802,15.0,596,11.1,,16,,inventory 425 days,branded basmati rice processing,screener.in/company/KRBL,screener.in,verified
+LT Foods (Daawat),listed,FY25,8681,979,11.3,612,7.1,34.9,19,,gross profit 3030cr; inventory 286 days,branded rice (Daawat) + organic + convenience foods,screener.in/company/LTFOODS + Indian Retailer,screener.in + news,verified
+LT Foods (Daawat),listed,FY24,7772,938,12.1,598,7.7,,21,,inventory 249 days,branded rice + organic foods,screener.in/company/LTFOODS,screener.in,verified
+Cargill India Pvt Ltd,unlisted,FY24,13850,,3.0,,,,,,provisional; operating margin 3% (CRISIL); PAT audited pending,edible oil/foods/agri trading,CRISIL rating rationale Sep-2024,ratings rationale,revenue provisional; margin verified; PAT n/a
+Cargill India Pvt Ltd,unlisted,FY23,13485,,,-113,-0.8,,,,audited; swung to loss,edible oil/foods/agri trading,CRISIL rating rationale Sep-2024,ratings rationale,verified
+Cargill India Pvt Ltd,unlisted,FY22,14540,,,99,0.7,,,,audited,edible oil/foods/agri trading,CRISIL rating rationale Sep-2024,ratings rationale,verified
+Bunge India Pvt Ltd,unlisted,FY24,7191,,2.3,46,0.6,,,,operating margin 2.3% (CRISIL),edible oils (Dalda/Chambal) processing & trading,CRISIL rating rationale Mar-2025,ratings rationale,verified
+Bunge India Pvt Ltd,unlisted,FY23,8855,,-0.2,-52,-4.3,,,,loss year,edible oils processing & trading,CRISIL rating rationale Mar-2025,ratings rationale,verified
+Louis Dreyfus Company India Pvt Ltd,unlisted,FY25,12645,,,,,,,,revenue +57% YoY; EBITDA/PAT paywalled,agri commodity trading/processing,thecompanycheck (ROC Delhi filing),MCA-derived aggregator,revenue verified; profit locked
+Olam Agri India Pvt Ltd (ex-Outspan),unlisted,FY25,1000,,,,,,,,">Rs 1000cr; 1yr rev CAGR 75%; EBITDA/PAT paywalled",rice/agri export & distribution,thecompanycheck/Tracxn (ROC filing),MCA-derived aggregator,revenue band only; profit locked
+Adani Agri Logistics Ltd,unlisted,FY24,125,,,,,,,,"rev band Rs 100-150cr; PAT +34.67% YoY, EBITDA -12.71% (Tofler, paywalled)",FCI foodgrain silo storage & bulk handling (BOO),Tofler / CRISIL/CARE,MCA-derived aggregator + ratings,revenue band only; absolute profit paywalled
