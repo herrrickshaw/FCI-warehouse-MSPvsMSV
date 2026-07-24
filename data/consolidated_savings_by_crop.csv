@@ -1,0 +1,17 @@
+crop_stream,product,import_usd_per_t,import_inr_per_t,subst_volume_lmt,potential_save_rs_cr,domestic_margin_note,food_processing_offtake
+Rice→bran,Rice bran oil (edible),1107,97970,7.7,7544,ex-mill Rs60 vs parity Rs105 = Rs45/kg + DORB feed,Food processing: frying/snacks/HoReCa (232C smoke pt) + fortification mandate
+Oilseeds,Mustard/groundnut oil,1116,98766,0.0,0,premium ~Rs136 vs palm Rs98; production-lever not in-yr,Branded premium retail + food processing blends
+Cotton→seed,Cottonseed oil,1116,98766,2.0,1975,crush margin + meal byproduct,Food processing + Vanaspati/HoReCa
+Pulses-tur,Tur dal,638,56463,5.0,2823,dal-milling margin ~8-12% + chuni feed,Dal millers (NAFEX auction) + PDS pulse pilot
+Pulses-urad,Urad dal,838,74163,3.0,2225,dal-milling margin,Dal millers + food processing (papad/snack)
+Pulses-masur,Masur dal,575,50888,4.0,2036,dal-milling margin,Dal millers + institutional
+Wheat,Vital wheat gluten,1292,114342,0.13,149,wet-mill gluten+starch; imports 13000 t/yr China 88%,Food processing: bakery/meat-analogue/pet-food (captive)
+Wheat,Wheat germ oil,5000,442500,0.02,88,"high-value nutraceutical, wasted germ fraction",Nutraceutical/cosmetic brands + export
+Wheat,Fortified atta (PDS),0,0,0.0,0,"captive PDS demand, no import",Government PDS/ICDS (captive offtake)
+Rice→husk,Precipitated silica,980,86730,1.0,867,"raw RHA Rs1-3.5 -> silica ~Rs40-90/kg, ~30x jump",Tyre/industrial (45% tyre demand); import substitution
+Rice→bran,Gamma oryzanol,120000,10620000,0.005,531,global USD2.6bn; India mkt only USD6.5mn vs #1 RBO,Nutraceutical/cosmetic export + fortification
+Rice→bran,Tocotrienols/Vit-E,200000,17700000,0.004,708,imports 60-70%; feedstock DD Rs45-75/kg domestic,Fortification input (captive) + pharma
+Maize,Starch/HFCS/sorbitol,420,37170,3.0,1115,wet-milling; India imports refined derivatives,Food/pharma/paper processing
+Maize,Corn gluten meal,500,44250,0.0,0,60% protein; India EXPORTS to 25+ countries,Feed export (already positive)
+Oilseeds,Soy lecithin (specialty),1300,115050,0.2,230,imports specialty grades; domestic feed-grade only,Food processing emulsifier (captive)
+Oilseeds,Soy/pea protein isolate,3000,265500,0.3,796,India exports some; plant-protein trend,Food processing + export
