@@ -13,9 +13,9 @@ sells it to flour millers through **OMSS at ~₹2,550/qtl** — a large, cheap, 
 The question this report asks: is India capturing the *value* of that wheat, or shipping it as
 flour while importing the finished products made from it?
 
-## The trade data — DGCI&S TradeStat, exact 8-digit HS (₹ crore)
+## The trade data — DGCI&S TradeStat, exact 8-digit HS (US$ million)
 
-Authoritative primary customs figures — DGCI&S TradeStat EIDB commodity-wise, FY2024-25 and
+Authoritative primary customs figures — DGCI&S TradeStat EIDB commodity-wise ("Values in US$ Million"), FY2024-25 and
 FY2025-26 (provisional), saved to [`data/wheat_products_trade_dgcis.csv`](../data/wheat_products_trade_dgcis.csv):
 
 | Product (HS) | Exports 24-25 | 25-26 | Imports 24-25 | 25-26 | Import growth |
@@ -28,13 +28,13 @@ FY2025-26 (provisional), saved to [`data/wheat_products_trade_dgcis.csv`](../dat
 | Wheat flour/maida (1101) | 74.0 | 80.9 | 1.9 | 4.2 | +121% |
 
 **What the exact data shows — three sharp facts:**
-1. **Biscuits are India's strength** (₹686 cr export vs ₹137 cr import) — the mass tier exports,
+1. **Biscuits are India's strength** ($686 mn export vs $137 mn import) — the mass tier exports,
    but **premium biscuit imports are growing +28%**.
-2. **Pasta is nascent both ways** — India net-exports only **₹63 cr (~$7.5 mn)** and imports
-   **₹53 cr, growing +24%**. Tiny in a multi-billion-dollar global trade — the opportunity, not
+2. **Pasta is nascent both ways** — India net-exports only **$63 mn** and imports
+   **$53 mn, growing +24%**. Tiny in a multi-billion-dollar global trade — the opportunity, not
    the ceiling.
-3. **Wheat gluten is the clean import gap** — imports **₹26.8 cr, growing +35%**, exports
-   essentially nil. And India *already exports* semolina (₹43 cr) — the pasta feedstock is
+3. **Wheat gluten is the clean import gap** — imports **$26.8 mn, growing +35%**, exports
+   essentially nil. And India *already exports* semolina ($43 mn) — the pasta feedstock is
    leaving the country rather than being made into pasta at home.
 
 ## The domestic market it feeds — large, and for pasta fast-growing
@@ -90,17 +90,17 @@ India's pasta *export* is nascent — and that is the opportunity, not the limit
 
 | | Value | Note |
 |---|---|---|
-| **India pasta exports (HS 1902, DGCI&S)** | **₹63 cr / ~$7.5 mn** (FY25-26) | net exporter, but only just — imports ₹53 cr, growing +24% |
+| **India pasta exports (HS 1902, DGCI&S)** | **$63 mn** (FY25-26) | net exporter, but only just — imports $53 mn, growing +24% |
 | Top destinations | Bhutan, US, UAE | neighbours + diaspora, not yet the mass import markets |
-| **Global pasta imports (the prize)** | **US $1.62 bn · Germany $1.24 bn · France $1.08 bn** | India's ~$7.5 mn is **under 0.5% of the US market alone** |
+| **Global pasta imports (the prize)** | **US $1.62 bn · Germany $1.24 bn · France $1.08 bn** | India's ~$63 mn is **under 4% of the US market alone** |
 | By volume (2024) | Germany 467k t · US 302k t · UK 283k t · Japan 70k t | Italy is the dominant exporter (the incumbent to take share from) |
 
 The gap is even starker on the official DGCI&S numbers than the industry estimates suggest:
-India ships **~$7.5 mn** of pasta into a global import trade of **billions per major market** —
-while it *exports* the semolina feedstock (₹43 cr) that could instead be milled into that pasta
+India ships **~$63 mn** of pasta into a global import trade of **billions per major market** —
+while it *exports* the semolina feedstock ($43 mn) that could instead be milled into that pasta
 at home.
 
-**The asymmetry:** India ships ~$46 mn of pasta into a global import trade worth *billions* per
+**The asymmetry:** India ships ~$63 mn of pasta into a global import trade worth *billions* per
 major market, dominated by Italy. India's edge is the one Italy lacks — **cheap surplus wheat**
 (OMSS ~₹2,550/qtl) as feedstock. Italy's edge is durum quality + brand. So the realistic export
 ladder is:
@@ -114,7 +114,7 @@ ladder is:
 **Why it fits the thesis:** the wheat surplus that costs the exchequer to store becomes an
 export earner as pasta — the same "process the surplus, contract the offtake, capture the
 margin" logic, with the export channel as the offtake and cheap OMSS wheat as the moat. Scaling
-from $46 mn toward even 1–2% of the global pasta import trade is a multi-hundred-million-dollar
+from $63 mn toward even 1–2% of the global pasta import trade is a multi-hundred-million-dollar
 export line built on grain India is *paying to hold*.
 
 **Caveat:** commodity-pasta export margins are thin and Italy/Turkey are entrenched low-cost
@@ -157,9 +157,11 @@ Trade figures are DGCI&S TradeStat EIDB commodity-wise, exact 8-digit HS, FY2024
 FY2025-26 provisional (user-supplied primary exports; [`data/wheat_products_trade_dgcis.csv`](../data/wheat_products_trade_dgcis.csv)),
 cross-referenced with the `india-trade-tracker` chapter warehouse (TIA Portal + PIB validated)
 and located via the graphify link to the cross-repo *Import Substitution Opportunity Matrix* in
-`textile_data/research`. FY25-26 is provisional (partial year, subject to revision). Pasta
-₹63 cr ≈ $7.5 mn at ~₹84/$; broader trade-database estimates (e.g. Volza ~$46 mn) use different
-aggregation/shipment-value bases — the DGCI&S HS-1902 figure is the authoritative one.
+`textile_data/research`. FY25-26 is provisional (partial year, subject to revision). The TradeStat unit is
+**US$ Million** (confirmed from the file header) — this validates the project's `trade_price_parity.csv`,
+whose `value_usd_mn` column matches TradeStat exactly for every oil and pulse (crude palm $9,053 mn,
+basmati $5,944 mn, etc.). Broader trade-database estimates (Volza ~$46 mn pasta) use different
+aggregation bases; the DGCI&S HS-1902 figure ($63 mn) is authoritative.
 Market sizes are industry-research figures (2025, multiple sources — pasta $1.21 bn; biscuits
 $5.0 bn; cereals $5.14 bn); growth CAGRs vary 14–16% (pasta) across sources. Durum-pasta import
 shipment counts (Volza) are directional, not customs-value totals. India's durum production (~1.5–2 MT,
