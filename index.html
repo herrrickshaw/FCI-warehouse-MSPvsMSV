@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FCI Warehouse · MSP vs MSV — Grain, Value & the Farmer's Income</title>
+<style>
+  :root{
+    --paper:#fbf9f5; --panel:#fffefb; --ink:#1b2019; --ink-2:#54604f; --ink-3:#8a917f;
+    --hair:#e2ddd0; --green:#2f7a4f; --green-d:#1f5637; --gold:#b7791f; --green-soft:#e6efe7;
+  }
+  @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a; --green-soft:#17251b;
+  }}
+  :root[data-theme="dark"]{
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a; --green-soft:#17251b;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--paper);color:var(--ink);
+    font:16px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;padding:0 0 60px}
+  .mono{font-family:"SF Mono",Menlo,Consolas,monospace}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  header{background:linear-gradient(150deg,var(--green-d),var(--green));color:#fff;padding:54px 0 40px;margin-bottom:34px}
+  header .eyebrow{font-family:"SF Mono",Menlo,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#dff0e5}
+  header h1{font-size:clamp(30px,5vw,46px);line-height:1.1;font-weight:600;margin:14px 0 12px;text-wrap:balance}
+  header p{font-size:19px;color:#eaf3ec;max-width:66ch}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .cta a{display:inline-flex;flex-direction:column;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;padding:14px 20px;text-decoration:none;color:#fff;min-width:200px;transition:background .15s}
+  .cta a:hover{background:rgba(255,255,255,.18)}
+  .cta a b{font-size:17px}.cta a span{font-size:13px;color:#dff0e5}
+  h2{font-size:15px;font-family:"SF Mono",Menlo,monospace;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--gold);margin:34px 0 14px;font-weight:700;border-bottom:1px solid var(--hair);padding-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  a.card{display:block;background:var(--panel);border:1px solid var(--hair);border-radius:9px;padding:13px 16px;
+    text-decoration:none;color:var(--ink);transition:border-color .15s,transform .1s}
+  a.card:hover{border-color:var(--green);transform:translateY(-1px)}
+  a.card b{display:block;font-size:15.5px;font-weight:600;color:var(--green)}
+  a.card span{font-size:13px;color:var(--ink-2);line-height:1.4}
+  .lead2{font-size:17px;color:var(--ink-2);margin:0 0 6px}
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--hair);color:var(--ink-3);font-size:13px}
+  footer a{color:var(--ink-2)}
+  .tag{font-family:"SF Mono",Menlo,monospace;font-size:10.5px;color:var(--gold);text-transform:uppercase;letter-spacing:.08em}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="eyebrow">Research · data · models · India agriculture · 2026</div>
+  <h1>FCI Warehouse — MSP vs MSV</h1>
+  <p>Can government purchase guarantees extend beyond rice and wheat? A verified-source study of India's
+  grain procurement, the byproduct-cascade opportunity it ignores, and the farmer income it could raise —
+  from national policy down to a Tamil Nadu mill's balance sheet.</p>
+  <div class="cta">
+    <a href="dashboard/index.html"><b>📊 Live Dashboard</b><span>Procurement · stocks · disposal · MSP gap · farmer income</span></a>
+    <a href="pitch/grain-value-loop-deck.html"><b>🌾 Pitch Deck</b><span>The Grain Value Loop — 14-slide investment/policy case</span></a>
+    <a href="report/pricing-msp-msv-published.html"><b>📄 The Price of Grain</b><span>The illustrated pricing-ladder essay</span></a>
+  </div>
+</div></header>
+
+<main class="wrap">
+
+<h2>Core analysis</h2>
+<p class="lead2">The central question and its answer.</p>
+<div class="grid">
+  <a class="card" href="report/msp-vs-msv-main-report.md"><b>MSP vs MSV — main report</b><span>12 adversarially-verified findings; why the hybrid design wins</span></a>
+  <a class="card" href="report/haryana-food-processing-linkages.md"><b>Haryana food-processing linkages</b><span>OMSS, ethanol precedent, government-as-seller, MSV design</span></a>
+  <a class="card" href="report/comparative-farm-support-models.md"><b>Comparative farm-support models</b><span>US / EU / China / Brazil — India runs the model others exited</span></a>
+</div>
+
+<h2>The system today</h2>
+<div class="grid">
+  <a class="card" href="report/holding-economics.md"><b>Holding economics</b><span>Does storing grain pay? Negative carry −8 to −15%/yr</span></a>
+  <a class="card" href="report/omss-processing-returns.md"><b>OMSS processing returns</b><span>3-tier margin ladder; the ₹7,650 cr byproduct giveaway</span></a>
+  <a class="card" href="report/fertiliser-and-cost-of-production.md"><b>Fertiliser & cost of production</b><span>A2+FL vs C2; the input-subsidy corridor</span></a>
+  <a class="card" href="report/sugarcane-frp-analysis.md"><b>Sugarcane FRP analysis</b><span>The obligation-to-buy model under stress (2025-26)</span></a>
+  <a class="card" href="report/iisfm-depot-coverage.md"><b>IISFM depot coverage</b><span>FCI storage systems + the data-access map (e-NAM/UPAg/Niryat)</span></a>
+</div>
+
+<h2>Extending beyond rice &amp; wheat</h2>
+<div class="grid">
+  <a class="card" href="report/product-diversification-strategy.md"><b>Product diversification strategy</b><span>Monetise the deficit crops, not the surplus</span></a>
+  <a class="card" href="report/domestic-procurement-stability-layer.md"><b>Deficit-crop stability layer</b><span>Buffer what we grow AND import — oilseeds, rice bran</span></a>
+  <a class="card" href="report/oilseed-msp-case.md"><b>Oilseed MSP case (NMEO)</b><span>Groundnut/mustard — production lever, not in-year oil lever</span></a>
+  <a class="card" href="report/patanjali-pds-model.md"><b>Patanjali-PDS verification</b><span>The tie-up that doesn't exist as imagined</span></a>
+</div>
+
+<h2>Trade, institutions &amp; markets</h2>
+<div class="grid">
+  <a class="card" href="report/agri-trader-playbook.md"><b>Agri-trader playbook</b><span>How Cargill/ADM monetise surplus; the emulation case + USGC</span></a>
+  <a class="card" href="report/psu-agri-ventures-history.md"><b>PSU agri-ventures history</b><span>STC→PEC→NCEL serial failure vs CWC/AMUL survivors</span></a>
+  <a class="card" href="report/rice-diplomacy-history.md"><b>Rice diplomacy history</b><span>PL-480 to the 2023-25 quota system</span></a>
+  <a class="card" href="report/new-markets-evaluation.md"><b>New-markets evaluation</b><span>Afghanistan/Chabahar, Africa, the Gulf inverse-capital</span></a>
+  <a class="card" href="report/import-arm-evaluation.md"><b>Import-arm evaluation</b><span>Imports suit a state arm better than exports — hedgeable</span></a>
+  <a class="card" href="report/trade-price-parity.md"><b>Trade price parity</b><span>APEDA/DGCI&amp;S export vs import unit values by crop</span></a>
+  <a class="card" href="report/demand-and-exports-highmargin.md"><b>Demand &amp; exports (high-margin)</b><span>Basmati ₹50k cr, FRK captive, the export upside</span></a>
+</div>
+
+<h2>Processing &amp; value-addition</h2>
+<div class="grid">
+  <a class="card" href="report/byproduct-product-tree.md"><b>Byproduct product-tree</b><span>39 products; value density rises ~1,000× to the molecular tail</span></a>
+  <a class="card" href="report/consolidated-savings-by-crop.md"><b>Consolidated savings by crop</b><span>~₹21,000 cr import substitution vs DGCI&amp;S prices</span></a>
+  <a class="card" href="report/product-margins-ranked.md"><b>Product margins ranked (DPRs)</b><span>Real NCDC/RACP/NIFTEM margins + MoFPI subsidy</span></a>
+  <a class="card" href="report/rbo-savings-scenarios.md"><b>RBO savings scenarios</b><span>Rice-bran-oil import substitution + demand security</span></a>
+  <a class="card" href="report/biodiesel-blending-scenarios.md"><b>Biodiesel blending scenarios</b><span>Rice bran → B0.15 max; cooking oil is the real prize</span></a>
+  <a class="card" href="report/oilseeds-biodiesel-consumption.md"><b>Oilseeds, biodiesel &amp; consumption</b><span>The preference-vs-price map of India's edible oil</span></a>
+  <a class="card" href="report/rice-mill-business-model.md"><b>Rice-mill business model</b><span>Grounded in the NCDC cooperative DPR (19% IRR)</span></a>
+  <a class="card" href="report/ppp-rice-mills.md"><b>PPP rice mills</b><span>Storage PPPs exist; the integrated biorefinery-mill is white space</span></a>
+</div>
+
+<h2>Farmer income &amp; energy</h2>
+<div class="grid">
+  <a class="card" href="report/diesel-cng-cost-of-production.md"><b>Diesel→CNG &amp; the CBG loop</b><span>~2-4% fuel cut; ~7-13% with the residue loop</span></a>
+  <a class="card" href="report/doubling-farmers-income-progress.md"><b>Doubling Farmers' Income — progress</b><span>RFII monitor: real income ~a third of the way (CPI-AL deflated)</span></a>
+</div>
+
+<h2>Financial models <span class="tag">Excel</span></h2>
+<div class="grid">
+  <a class="card" href="pitch/TN-Rice-Mill-Business-Model.xlsx"><b>TN rice-mill model</b><span>2-TPH parboiled ponni · 19% IRR · mandi + CBG-loop sheets</span></a>
+  <a class="card" href="pitch/TN-Combined-Oil-Mill-Model.xlsx"><b>TN combined oil-mill model</b><span>RBO + groundnut + coconut · fodder margin · fuel choice · DFI</span></a>
+  <a class="card" href="pitch/Rice-Biorefinery-Business-Model.xlsx"><b>Rice biorefinery model</b><span>Integrated CFI three-statement + DCF</span></a>
+</div>
+
+<h2>Reference</h2>
+<div class="grid">
+  <a class="card" href="GLOSSARY.md"><b>Glossary</b><span>Every abbreviation expanded &amp; categorised (~180 terms)</span></a>
+  <a class="card" href="data/MANIFEST.md"><b>Data manifest</b><span>All 32 datasets — source URL + vintage + caveats per file</span></a>
+  <a class="card" href="README.md"><b>README</b><span>Project scope, layout &amp; status</span></a>
+</div>
+
+<footer>
+  <p><strong>FCI-warehouse-MSPvsMSV</strong> — research synthesis, not investment or policy advice.
+  Every figure carries a source and vintage; verified/reported/estimated labels throughout.
+  Report links open the rendered Markdown on GitHub; the dashboard, deck &amp; essay are live pages.
+  Repo: <a href="https://github.com/herrrickshaw/FCI-warehouse-MSPvsMSV">github.com/herrrickshaw/FCI-warehouse-MSPvsMSV</a>.</p>
+</footer>
+</main>
+
+<script>
+// report/data .md links → GitHub blob (renders Markdown); keep HTML/xlsx as relative Pages paths
+const BLOB="https://github.com/herrrickshaw/FCI-warehouse-MSPvsMSV/blob/main/";
+document.querySelectorAll('a.card').forEach(a=>{
+  const h=a.getAttribute('href');
+  if(h && (h.endsWith('.md'))) a.setAttribute('href', BLOB+h);
+});
+</script>
+</body>
+</html>
