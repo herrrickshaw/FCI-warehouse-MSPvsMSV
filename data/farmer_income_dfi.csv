@@ -14,3 +14,9 @@ crop_income_share_2018_19,37,pct,SAS 2018-19,crop cultivation share of total inc
 wages_income_share_2018_19,40,pct,SAS 2018-19,wages largest single source
 animal_income_share_2018_19,15,pct,SAS 2018-19,
 nonfarm_business_share_2018_19,6,pct,SAS 2018-19,
+cpi_al_2015_16,869,index_base_1986_87,MoSPI CPIALRL (All India June),CPI Agricultural Labourers - the farm-household deflator
+cpi_al_2016_17,877,index_base_1986_87,MoSPI CPIALRL,
+cpi_al_2018_19,950,index_base_1986_87,MoSPI CPIALRL,
+cpi_al_2021_22,1125,index_base_1986_87,MoSPI CPIALRL,+28.3% vs 2016-17
+real_income_growth_agri_2016_22,32.1,pct,derived (nominal 69.5% / CPI-AL 28.3%),real farm income growth over NAFIS window
+real_income_cagr_achieved,5.7,pct,derived,vs 10.4% needed for doubling

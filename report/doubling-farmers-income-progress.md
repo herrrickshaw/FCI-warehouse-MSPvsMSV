@@ -61,6 +61,29 @@ has effectively lapsed into an ongoing income-enhancement framing.**
 modest and short of doubling, target quietly reframed. Not a failure of direction — a failure
 of the (very ambitious) timeline.
 
+### The exact real number — deflated by CPI-AL (MoSPI)
+
+The right deflator for farm households is **CPI-AL (Consumer Price Index for Agricultural
+Labourers)** — their own consumption basket, not general CPI. Pulling it from MoSPI's CPIALRL
+series (base 1986-87, All-India, June):
+
+| | 2016-17 | 2021-22 | Change |
+|---|---|---|---|
+| CPI-AL index | 877 | 1,125 | **+28.3%** inflation |
+| Nominal income (agri household) | ₹8,059 | ₹13,661 | +69.5% |
+| **Real income (deflated)** | | | **+32.1%** |
+| Real CAGR | | | **~5.7%/yr** |
+
+So over the five-year NAFIS window, **real farm income grew ~32% (agri household) — a real
+CAGR of ~5.7%/yr against the 10.4%/yr the doubling target required.** On the all-rural series
+it is even lower (+22.8% real, 4.2%/yr). The SAS window (2012-13→2018-19) gives a similar
+~32% real gain.
+
+**The precise verdict: real farm income grew about a quarter to a third — not doubled. The
+achieved real pace (~4–6%/yr) was roughly half the 10.4%/yr the target demanded.** That is the
+exact, MoSPI-deflated version of "real doubling missed," and it is a *better* number than the
+nominal headlines because CPI-AL is the farmer's actual cost-of-living index.
+
 ## 4. Where this project fits the DFI goal
 
 The Dalwai Committee named **seven income sources**: crop productivity, livestock, resource-use
