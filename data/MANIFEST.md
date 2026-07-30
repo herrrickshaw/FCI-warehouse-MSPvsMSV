@@ -201,3 +201,5 @@ PML interest, loss norms) are cited in `report/holding-economics.md`.
 
 - **agri_company_financials.csv** — latest-FY financials (revenue/EBITDA%/PAT%/ROCE) for AWL, ITC-Agri, KRBL, LT Foods, Cargill/Bunge/LDC/Olam India, Adani Agri Logistics. Sources: screener.in, CRISIL rationales, ITC filings; some margins locked/estimated (flagged per row).
 - **omss_processing_model.py** — deterministic unit-economics model: OMSS/mandi grain cost → milling outturn+byproducts → EBITDA/qtl and business-scale ROCE. Labelled price/yield inputs.
+
+- **diesel_cng_cost_impact.csv** — per-crop A2+FL reduction from diesel→CNG substitution (20 CACP crops); ~2-4% at current TN prices (24% fuel saving, diesel 8-14% of A2). Derived from cost_of_production.csv + PIB CNG-tractor data.
