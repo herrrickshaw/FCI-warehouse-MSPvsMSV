@@ -13,23 +13,29 @@ sells it to flour millers through **OMSS at ~₹2,550/qtl** — a large, cheap, 
 The question this report asks: is India capturing the *value* of that wheat, or shipping it as
 flour while importing the finished products made from it?
 
-## The trade data — DGCI&S, by wheat-relevant chapter
+## The trade data — DGCI&S TradeStat, exact 8-digit HS (₹ crore)
 
-Authoritative customs figures (DGCI&S chapter-level, latest full year; from the
-`india-trade-tracker` warehouse, cross-validated against the Commerce TIA Portal and PIB;
-surfaced via the graphify cross-repo *Import Substitution Opportunity Matrix*):
+Authoritative primary customs figures — DGCI&S TradeStat EIDB commodity-wise, FY2024-25 and
+FY2025-26 (provisional), saved to [`data/wheat_products_trade_dgcis.csv`](../data/wheat_products_trade_dgcis.csv):
 
-| HS chapter | What it is | Exports | Imports | Import growth |
-|---|---|---|---|---|
-| **19** | Preparations of cereals, flour, starch — **pasta, biscuits, bakery** | **$988 mn** | **$180 mn** | **+15.2%** |
-| **11** | Milling products, malt, starch, **wheat gluten** | $626 mn | $109 mn | **+19.2%** |
-| **10** | Cereals (incl. wheat grain) | $12,007 mn | $396 mn | +197%* |
+| Product (HS) | Exports 24-25 | 25-26 | Imports 24-25 | 25-26 | Import growth |
+|---|---|---|---|---|---|
+| **Pasta (1902)** | 60.7 | **63.0** | 42.8 | **53.0** | **+23.8%** |
+| **Biscuits & bakery (1905)** | 630.2 | **685.9** | 106.8 | **136.8** | **+28.1%** |
+| Breakfast cereal (1904) | 82.0 | 93.7 | 2.5 | 2.8 | +12% |
+| **Wheat gluten (1109)** | 0.5 | **1.5** | 19.9 | **26.8** | **+34.7%** |
+| Semolina/groats (1103) | 32.9 | 42.7 | 0.1 | 0.1 | flat |
+| Wheat flour/maida (1101) | 74.0 | 80.9 | 1.9 | 4.2 | +121% |
 
-*Chapter-10 import jump is deficit-year wheat grain, not products. **The signal:** India is a
-**net exporter of cereal preparations** (HS 19: $988 mn out vs $180 mn in) — the biscuit-export
-strength is real in the customs data — **but the import side of the value-added chapters is
-growing fast (HS 19 +15.2%, HS 11 +19.2%)**: the premium/pasta/gluten tier is where import
-dependence is *building*, even as the mass tier exports.
+**What the exact data shows — three sharp facts:**
+1. **Biscuits are India's strength** (₹686 cr export vs ₹137 cr import) — the mass tier exports,
+   but **premium biscuit imports are growing +28%**.
+2. **Pasta is nascent both ways** — India net-exports only **₹63 cr (~$7.5 mn)** and imports
+   **₹53 cr, growing +24%**. Tiny in a multi-billion-dollar global trade — the opportunity, not
+   the ceiling.
+3. **Wheat gluten is the clean import gap** — imports **₹26.8 cr, growing +35%**, exports
+   essentially nil. And India *already exports* semolina (₹43 cr) — the pasta feedstock is
+   leaving the country rather than being made into pasta at home.
 
 ## The domestic market it feeds — large, and for pasta fast-growing
 
@@ -76,7 +82,46 @@ nuanced, and overstating it would be wrong:
 4. **Export scale-up on cheap feedstock.** India already exports biscuits and some pasta;
    surplus OMSS wheat is a feedstock-cost advantage no import-dependent competitor has. The
    wheat surplus that is a *fiscal drag* as buffer stock is an *export input* as processed
-   product — turning a storage cost into an export earner.
+   product — turning a storage cost into an export earner (detailed below).
+
+## The pasta export opportunity — tiny today, a multi-billion-dollar market
+
+India's pasta *export* is nascent — and that is the opportunity, not the limit:
+
+| | Value | Note |
+|---|---|---|
+| **India pasta exports (HS 1902, DGCI&S)** | **₹63 cr / ~$7.5 mn** (FY25-26) | net exporter, but only just — imports ₹53 cr, growing +24% |
+| Top destinations | Bhutan, US, UAE | neighbours + diaspora, not yet the mass import markets |
+| **Global pasta imports (the prize)** | **US $1.62 bn · Germany $1.24 bn · France $1.08 bn** | India's ~$7.5 mn is **under 0.5% of the US market alone** |
+| By volume (2024) | Germany 467k t · US 302k t · UK 283k t · Japan 70k t | Italy is the dominant exporter (the incumbent to take share from) |
+
+The gap is even starker on the official DGCI&S numbers than the industry estimates suggest:
+India ships **~$7.5 mn** of pasta into a global import trade of **billions per major market** —
+while it *exports* the semolina feedstock (₹43 cr) that could instead be milled into that pasta
+at home.
+
+**The asymmetry:** India ships ~$46 mn of pasta into a global import trade worth *billions* per
+major market, dominated by Italy. India's edge is the one Italy lacks — **cheap surplus wheat**
+(OMSS ~₹2,550/qtl) as feedstock. Italy's edge is durum quality + brand. So the realistic export
+ladder is:
+
+1. **Commodity / mid-market pasta to price-sensitive geographies** (Africa, Middle East, South &
+   SE Asia) on the OMSS-wheat cost advantage — where price beats brand.
+2. **Diaspora & ethnic-retail** (US, UAE, UK) — already the current export base, scalable.
+3. **Premium durum pasta** — gated by domestic durum quality, so it *follows* the
+   durum-MSV production lever, not precedes it.
+
+**Why it fits the thesis:** the wheat surplus that costs the exchequer to store becomes an
+export earner as pasta — the same "process the surplus, contract the offtake, capture the
+margin" logic, with the export channel as the offtake and cheap OMSS wheat as the moat. Scaling
+from $46 mn toward even 1–2% of the global pasta import trade is a multi-hundred-million-dollar
+export line built on grain India is *paying to hold*.
+
+**Caveat:** commodity-pasta export margins are thin and Italy/Turkey are entrenched low-cost
+competitors too; the durum-quality constraint caps the premium tier until domestic durum scales;
+and export competitiveness depends on wheat *not* being export-banned (the 2022–24 wheat-product
+export flows were disrupted by the grain ban — a policy risk the processed-export case must price
+in).
 
 ## The value ladder — from OMSS wheat to the shelf
 
@@ -108,11 +153,13 @@ gives farmers a reason to grow it).
 
 ## Caveats
 
-Trade figures are DGCI&S chapter-level customs data (from the `india-trade-tracker` warehouse,
-cross-validated against the Commerce TIA Portal + PIB on 2026-07-18; located via the graphify
-knowledge-graph link to the cross-repo *Import Substitution Opportunity Matrix* in
-`textile_data/research`). Chapter totals bundle several products — HS 19 includes pasta,
-biscuits, bakery *and* other cereal preparations, so the product split within it is directional.
+Trade figures are DGCI&S TradeStat EIDB commodity-wise, exact 8-digit HS, FY2024-25 and
+FY2025-26 provisional (user-supplied primary exports; [`data/wheat_products_trade_dgcis.csv`](../data/wheat_products_trade_dgcis.csv)),
+cross-referenced with the `india-trade-tracker` chapter warehouse (TIA Portal + PIB validated)
+and located via the graphify link to the cross-repo *Import Substitution Opportunity Matrix* in
+`textile_data/research`. FY25-26 is provisional (partial year, subject to revision). Pasta
+₹63 cr ≈ $7.5 mn at ~₹84/$; broader trade-database estimates (e.g. Volza ~$46 mn) use different
+aggregation/shipment-value bases — the DGCI&S HS-1902 figure is the authoritative one.
 Market sizes are industry-research figures (2025, multiple sources — pasta $1.21 bn; biscuits
 $5.0 bn; cereals $5.14 bn); growth CAGRs vary 14–16% (pasta) across sources. Durum-pasta import
 shipment counts (Volza) are directional, not customs-value totals. India's durum production (~1.5–2 MT,
