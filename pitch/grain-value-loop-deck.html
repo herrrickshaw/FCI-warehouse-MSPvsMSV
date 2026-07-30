@@ -24,7 +24,7 @@
   .slide{background:var(--paper);border:1px solid var(--hair);border-radius:14px;
     padding:44px 48px;margin-bottom:20px;min-height:540px;position:relative;
     box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column}
-  .slide::before{content:attr(data-n)" / 12";position:absolute;top:20px;right:26px;
+  .slide::before{content:attr(data-n)" / 14";position:absolute;top:20px;right:26px;
     font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--ink-3);letter-spacing:.1em}
   .eyebrow{font-family:"SF Mono",Menlo,monospace;font-size:12px;letter-spacing:.16em;
     text-transform:uppercase;color:var(--green)}
@@ -301,8 +301,50 @@
   <div class="foot">All component economics from real project DPRs; integration is the un-built step</div>
 </section>
 
-<!-- 12 CLOSE -->
-<section class="slide cover" data-n="12" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
+<!-- 12 FARMER INCOME / RFII -->
+<section class="slide" data-n="12">
+  <div class="eyebrow">Why it matters · Doubling Farmers' Income</div>
+  <h2>Real farm income is ~a third of the way to doubling</h2>
+  <div class="grid2">
+    <div>
+      <p>The 2016 goal: double farmers' <em>real</em> income by 2022-23. Deflated by CPI-AL
+      (the farm household's own cost basket, MoSPI), the <strong>Real Farm Income Index</strong> reads:</p>
+      <div class="flow">
+        <div class="step"><div class="t">2016-17</div><div class="d">RFII 99</div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="t">2021-22</div><div class="d">RFII 131</div></div>
+        <div class="arrow">→</div>
+        <div class="step" style="border-color:var(--gold)"><div class="t gold">Target</div><div class="d">200 = doubling</div></div>
+      </div>
+      <p class="lead" style="margin-top:6px">Achieved ~5.7%/yr real vs the 10.4%/yr needed — reaching 200 slips to ~2030.</p>
+    </div>
+    <div class="card"><h3>The lever the gap needs</h3>
+      <ul><li>Crop income is only <strong>37%</strong> of farm income — price alone can't double it</li>
+      <li>The other 63%: wages, livestock, <strong>non-farm/value-addition</strong></li>
+      <li>Cutting <em>cost</em> defends real income against inflation the nominal headline hides</li>
+      <li>Exactly the byproduct-cascade + processing-margin this project builds</li></ul></div>
+  </div>
+  <div class="note">RFII is a monitorable metric: CPI-AL deflator refreshes monthly (MoSPI), income on each SAS/NAFIS survey.</div>
+  <div class="foot">Sources: NABARD NAFIS 2021-22 · NSSO SAS · MoSPI CPIALRL · Dalwai Committee (DFI)</div>
+</section>
+
+<!-- 13 CBG LOOP / FUEL -->
+<section class="slide" data-n="13">
+  <div class="eyebrow">The farm-side loop · fuel choice</div>
+  <h2>Diesel→CNG + residue: the inflation-proof income lever</h2>
+  <div class="grid3">
+    <div class="card"><div class="k">Fuel shift (diesel→CNG)</div><div class="v accent">+₹5,400</div><div class="s">/yr per 1.5-ha paddy household · 24% on tractor fuel · +3.3 RFII pts</div></div>
+    <div class="card"><div class="k">Full CBG loop (+residue)</div><div class="v accent">+₹9,750</div><div class="s">/yr · residue→CBG + FOM slurry · +5.9 RFII pts · closes 9% of the doubling gap</div></div>
+    <div class="card"><div class="k">Mill fuel choice</div><div class="v gold">₹1 vs ₹10.45</div><div class="s">husk/CBG per kWh vs grid · ₹2.7-7.9 cr/yr on the mill's EBITDA</div></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)"><strong>The loop closes:</strong> crop → residue → CBG →
+  fuels the tractor (24% cheaper, inflation-proof) AND the mill's boiler → slurry to the field. Diesel is a volatile
+  imported input; CBG from the farmer's own residue defends the <em>real</em> income the doubling metric measures.</div>
+  <div class="foot">CACP A2+FL · PIB CNG-tractor (PRID 1697555) · SATAT CBG · TN diesel/CNG Jul 2026</div>
+</section>
+
+<!-- 14 CLOSE -->
+<section class="slide cover" data-n="14" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
   <div class="eyebrow">The one-line case</div>
   <h1 style="font-size:clamp(26px,4.6vw,42px)">Stop gifting the byproduct.<br>Contract the demand. Capture the cascade.</h1>
   <p class="lead" style="color:#eaf3ec;max-width:62ch">India is the world's #1 producer of the raw byproduct and a net importer
