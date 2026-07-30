@@ -109,6 +109,8 @@
   <div class="card" id="card-offtake"></div>
   <div class="card" id="card-wstates"></div>
   <div class="card wide" id="card-storage"></div>
+  <div class="card" id="card-rfii"></div>
+  <div class="card" id="card-fuel"></div>
 </div>
 
 <footer>
@@ -121,7 +123,7 @@
 // ?theme=dark|light forces a theme (used for screenshot capture; also a handy manual toggle)
 { const t = new URLSearchParams(location.search).get('theme');
   if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; }
-const DATA = {"trend":{"years":["2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"rice":[342.0,350.6,340.4,318.4,320.4,342.2,381.1,381.9,444.0,520.0,601.7,575.9,568.7,525.4,544.8,null],"wheat":[null,283.4,381.5,250.9,280.2,280.9,229.6,308.2,357.9,341.3,389.9,433.4,187.9,262.0,266.1,300.4]},"share":[{"crop":"rice","year":"2024-25","share":36.3,"agency":"FCI_state_agencies"},{"crop":"wheat","year":"2024-25","share":22.6,"agency":"FCI_state_agencies"},{"crop":"ragi","year":"2023-24","share":14.8,"agency":"FCI_state_agencies"},{"crop":"mustard","year":"2019-20","share":8.8,"agency":"NAFED_PSS"},{"crop":"jowar","year":"2023-24","share":8.4,"agency":"FCI_state_agencies"},{"crop":"bajra","year":"2023-24","share":6.5,"agency":"FCI_state_agencies"},{"crop":"moong","year":"2023-24","share":4.7,"agency":"NAFED_PSS"},{"crop":"gram","year":"2022-23","share":1.4,"agency":"NAFED_PSS"},{"crop":"sunflower","year":"2022-23","share":0.7,"agency":"NAFED_PSS"},{"crop":"masur","year":"2019-20","share":0.1,"agency":"NAFED_PSS"},{"crop":"groundnut","year":"2022-23","share":0.1,"agency":"NAFED_PSS"},{"crop":"urad","year":"2022-23","share":0.0,"agency":"NAFED_PSS"},{"crop":"tur","year":"2022-23","share":0.0,"agency":"NAFED_PSS"},{"crop":"soybean","year":"2020-21","share":0.0,"agency":"NAFED_PSS"},{"crop":"maize","year":"2023-24","share":0.0,"agency":"FCI_state_agencies"}],"stocks":{"dates":["2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01","2024-01-01","2024-02-01","2024-03-01","2024-04-01","2024-05-01","2024-06-01","2024-07-01","2024-08-01","2024-09-01","2024-10-01","2024-11-01","2024-12-01"],"stock":[532.8,565.5,582.4,572.2,838.0,909.6,906.8,861.3,788.7,723.7,650.5,593.1,553.5,549.0,533.1,518.0,640.3,645.3,606.1,549.5,495.9,434.8,379.1,308.6,298.2,325.3,329.9,336.4,560.2,580.5,559.4,527.4,496.5,464.2,421.2,377.4,347.1,346.8,363.7,380.4,583.2,628.1,615.1,602.0,578.2,550.6,522.7,488.5],"norm":[214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null]},"offtake":{"years":["2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"],"series":["NFSA/TPDS","PMGKAY","OMSS(D)","Other welfare"],"values":{"NFSA/TPDS":[501.0,491.9,462.9,490.4,493.0,323.9],"PMGKAY":[0,305.0,425.7,312.5,0,0],"OMSS(D)":[52.5,49.6,83.9,53.6,118.1,23.6],"Exports":[0,0,0,0,0,0],"Other welfare":[68.4,90.5,85.5,74.9,65.9,45.8]}},"storage":[{"agency":"State agencies (incl SWC)","lmt":365.7},{"agency":"FCI owned","lmt":147.2},{"agency":"Hired \u2013 SWC","lmt":102.7},{"agency":"Hired \u2013 PEG","lmt":85.2},{"agency":"Hired \u2013 other","lmt":43.1},{"agency":"Hired \u2013 CWC","lmt":32.8}],"wheatStates":{"years":["2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"],"series":["Punjab","Haryana","Madhya Pradesh","Uttar Pradesh","Other"],"values":{"Punjab":[129.1,127.1,132.2,96.5,121.2,124.6],"Haryana":[93.2,74.0,84.9,41.9,63.2,71.5],"Madhya Pradesh":[67.2,129.4,128.2,46.0,71.0,48.4],"Uttar Pradesh":[37.0,35.8,56.4,3.4,2.2,9.3],"Other":[14.7,23.6,31.7,0.2,4.5,12.3]}}};
+const DATA = {"trend":{"years":["2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],"rice":[342.0,350.6,340.4,318.4,320.4,342.2,381.1,381.9,444.0,520.0,601.7,575.9,568.7,525.4,544.8,null],"wheat":[null,283.4,381.5,250.9,280.2,280.9,229.6,308.2,357.9,341.3,389.9,433.4,187.9,262.0,266.1,300.4]},"share":[{"crop":"rice","year":"2024-25","share":36.3,"agency":"FCI_state_agencies"},{"crop":"wheat","year":"2024-25","share":22.6,"agency":"FCI_state_agencies"},{"crop":"ragi","year":"2023-24","share":14.8,"agency":"FCI_state_agencies"},{"crop":"mustard","year":"2019-20","share":8.8,"agency":"NAFED_PSS"},{"crop":"jowar","year":"2023-24","share":8.4,"agency":"FCI_state_agencies"},{"crop":"bajra","year":"2023-24","share":6.5,"agency":"FCI_state_agencies"},{"crop":"moong","year":"2023-24","share":4.7,"agency":"NAFED_PSS"},{"crop":"gram","year":"2022-23","share":1.4,"agency":"NAFED_PSS"},{"crop":"sunflower","year":"2022-23","share":0.7,"agency":"NAFED_PSS"},{"crop":"masur","year":"2019-20","share":0.1,"agency":"NAFED_PSS"},{"crop":"groundnut","year":"2022-23","share":0.1,"agency":"NAFED_PSS"},{"crop":"urad","year":"2022-23","share":0.0,"agency":"NAFED_PSS"},{"crop":"tur","year":"2022-23","share":0.0,"agency":"NAFED_PSS"},{"crop":"soybean","year":"2020-21","share":0.0,"agency":"NAFED_PSS"},{"crop":"maize","year":"2023-24","share":0.0,"agency":"FCI_state_agencies"}],"stocks":{"dates":["2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01","2024-01-01","2024-02-01","2024-03-01","2024-04-01","2024-05-01","2024-06-01","2024-07-01","2024-08-01","2024-09-01","2024-10-01","2024-11-01","2024-12-01"],"stock":[532.8,565.5,582.4,572.2,838.0,909.6,906.8,861.3,788.7,723.7,650.5,593.1,553.5,549.0,533.1,518.0,640.3,645.3,606.1,549.5,495.9,434.8,379.1,308.6,298.2,325.3,329.9,336.4,560.2,580.5,559.4,527.4,496.5,464.2,421.2,377.4,347.1,346.8,363.7,380.4,583.2,628.1,615.1,602.0,578.2,550.6,522.7,488.5],"norm":[214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null,214.1,null,null,210.4,null,null,411.2,null,null,307.7,null,null]},"offtake":{"years":["2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"],"series":["NFSA/TPDS","PMGKAY","OMSS(D)","Other welfare"],"values":{"NFSA/TPDS":[501.0,491.9,462.9,490.4,493.0,323.9],"PMGKAY":[0,305.0,425.7,312.5,0,0],"OMSS(D)":[52.5,49.6,83.9,53.6,118.1,23.6],"Exports":[0,0,0,0,0,0],"Other welfare":[68.4,90.5,85.5,74.9,65.9,45.8]}},"storage":[{"agency":"State agencies (incl SWC)","lmt":365.7},{"agency":"FCI owned","lmt":147.2},{"agency":"Hired \u2013 SWC","lmt":102.7},{"agency":"Hired \u2013 PEG","lmt":85.2},{"agency":"Hired \u2013 other","lmt":43.1},{"agency":"Hired \u2013 CWC","lmt":32.8}],"wheatStates":{"years":["2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"],"series":["Punjab","Haryana","Madhya Pradesh","Uttar Pradesh","Other"],"values":{"Punjab":[129.1,127.1,132.2,96.5,121.2,124.6],"Haryana":[93.2,74.0,84.9,41.9,63.2,71.5],"Madhya Pradesh":[67.2,129.4,128.2,46.0,71.0,48.4],"Uttar Pradesh":[37.0,35.8,56.4,3.4,2.2,9.3],"Other":[14.7,23.6,31.7,0.2,4.5,12.3]}},"rfii":{"years":["2016-17","2018-19","2021-22","2024-25*"],"rfii":[99.1,116.0,130.9,160.4],"target":[200,200,200,200],"measured":3},"fuelImpact":{"labels":["Diesel/hr","CNG/hr"],"cost":[498,378],"incomeAddFuel":5400,"incomeAddLoop":9750,"incomePct":[3.3,5.9],"rfiiPts":[3.3,5.9]}};
 
 const F = n => n==null ? '—' : n.toLocaleString('en-IN',{maximumFractionDigits:1});
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
@@ -399,6 +401,48 @@ stacked('card-wstates','Wheat procurement by state',
     hit.addEventListener('pointerleave',()=>T.hide());
   });
   tableView(c,['Agency','Capacity (LMT)'],d.map(r=>[r.agency,F(r.lmt)]));
+})();
+
+/* ---------- RFII monitor (line vs 200 target) ---------- */
+lineChart('card-rfii','Real Farm Income Index (RFII) — vs doubling target',
+  'Nominal income ÷ CPI-AL, base 2016-17=100. Target 200 = real doubling. 2024-25 projected*. Source: MoSPI CPIALRL + NAFIS/SAS.',
+  DATA.rfii.years,
+  [{label:'RFII (real)',color:css('--s1'),values:DATA.rfii.rfii,markers:true},
+   {label:'Doubling target',color:css('--s2'),values:DATA.rfii.target}],
+  {});
+
+/* ---------- Fuel shift → farmer income (custom card) ---------- */
+(function(){
+  const F=DATA.fuelImpact;
+  const c=document.getElementById('card-fuel');
+  const h=document.createElement('h2');h.textContent='Diesel→CNG fuel shift → farmer income';c.appendChild(h);
+  const s=div('sub',c);s.textContent='Per 1.5-ha paddy household. CNG saves 24% on tractor fuel; the CBG loop adds residue income. Real-income-protective (CBG is inflation-proof).';
+  const wrap=div('chartwrap',c);
+  const W=540,H=150,padL=90,padR=90,padT=16,padB=30;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'diesel vs CNG cost'},wrap);
+  const max=520,bw=26;
+  const rows=[['Diesel',F.cost[0],css('--s2')],['CNG',F.cost[1],css('--s3')]];
+  rows.forEach((r,i)=>{
+    const y=padT+i*46;
+    const w=r[1]/max*(W-padL-padR);
+    el('rect',{x:padL,y:y,width:w,height:bw,fill:r[2]},svg);
+    el('rect',{x:padL+w-4,y:y,width:4,height:bw,fill:r[2],rx:4},svg);
+    const lb=el('text',{x:padL-8,y:y+18,'text-anchor':'end',fill:css('--ink-1'),'font-size':13},svg);lb.textContent=r[0]+'/hr';
+    const v=el('text',{x:padL+w+8,y:y+18,fill:css('--ink-2'),'font-size':12,'font-variant-numeric':'tabular-nums'},svg);v.textContent='₹'+r[1];
+  });
+  const sv=el('text',{x:padL,y:padT+2*46+12,fill:css('--good'),'font-size':13,'font-weight':700},svg);
+  sv.textContent='↓ ₹120/hr saved (24%) — CBG is inflation-proof; diesel is not';
+  // income stat row
+  const row=div('legend',c);row.style.marginTop='6px';
+  [['Fuel shift','+₹5,400/yr','3.3% of income · +3.3 RFII pts'],
+   ['Full CBG loop','+₹9,750/yr','5.9% of income · +5.9 RFII pts · closes 9% of doubling gap']].forEach(t=>{
+    const d=document.createElement('div');d.style.cssText='flex:1;min-width:150px;background:var(--surface-1);border:1px solid var(--border);border-radius:8px;padding:8px 10px';
+    d.innerHTML='';
+    const k=document.createElement('div');k.style.cssText='font-family:monospace;font-size:11px;color:var(--ink-3);text-transform:uppercase';k.textContent=t[0];
+    const vv=document.createElement('div');vv.style.cssText='font-size:18px;font-weight:600;color:var(--s3)';vv.textContent=t[1];
+    const ss=document.createElement('div');ss.style.cssText='font-size:11px;color:var(--ink-2)';ss.textContent=t[2];
+    d.appendChild(k);d.appendChild(vv);d.appendChild(ss);row.appendChild(d);
+  });
 })();
 </script>
 </body>
