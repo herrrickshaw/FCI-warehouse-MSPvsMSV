@@ -84,6 +84,38 @@ achieved real pace (~4–6%/yr) was roughly half the 10.4%/yr the target demande
 exact, MoSPI-deflated version of "real doubling missed," and it is a *better* number than the
 nominal headlines because CPI-AL is the farmer's actual cost-of-living index.
 
+## 3b. The metric to monitor — Real Farm Income Index (RFII)
+
+Turn the verdict into a **trackable, inflation-adjusted metric**. Define:
+
+> **RFII = (nominal agri-household income ÷ base income) ÷ (CPI-AL ÷ base CPI-AL) × 100**
+> Base 2016-17 = 100. **Doubling target = 200 (real).** Deflator = CPI-AL (the farm
+> household's own cost-of-living basket).
+
+Reproducible tracker: [`data/rfii_monitor.py`](../data/rfii_monitor.py) →
+[`data/real_farm_income_index.csv`](../data/real_farm_income_index.csv).
+
+| Year | Nominal ₹/mo | CPI-AL (1986-87) | **RFII** | Gap to 200 |
+|---|---|---|---|---|
+| 2016-17 | 8,059 | 877 | 99.1 | 100.9 |
+| 2018-19 | 10,218 | 950 | 116.0 | 84.0 |
+| **2021-22 (last measured)** | 13,661 | 1,125 | **130.9** | **69.1** |
+| 2024-25 (projected*) | ~19,640 | 1,320 | ~160 | ~40 |
+
+*Projection assumes nominal income continued at the 9.5% CAGR — **unconfirmed until the next
+SAS/NAFIS survey.** The latest MoSPI CPI-AL print is 1,320 (cumulative **+52% inflation since
+2015-16** — that is the deflator eating the nominal gains).
+
+**Reading the monitor:** the last *measured* real index is **130.9** — about a third of the way
+from 100 to the 200 doubling line. At the achieved ~5.7%/yr real pace, RFII reaches 200 around
+**2030** — roughly 8 years past the 2022-23 DFI deadline.
+
+**Refresh cadence:** the CPI-AL deflator updates **monthly** (MoSPI `CPIALRL`, base 1986-87,
+All-India, General Index) — so the *real* value of the last measured income can be re-marked
+every month; the nominal income point refreshes only on a new **SAS/NAFIS** survey (~5-yearly).
+Edit the two dicts in `rfii_monitor.py` when either lands and re-run. This is the single
+number that tells you, in the farmer's own price terms, how far the doubling actually got.
+
 ## 4. Where this project fits the DFI goal
 
 The Dalwai Committee named **seven income sources**: crop productivity, livestock, resource-use

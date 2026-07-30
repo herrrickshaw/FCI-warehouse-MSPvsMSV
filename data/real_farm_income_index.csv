@@ -1,0 +1,5 @@
+year,nominal_income_rs_month,cpi_al_index_1986_87,rfii_base_2016_17_100,note
+2016-17,8059,877,99.1,MoSPI CPIALRL + SAS/NAFIS; target=200 (real doubling)
+2018-19,10218,950,116.0,MoSPI CPIALRL + SAS/NAFIS; target=200 (real doubling)
+2021-22,13661,1125,130.9,MoSPI CPIALRL + SAS/NAFIS; target=200 (real doubling)
+2024-25_projected,19640,1320,160.4,MoSPI CPIALRL + SAS/NAFIS; target=200 (real doubling)
