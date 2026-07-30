@@ -78,6 +78,41 @@ So the honest cost-of-production answer has two layers: the *direct* fuel substi
 and adds a residue-sale income. That is the same byproduct-cascade logic as the rice-biorefinery,
 applied to the farm's own energy.
 
+## The CBG loop, quantified — three layers, not one
+
+Adding the three loop layers to the CACP A2+FL data
+([`data/cbg_loop_cost_impact.csv`](../data/cbg_loop_cost_impact.csv)) — **CNG fuel saving
+(24% on the diesel share) + FOM fertiliser offset (slurry replaces ~15% of chemical fertiliser)
++ net residue income (removable straw sold to the CBG plant, after baling/transport cost):**
+
+| Crop | A2+FL ₹/qtl | + CNG fuel ₹ | + FOM offset ₹ | + Net residue income ₹ | **Total benefit ₹/qtl** | **Net A2 improvement** |
+|---|---|---|---|---|---|---|
+| **Wheat** | 1,239 | 33 | 30 | 99 | **161** | **13.0%** |
+| **Paddy** | 1,627 | 55 | 39 | 90 | **184** | **11.3%** |
+| Maize | 1,544 | 37 | 37 | 55 | 129 | 8.4% |
+| Cotton | 5,140 | 148 | 123 | 135 | 406 | 7.9% |
+| Groundnut | 4,842 | 128 | 116 | 28 | 272 | 5.6% |
+| Tur | 5,496 | 119 | 132 | 52 | 303 | 5.5% |
+| **Average (20 crops)** | | | | | | **~6.8%** |
+
+**The residue income is the dominant lever for the straw-heavy cereals** (paddy, wheat) — exactly
+the crops whose stubble is burned today. Monetising that straw (₹90–99/qtl) outweighs the fuel
+saving (₹33–55/qtl) and the FOM offset combined. So the loop is really a *residue-monetisation*
+story with fuel and fertiliser savings on top:
+
+- **Fuel swap alone: ~2–4%** of A2+FL (small).
+- **Full CBG loop: ~7–13% for cereals, ~6.8% average** — 2–4× the fuel-only effect.
+
+The direct answer to "does diesel→CNG lower the cost of production" is *a little*; the honest answer
+to "does the CBG loop it enables lower the cost of production" is *materially — and most for the
+paddy/wheat stubble that is a burning liability today.*
+
+*Loop-model caveats: removable straw is taken at 50–60% (the rest returns to the soil); net
+residue price is ₹700–1,200/tonne after baling/transport (gross CBG-feedstock price minus
+collection cost); FOM replaces ~15% of the fertiliser line. All are conservative, labelled
+assumptions — the loop only realises where a CBG plant sits within collection range (SATAT
+corridors), and the residue "income" is a farm-revenue offset to gross cost, not a cut in A2 inputs.*
+
 ## Caveats
 
 - CNG-tractor adoption is nascent (first diesel-converted unit 2021; few OEM models; conversion
