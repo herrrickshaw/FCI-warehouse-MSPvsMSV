@@ -204,3 +204,4 @@ PML interest, loss norms) are cited in `report/holding-economics.md`.
 
 - **diesel_cng_cost_impact.csv** — per-crop A2+FL reduction from diesel→CNG substitution (20 CACP crops); ~2-4% at current TN prices (24% fuel saving, diesel 8-14% of A2). Derived from cost_of_production.csv + PIB CNG-tractor data.
 - **cbg_loop_cost_impact.csv** — layered CBG-loop benefit per crop: CNG fuel saving + FOM fertiliser offset + net residue income; ~7-13% net A2 improvement for cereals (~6.8% avg), residue income dominant for paddy/wheat.
+- **farmer_income_dfi.csv** — farmer income (SAS ₹6,426→10,218; NAFIS ₹8,059→13,661) + DFI goal (Dalwai real-doubling by 2022-23, 10.4% CAGR needed) + progress (nominal +57-70%, real doubling missed) + income composition. Sources: PIB/NSSO/NABARD.

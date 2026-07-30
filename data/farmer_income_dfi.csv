@@ -1,0 +1,16 @@
+metric,value,unit,source,note
+sas_income_2012_13,6426,rs_per_month,NSSO SAS 70th round,agricultural household total income (all sources)
+sas_income_2018_19,10218,rs_per_month,NSO SAS 77th round (PIB PRID 1896134),+59% over 2012-13 nominal
+nafis_income_2016_17,8059,rs_per_month,NABARD NAFIS-1,all rural households
+nafis_income_2021_22,12698,rs_per_month,NABARD NAFIS-2 2021-22,all rural; +57.6% in 5 yrs
+nafis_agri_income_2021_22,13661,rs_per_month,NABARD NAFIS-2 2021-22,agricultural households specifically
+nafis_nonagri_income_2021_22,11438,rs_per_month,NABARD NAFIS-2 2021-22,non-agri rural households
+nafis_nominal_cagr,9.5,pct,NABARD NAFIS-2,vs 9% nominal GDP growth
+dfi_baseline_aggregate,8.5,lakh_crore,Dalwai Committee 2018,2015-16 base
+dfi_target_aggregate,18.5,lakh_crore,Dalwai Committee 2018,2022-23 target (real doubling)
+dfi_real_cagr_needed,10.4,pct,NITI Aayog,real growth needed 2015-16 to 2022-23
+historical_real_cagr,3.31,pct,NITI Aayog,1993-94 to 2015-16 (took 22 yrs to double)
+crop_income_share_2018_19,37,pct,SAS 2018-19,crop cultivation share of total income
+wages_income_share_2018_19,40,pct,SAS 2018-19,wages largest single source
+animal_income_share_2018_19,15,pct,SAS 2018-19,
+nonfarm_business_share_2018_19,6,pct,SAS 2018-19,
