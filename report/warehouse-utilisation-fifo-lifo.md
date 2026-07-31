@@ -56,7 +56,7 @@ minus trough) actually churns.
 | Layer | LMT | Behaviour |
 |---|---:|---|
 | Working layer (cycles) | ~244 | issued within months; healthy turnover |
-| **Static base (LIFO-trapped)** | **~298** | never cycles; ages, deteriorates, becomes feed/ethanol/write-off |
+| **Static base (LIFO-trapped)** | **~298** | *would* age/deteriorate under LIFO — the risk FCI's FIFO avoids (see reality check below) |
 | Peak-season surplus (above norm ~411) | variable | slow-moving; the disposal (OMSS) problem |
 
 ## Reality check — FCI *does* follow FIFO, and spoilage is negligible
@@ -78,6 +78,14 @@ result shows it works — **damaged/non-issuable grain is a rounding error:**
 So the LIFO "dead-layer rots" scenario is the **counterfactual FIFO avoids, not current reality** — actual
 spoilage is **0.002–0.022% of off-take.** (The off-take series also confirms the model: 455–766 LMT/yr,
 averaging ~611 LMT — the ~610 LMT assumption above is spot-on; the 766 LMT peak is the PMGKAY surge.)
+
+**What "non-issuable" means** is fixed by the DFPD *Uniform Specifications* for procurement and issue
+(No. 8-2/2019-S&I, KMS 2019-20): paddy moisture ≤17%, damaged/sprouted/weevilled ≤4%; rice damaged ≤3–4%,
+foreign matter ≤0.5%, **brokens up to 25% (raw) / 16% (parboiled)**; issue-stocks are "ready" if refractions
+run up to **20% in excess** of the uniform spec (A/B/C categorisation). Two things follow: (a) the tight
+damage bands + the 20%-excess issue tolerance are *why* so little is written off; (b) the **25% broken-rice
+allowance is itself a byproduct hook** — broken rice is a legitimate feedstock for ethanol, starch and rice
+flour, another value stream inside the procured grain, alongside the bran→RBO route.
 
 ## The corrected implication for the biorefinery thesis
 
