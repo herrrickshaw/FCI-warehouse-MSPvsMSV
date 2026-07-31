@@ -1,0 +1,6 @@
+scenario,total_ethanol_cr_l,grain_based_cr_l,fci_rice_40pct_cr_l,fci_rice_lmt,pct_of_surplus,verdict
+Current (ESY25-26 tender),1050,585,234,52,27-35%,OK
+E20 target (NITI roadmap 2025-26),1350,885,354,79,41-52%,OK
+E27 (beyond E20),1650,1185,474,105,55-70%,OK (tightening)
+E30,2000,1535,614,136,72-91%,TIGHT (weak-year breach risk)
+assumptions: sugar-route ethanol held ~465 cr L (capped for food/sugar security); grain-based absorbs growth; 40% FCI-rice floor held constant; 1 LMT rice=4.5 cr L (~450 L/t); rice surplus above buffer ~150-190 LMT

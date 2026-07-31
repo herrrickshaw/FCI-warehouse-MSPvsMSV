@@ -84,6 +84,33 @@ lever, and it does not compete with the *first-best* one:
   substitution); (2) send genuinely-surplus milled rice to ethanol under a *stock-threshold* rule (this
   clause, improved); (3) keep the food entitlement ring-fenced throughout.
 
+## Sufficiency stress-test — does the surplus hold as volumes scale (40% fixed)?
+
+The [NITI Aayog *Roadmap for Ethanol Blending 2020-25*](https://www.niti.gov.in/sites/default/files/2025-07/Roadmap-For-Ethanol-Blending-In-India-2020-25.pdf)
+projects **~1,350 crore litres** of total ethanol demand by 2025-26 (of which ~1,016 cr L for E20), and
+capacity rising **700 → 1,500 cr L**. If the **40% FCI-rice floor is held constant** while grain-based
+ethanol absorbs the growth (sugar diversion is capped ~flat for food/sugar security), the FCI-rice draw
+scales like this ([`data/ethanol_grain_sufficiency_scenarios.csv`](../data/ethanol_grain_sufficiency_scenarios.csv);
+1 LMT rice ≈ 4.5 cr L ethanol):
+
+| Scenario | Total ethanol | Grain-based | FCI rice @40% | **FCI rice needed** | vs ~150–190 LMT surplus |
+|---|---:|---:|---:|---:|---|
+| **Current** (ESY25-26) | 1,050 cr L | 585 | 234 cr L | **52 LMT** | 27–35% — **OK** |
+| **E20 target** (NITI 25-26) | 1,350 | 885 | 354 | **79 LMT** | 41–52% — **OK** |
+| E27 (beyond E20) | 1,650 | 1,185 | 474 | **105 LMT** | 55–70% — OK, tightening |
+| E30 | 2,000 | 1,535 | 614 | **136 LMT** | 72–91% — **TIGHT** |
+
+**The answer: yes, the grain is sufficient through the roadmap's E20 target — and even E27 in a normal
+year.** The persistent rice surplus above buffer norm (~150–190 LMT — opening stock 250–326 LMT minus the
+~135 LMT norm, every year 2021-24) comfortably covers the 52–105 LMT the 40% floor draws.
+
+**But the fixed 40% breaks down at E30.** At ~2,000 cr L, the floor needs **136 LMT of FCI rice — 72–91% of
+the surplus**; in a below-average production year (surplus shrinks toward ~100 LMT), that **breaches into the
+buffer** — the fuel-vs-food line the clause is supposed to protect. **So "hold 40% constant as volumes go up"
+is safe only up to ~E27; beyond that it must change.** NITI's own roadmap points the way: it explicitly
+promotes **maize and 2G** (less water-intensive) — the incremental grain-ethanol beyond E20 should be
+**maize-led, not more rice**, keeping the FCI-rice draw within the reliable surplus.
+
 ## Recommendations on the clause
 
 1. **Make "sufficient grain" dynamic, not a fixed cap.** Trigger the FCI-rice-to-ethanol release on
