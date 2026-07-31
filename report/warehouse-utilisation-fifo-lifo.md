@@ -48,10 +48,11 @@ reports price at ~₹5.6/kg/yr.
 ## LIFO — the ~298 LMT dead layer that never moves
 
 The revealing number is the **trough: the pool never fell below ~298 LMT** in four years. Under a **LIFO**
-regime (last-in-first-out — what happens physically when fresh grain is stacked on top and issued first,
-or when depots ship the most accessible lots), that **~298 LMT base layer is never touched — it ages 2–3+
-crop years, the classic FCI old-stock deterioration problem.** Only the **~244 LMT "working layer"** (average
-minus trough) actually churns.
+regime (last-in-first-out — what would happen if fresh grain were stacked on top and issued first, or if
+depots shipped the most accessible lots), that **~298 LMT base layer would never be touched and would age
+2–3+ crop years** — the old-stock deterioration risk that a LIFO discipline creates. **FCI avoids this by
+following FIFO** (§ reality check below), so in practice only the **~244 LMT "working layer"** (average minus
+trough) needs to churn — but the ~298 LMT base still *sits*, cycling slowly, carrying cost the whole time.
 
 | Layer | LMT | Behaviour |
 |---|---:|---|

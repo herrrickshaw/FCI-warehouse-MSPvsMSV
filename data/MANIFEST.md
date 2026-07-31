@@ -261,3 +261,9 @@ cottonseed ~13.4 LMT via CCI cotton — 7.3M bales procured MY24-25) + oilseed c
 -> ~22 LMT oil per SOPA 2024-25; groundnut ~12; mustard ~42). Includes state touchpoint + co-products.
 Sources: SOPA statistics 2024-25, USDA Cotton Annual 2025/CAI, USDA MY23/24, SEA. Feeds
 report/executive-summary.md (cottonseed-utilisation section).
+
+## omss_ethanol_rbo_volumes.csv
+Sourced volume/savings chain for the import-substitution argument: OMSS(D) 2023-24 (71.01 LMT wheat +
+1.62 LMT rice sold, PIB 2000937); Ethanol EBP (38->661 cr L, 20% blend Mar-2025, Rs1.36 lakh cr forex
+saved, PIB 2113234); RBO (40-98 LMT bran -> 6.4-15.7 LMT oil -> Rs6,698-16,464 cr import displaced,
+rbo_savings_scenarios.py). Feeds report/omss-ethanol-rbo-import-substitution.md.

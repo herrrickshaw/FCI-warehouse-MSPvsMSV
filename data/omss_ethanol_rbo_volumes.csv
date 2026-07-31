@@ -1,0 +1,19 @@
+scheme,metric,volume,value,source
+OMSS(D),wheat allocated 2023-24,101.5 LMT,reserve Rs2150/qtl FAQ,PIB PRID 2000937 (till 24-01-2024)
+OMSS(D),wheat sold 2023-24,71.01 LMT,,PIB PRID 2000937
+OMSS(D),rice allocated 2023-24,25 LMT,reserve Rs2900/qtl,PIB PRID 2000937
+OMSS(D),rice sold 2023-24,1.62 LMT,highest-ever to private traders,PIB PRID 2000937
+OMSS(D),buyer + lot,processors/flour millers,10-100 MT per bid,PIB PRID 2000937
+Ethanol EBP,production 2014,38 crore litres,,PIB/MoPNG (VisionIAS/Drishti)
+Ethanol EBP,production Jun-2025,661.1 crore litres,,newsonair/PIB Jun-2025
+Ethanol EBP,blending rate,8.17% (2020-21) -> 20% (Mar-2025),5 yrs ahead of 2030 target,PIB PRID 2113234
+Ethanol EBP,farmer earnings till 2025,,Rs 1.18 lakh crore,PIB/MoPNG
+Ethanol EBP,forex saved (crude cut),,Rs 1.36 lakh crore,PIB/MoPNG
+Ethanol EBP,feedstock,"sugarcane/molasses, maize, broken/damaged rice",absorbs surplus grain,NITI Ethanol Roadmap 2020-25
+RBO,national production,~10 LMT (India #1),,USDA/SEA
+RBO,bran available (all-India),~98 LMT,oil yield 16%,rbo_savings_scenarios.py
+RBO,bran in govt CMR paddy,~40 LMT (41% of total),from ~832 LMT CMR paddy,rbo_savings_scenarios.py
+RBO,ex-mill vs import parity,,Rs60/kg vs Rs105/kg = Rs45/kg edge,DGCI&S + ICRA edible-oil thematic
+RBO,CMR-bran 100% processed,6.4 LMT RBO,Rs6698 cr import displaced + Rs2871 cr net + Rs4665 cr DORB,rbo_savings_scenarios.py
+RBO,all-India 100% processed,15.7 LMT RBO,Rs16464 cr import displaced + Rs7056 cr net,rbo_savings_scenarios.py
+RBO,realistic near-term capture,+7.7 LMT RBO,Rs8064 cr import displaced (~5% of Rs1.68 lakh cr oil bill),rbo_savings_scenarios.py
