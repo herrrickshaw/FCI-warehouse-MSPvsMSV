@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India — Grain Cultivation · FCI Storage · FPOs (schematic state map)</title>
+<style>
+  :root{
+    --paper:#f7f5ef; --panel:#fffefb; --ink:#1b2019; --ink-2:#54604f; --ink-3:#8a917f;
+    --hair:#e2ddd0; --green:#2f7a4f; --green-d:#1f5637; --gold:#b7791f; --paddy:#2f7a4f;
+    --wheat:#c8952a; --oilseed:#d0692a; --mixed:#8a917f; --band:#efece2;
+  }
+  @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a; --paddy:#4ea877;
+    --wheat:#d6a24a; --oilseed:#e08a4a; --mixed:#79806d; --band:#1b1e16;
+  }}
+  :root[data-theme="dark"]{
+    --paper:#12140f; --panel:#191c15; --ink:#eef0e8; --ink-2:#aab19c; --ink-3:#79806d;
+    --hair:#2a2e22; --green:#4ea877; --green-d:#7cc79c; --gold:#d6a24a; --paddy:#4ea877;
+    --wheat:#d6a24a; --oilseed:#e08a4a; --mixed:#79806d; --band:#1b1e16;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--band);color:var(--ink);font:15px/1.5 "Iowan Old Style",Palatino,Georgia,serif;padding:24px 16px 60px}
+  .wrap{max-width:1060px;margin:0 auto}
+  h1{font-size:clamp(22px,3.4vw,30px);font-weight:600;margin-bottom:4px}
+  .sub{color:var(--ink-2);font-size:15px;margin-bottom:18px;max-width:80ch}
+  .mono{font-family:"SF Mono",Menlo,Consolas,monospace}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:14px 0 18px;font-size:12.5px;
+    font-family:"SF Mono",Menlo,monospace;color:var(--ink-2)}
+  .legend .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+  .grid{display:grid;grid-template-columns:repeat(8,1fr);gap:7px}
+  .tile{background:var(--panel);border:1px solid var(--hair);border-left-width:4px;border-radius:7px;
+    padding:7px 8px;min-height:74px;display:flex;flex-direction:column;justify-content:space-between}
+  .tile .nm{font-family:"SF Mono",Menlo,monospace;font-size:11px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+  .tile .crop{font-size:10px;color:var(--ink-3);font-family:"SF Mono",Menlo,monospace;text-transform:uppercase;letter-spacing:.03em}
+  .bars{margin-top:5px}
+  .barrow{display:flex;align-items:center;gap:4px;font-size:10px;font-family:"SF Mono",Menlo,monospace;color:var(--ink-2);line-height:1.5}
+  .barrow .lab{width:16px;color:var(--ink-3)}
+  .bar{height:6px;border-radius:3px;min-width:2px}
+  .bar.s{background:var(--green)}
+  .bar.f{background:var(--gold)}
+  .barrow .val{margin-left:auto;color:var(--ink)}
+  footer{margin-top:22px;padding-top:14px;border-top:1px solid var(--hair);color:var(--ink-3);font-size:12px;font-family:"SF Mono",Menlo,monospace}
+  @media(max-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>India — where the grain, the storage, and the farmers are</h1>
+  <p class="sub">Schematic state map (approximate geography, not to scale). Each tile: lead grain/feedstock
+  (left-border colour), <b style="color:var(--green)">FCI+hired storage</b> (green bar, LMT) and
+  <b style="color:var(--gold)">SFAC FPOs</b> (gold bar, count). The point: the storage belt and the
+  FPO belt are <b>different states</b> — Madhya Pradesh is the one with both.</p>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--wheat)"></span>wheat-led</span>
+    <span><span class="sw" style="background:var(--paddy)"></span>paddy-led</span>
+    <span><span class="sw" style="background:var(--oilseed)"></span>oilseed/cotton-led</span>
+    <span><span class="sw" style="background:var(--mixed)"></span>mixed</span>
+    <span style="margin-left:auto"><span class="bar s" style="width:24px;display:inline-block"></span> storage LMT &nbsp; <span class="bar f" style="width:24px;display:inline-block"></span> FPOs</span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <footer>Storage: DFPD Foodgrain Bulletin Nov-2024 (FCI-owned + hired CWC/SWC/PEG/private, ~841 LMT all-India).
+  FPOs: SFAC state-wise 10,000-FPO registry 24-02-2025 (3,649 — SFAC channel only; NABARD/NCDC add more; India ~45,000 total).
+  Bars scaled to the max in each series (storage max 200 LMT = MP; FPO max 758 = UP). Schematic layout — data/national_fci_fpo_by_state.csv.</footer>
+</div>
+<script>
+// [name, gridCol, gridRow, storageLMT, fpos, cropClass, cropLabel]
+const D=[
+ ["J&K",3,1,2.3,0,"mixed","mixed"],
+ ["Punjab",2,2,175,78,"wheat","wheat·paddy"],
+ ["Uttarakhand",4,2,3.5,43,"mixed","mixed"],
+ ["Arunachal",8,2,0.4,39,"paddy","paddy"],
+ ["Haryana",2,3,100,119,"wheat","wheat·paddy"],
+ ["Delhi",3,3,3.3,9,"mixed","mixed"],
+ ["Uttar Pradesh",4,3,47,758,"wheat","wheat·paddy·cane"],
+ ["Bihar",5,3,21,312,"paddy","paddy·wheat·pulses"],
+ ["Assam",7,3,5.3,176,"paddy","paddy·mustard"],
+ ["Nagaland",8,3,0.7,8,"paddy","paddy"],
+ ["Rajasthan",1,4,16,225,"oilseed","mustard·pulses·bajra"],
+ ["Madhya Pradesh",3,4,200,348,"oilseed","wheat·soy·pulses"],
+ ["Jharkhand",5,4,6.3,93,"paddy","paddy·pulses"],
+ ["West Bengal",6,4,20,156,"paddy","paddy·oilseeds"],
+ ["Meghalaya",7,4,0.5,13,"paddy","paddy"],
+ ["Manipur",8,4,0.7,10,"paddy","paddy"],
+ ["Gujarat",1,5,9.8,141,"oilseed","groundnut·cotton"],
+ ["Maharashtra",2,5,24,213,"oilseed","soy·tur·cotton"],
+ ["Chhattisgarh",4,5,36,68,"paddy","paddy"],
+ ["Odisha",5,5,13,164,"paddy","paddy"],
+ ["Tripura",7,5,1.4,36,"paddy","paddy"],
+ ["Mizoram",8,5,0.7,14,"paddy","paddy"],
+ ["Goa",1,6,0.2,11,"mixed","mixed"],
+ ["Telangana",3,6,24,116,"paddy","paddy·groundnut"],
+ ["Andhra Pradesh",4,6,25,247,"paddy","paddy·groundnut"],
+ ["Karnataka",2,7,9.7,52,"oilseed","pulses·oilseed·millet"],
+ ["Tamil Nadu",3,7,21,90,"paddy","paddy·groundnut·pulses"],
+ ["Kerala",2,8,7.9,50,"mixed","coconut·rice bran"],
+ ["Himachal",3,2,1.0,60,"mixed","mixed"],
+];
+const SMAX=200, FMAX=758, W=88;
+const col={wheat:"var(--wheat)",paddy:"var(--paddy)",oilseed:"var(--oilseed)",mixed:"var(--mixed)"};
+const g=document.getElementById("grid");
+D.forEach(d=>{
+  const [nm,c,r,s,f,cc,cl]=d;
+  const el=document.createElement("div");
+  el.className="tile";
+  el.style.gridColumn=c; el.style.gridRow=r; el.style.borderLeftColor=col[cc];
+  el.innerHTML=`<div><div class="nm">${nm}</div><div class="crop">${cl}</div></div>
+   <div class="bars">
+     <div class="barrow"><span class="lab">S</span><span class="bar s" style="width:${Math.max(2,s/SMAX*W)}px"></span><span class="val">${s>=10?Math.round(s):s}</span></div>
+     <div class="barrow"><span class="lab">F</span><span class="bar f" style="width:${Math.max(2,f/FMAX*W)}px"></span><span class="val">${f}</span></div>
+   </div>`;
+  g.appendChild(el);
+});
+</script>
+</body>
+</html>

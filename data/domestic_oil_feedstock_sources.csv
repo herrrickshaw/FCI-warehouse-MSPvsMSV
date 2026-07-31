@@ -1,0 +1,6 @@
+source,type,feedstock_volume,oil_output_lmt,state_touchpoint,co_products,source_ref
+Rice bran,byproduct,~65 LMT bran (from ~850 LMT paddy milled),~10,"FCI procures paddy (CMR); bran given to millers free","de-oiled rice bran (feed), gamma-oryzanol, tocotrienols",USDA/SEA; omss-processing-returns.md
+Cottonseed,byproduct,~95-100 LMT cottonseed (from ~5 MMT lint),~13.4,"CCI procures cotton at MSP (7.3M bales MY24-25); cottonseed sold by ginners","cottonseed meal (~45 LMT feed protein), linters (cellulose), hull",USDA Cotton Annual 2025; CAI; reportlinker
+Soybean,oilseed crush,123.28 LMT available for crush (SOPA 2024-25),~22,"MSP crop; NAFED procurement thin","soybean meal/DOC (India exports; ~16 LMT/2mo)",SOPA statistics 2024-25
+Groundnut,oilseed crush,~25-30% of crop crushed,~12,"MSP crop; ~half to food/seed/export","groundnut cake",USDA MY23/24
+Mustard-rapeseed,oilseed crush,~115 LMT seed (almost fully crushed),~42,"MSP crop; India's #1 indigenous oil","mustard DOC",USDA MY23/24

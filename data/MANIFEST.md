@@ -254,3 +254,10 @@ Per-state pairing of FCI+hired storage capacity (LMT, Nov-2024 Foodgrain Bulleti
 SFAC 10,000-FPO-scheme counts (24-02-2025, 3,649 nationally, SFAC channel only) and lead feedstock. Reveals
 the storage-vs-aggregation mismatch (Punjab/MP/Haryana hold grain; UP/Bihar/AP/Rajasthan hold FPOs; MP has
 both). Feeds report/national-fci-fpo-food-processing-psu.md.
+
+## domestic_oil_feedstock_sources.csv
+The MSP-crop oil-feedstock base: byproduct oils the state already touches (rice bran ~10 LMT via FCI paddy;
+cottonseed ~13.4 LMT via CCI cotton — 7.3M bales procured MY24-25) + oilseed crush (soybean 123 LMT crush
+-> ~22 LMT oil per SOPA 2024-25; groundnut ~12; mustard ~42). Includes state touchpoint + co-products.
+Sources: SOPA statistics 2024-25, USDA Cotton Annual 2025/CAI, USDA MY23/24, SEA. Feeds
+report/executive-summary.md (cottonseed-utilisation section).
