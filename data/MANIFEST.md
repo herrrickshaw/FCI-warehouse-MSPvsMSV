@@ -241,3 +241,16 @@ excess-stock carry ~₹18,000 cr on ~330 LMT over buffer; bran giveaway ₹7,650
 count noted (procurement sits inside subsidy). Sources: PIB/FCI procurement, PRS food subsidy, DGCI&S
 imports, FCI stock 738 LMT (1 May 2025). Feeds report/fiscal-rationalisation-procurement-vs-processing.md
 + pitch slide 14.
+
+## tn_fpo_processing_partners.csv
+Shortlist of Tamil Nadu FPOs screened as processing partners: Tier 1 = demonstrated processing capacity
+(Nachalur — owns seed-processing machine + paddy/sesame/pulses; Sharvani — Rs60L processing plant + brand;
+Erode Precision — warehouse+paddy+credit), Tier 2 = feedstock-matched by biorefinery stream (rice/RBO,
+groundnut, pulses, coconut, maize, millet). Sources: TN FPO list 2015 (machinery columns) + TNSFAC 130-FPO
+directory. Feeds report/fpo-processing-partners-tamilnadu.md.
+
+## national_fci_fpo_by_state.csv
+Per-state pairing of FCI+hired storage capacity (LMT, Nov-2024 Foodgrain Bulletin, ~841 LMT all-India) with
+SFAC 10,000-FPO-scheme counts (24-02-2025, 3,649 nationally, SFAC channel only) and lead feedstock. Reveals
+the storage-vs-aggregation mismatch (Punjab/MP/Haryana hold grain; UP/Bihar/AP/Rajasthan hold FPOs; MP has
+both). Feeds report/national-fci-fpo-food-processing-psu.md.

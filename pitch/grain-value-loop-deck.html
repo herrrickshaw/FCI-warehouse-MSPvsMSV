@@ -24,7 +24,7 @@
   .slide{background:var(--paper);border:1px solid var(--hair);border-radius:14px;
     padding:44px 48px;margin-bottom:20px;min-height:540px;position:relative;
     box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column}
-  .slide::before{content:attr(data-n)" / 19";position:absolute;top:20px;right:26px;
+  .slide::before{content:attr(data-n)" / 21";position:absolute;top:20px;right:26px;
     font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--ink-3);letter-spacing:.1em}
   .eyebrow{font-family:"SF Mono",Menlo,monospace;font-size:12px;letter-spacing:.16em;
     text-transform:uppercase;color:var(--green)}
@@ -426,8 +426,67 @@
   <div class="foot">Sources: PIB/FCI procurement (wheat ₹62,156 cr RMS25-26) · PRS food subsidy ₹2.05 L cr · DGCI&amp;S imports · FCI stock 738 LMT (1 May 25) · report/fiscal-rationalisation-procurement-vs-processing.md</div>
 </section>
 
-<!-- 12 MODEL -->
+<!-- 15 NATIONAL FCI x FPO MAP -->
 <section class="slide" data-n="15">
+  <div class="eyebrow">National build-out · storage × farmer-aggregation</div>
+  <h2>The grain and the farmers are in different states — design for it</h2>
+  <div class="grid2">
+    <div>
+      <table>
+        <tr><th>State</th><th class="n">FCI storage LMT</th><th class="n">SFAC FPOs</th></tr>
+        <tr class="hl"><td><strong>Madhya Pradesh</strong></td><td class="n">200</td><td class="n">348</td></tr>
+        <tr><td>Punjab</td><td class="n">175</td><td class="n">78</td></tr>
+        <tr><td>Haryana</td><td class="n">100</td><td class="n">119</td></tr>
+        <tr><td>Uttar Pradesh</td><td class="n">47</td><td class="n">758</td></tr>
+        <tr><td>Bihar</td><td class="n">21</td><td class="n">312</td></tr>
+        <tr><td>Andhra Pradesh</td><td class="n">25</td><td class="n">247</td></tr>
+        <tr><td>Rajasthan</td><td class="n">16</td><td class="n">225</td></tr>
+        <tr><td>Maharashtra</td><td class="n">24</td><td class="n">213</td></tr>
+      </table>
+      <p style="font-size:12px">FCI+hired storage (Nov-24 bulletin, ~841 LMT all-India) · SFAC 10,000-FPO registry (3,649, Feb-25 — SFAC channel only)</p>
+    </div>
+    <div class="card"><h3 style="color:var(--green)">The mismatch = the design rule</h3>
+      <ul style="font-size:13.5px">
+        <li><strong>Storage belt</strong> (Punjab 175, MP 200, Haryana 100) holds the grain — but is thin on FPOs (Punjab 78)</li>
+        <li><strong>FPO belt</strong> (UP 758, Bihar 312, AP 247, Rajasthan 225) has the farmers — but far less storage</li>
+        <li><strong>MP is the one state with both</strong> — 200 LMT + 348 FPOs + soybean/pulses/mustard = <strong>the natural first hub</strong></li>
+      </ul>
+      <p style="font-size:13px;margin-top:6px"><strong>Siting logic:</strong> oilseed/pulse crush → FPO-dense deficit states (MP, Maharashtra, Rajasthan, AP); rice-bran → the paddy/storage belt (Punjab, Haryana, Chhattisgarh). Match each stream to the state that has its feedstock <em>and</em> the aggregation.</p></div>
+  </div>
+  <div class="foot">Sources: DFPD Foodgrain Bulletin Nov-2024 (storage) · SFAC state-wise 10,000-FPO list 24-02-2025 · data/national_fci_fpo_by_state.csv</div>
+</section>
+
+<!-- 16 FOOD-PROCESSING PSU (HVOC) -->
+<section class="slide" data-n="16">
+  <div class="eyebrow">The vehicle · don't create a PSU — revive the one DFPD owns</div>
+  <h2>DFPD already owns a dormant edible-oils processing PSU</h2>
+  <div class="grid2">
+    <div>
+      <p>Per igod.gov.in, DFPD's org chart already holds <strong>three</strong> delivery bodies:</p>
+      <div class="flow" style="flex-direction:column;gap:8px">
+        <div class="step" style="border-right:1px solid var(--hair)"><div class="t">FCI</div><div class="d">procurement · storage · the grain + bran feedstock</div></div>
+        <div class="step" style="border-right:1px solid var(--hair)"><div class="t">CWC</div><div class="d">the warehousing network</div></div>
+        <div class="step" style="border-right:1px solid var(--hair);border-left:3px solid var(--green)"><div class="t" style="color:var(--green)">HVOC — Hindustan Vegetable Oils Corp</div><div class="d">a CPSE built for vegetable-oil / vanaspati processing — now dormant</div></div>
+      </div>
+      <p style="font-size:13.5px"><strong>India needn't <em>create</em> a food-processing PSU — it can <em>revive</em> HVOC:</strong> the corporate shell, the DFPD mandate and the edible-oil remit already exist, alongside the grain (FCI) and the storage (CWC).</p>
+    </div>
+    <div class="card" style="border-top:3px solid var(--green)"><h3 style="color:var(--green)">Build it like the survivors, not the failures</h3>
+      <ul style="font-size:13px">
+        <li><strong>Infrastructure + processing, NOT trading</strong> — STC→PEC→NCEL died trading naked</li>
+        <li><strong>FPO-fed supply</strong> — the AMUL/NAFED survival trait</li>
+        <li><strong>Ring-fenced, contracted offtake</strong> — PDS/ONORC oil + fortification, not the open market</li>
+        <li><strong>JV/PPP capital</strong> — HVOC brings mandate + sites; partner brings crush/refining</li>
+        <li><strong>Sit on the FCI/CWC network</strong> + the ₹7,650 cr free bran</li>
+      </ul></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)">A revived HVOC is the <strong>edible-oil counterpart to FCI</strong>:
+  FCI holds the grain, HVOC processes the oil, CWC stores, FPOs supply, ONORC distributes — anchoring the ₹1.68 lakh-cr
+  import substitution and supplying the PDS oil ration domestically instead of buying imported palmolein.</div>
+  <div class="foot">Sources: igod.gov.in DFPD org list (FCI/CWC/HVOC) · report/psu-agri-ventures-history.md (STC/PEC/NCEL vs CWC/AMUL) · report/national-fci-fpo-food-processing-psu.md</div>
+</section>
+
+<!-- 12 MODEL -->
+<section class="slide" data-n="17">
   <div class="eyebrow">The model · why government-cooperative-PPP</div>
   <h2>Ring-fence the commercial arm; contract the offtake</h2>
   <div class="grid2">
@@ -448,7 +507,7 @@
 </section>
 
 <!-- 12 THE ASK -->
-<section class="slide" data-n="16">
+<section class="slide" data-n="18">
   <div class="eyebrow">Illustrative pilot</div>
   <h2>One integrated complex, in an operational food park</h2>
   <div class="grid3">
@@ -466,7 +525,7 @@
 </section>
 
 <!-- 13 FARMER INCOME / RFII -->
-<section class="slide" data-n="17">
+<section class="slide" data-n="19">
   <div class="eyebrow">Why it matters · Doubling Farmers' Income</div>
   <h2>Real farm income is ~a third of the way to doubling</h2>
   <div class="grid2">
@@ -493,7 +552,7 @@
 </section>
 
 <!-- 14 CBG LOOP / FUEL -->
-<section class="slide" data-n="18">
+<section class="slide" data-n="20">
   <div class="eyebrow">The farm-side loop · fuel choice</div>
   <h2>Diesel→CNG + residue: the inflation-proof income lever</h2>
   <div class="grid3">
@@ -508,7 +567,7 @@
 </section>
 
 <!-- 15 CLOSE -->
-<section class="slide cover" data-n="19" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
+<section class="slide cover" data-n="21" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
   <div class="eyebrow">The one-line case</div>
   <h1 style="font-size:clamp(26px,4.6vw,42px)">Stop gifting the byproduct.<br>Contract the demand. Capture the cascade.</h1>
   <p class="lead" style="color:#eaf3ec;max-width:62ch">India is the world's #1 producer of the raw byproduct and a net importer
