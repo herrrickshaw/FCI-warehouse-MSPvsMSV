@@ -121,7 +121,11 @@ The state spends **₹2.05 L cr** and runs **5.43 lakh Fair Price Shops** to fee
 where it distributes PDS oil (Tamil Nadu ₹3,800 cr, palmolein at ₹25/L), it subsidises an **import**.
 **ONORC** unifies this into one portable, deduplicated national offtake — the captive demand a domestic
 PDS-RBO would ride, redirecting the oil subsidy from imported palmolein to domestic jobs
-([msp-crops-refined-oil-source.md](msp-crops-refined-oil-source.md)).
+([msp-crops-refined-oil-source.md](msp-crops-refined-oil-source.md)). The
+[DFPD Year-End Review 2024](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2086345) confirms the scale
+and the offtake precedent: **610 LMT** of grain allocated a year to **80.67 cr** beneficiaries, ONORC live
+in all States/UTs, and **100% fortified rice achieved by March 2024** — proof the state can mandate a
+fortified staple nationwide, exactly the captive channel a fortified domestic RBO would use.
 
 ## 7. The national build-out — where, and who runs it
 
