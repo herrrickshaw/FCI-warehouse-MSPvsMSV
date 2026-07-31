@@ -1,0 +1,8 @@
+commodity,flow,value_scale,private_share_pct,public_share_pct,public_agency_channel,how_to_alter_for_pds_and_processing
+Rice (basmati),export,$5.94 bn,~98,~2,"NCEL G2G (small)","already public on the procurement side; add public/coop RBO + fortification processing from the bran"
+Rice (non-basmati),export,$6.53 bn,~90,~10,"NCEL / G2G deals; export bans+quotas = public CONTROL, private EXECUTION","public procurement already feeds PDS; route surplus to coop processing (poha/RBO) not just raw export"
+Wheat,export,~$0 (banned),n/a,n/a,"export ban = 100% public policy control","surplus -> public/coop milling (atta fortification, semolina/pasta) for PDS + processing, not raw export"
+Edible oil,import,Rs 1.68 lakh cr,~100,~0,"NONE today (STC/NAFED canalisation ended 1990s)","THE BIG GAP: build a public/coop crushing channel (HVOC + NAFED oilseed + PACS/coop crush + CCI cottonseed + FCI rice-bran) to supply PDS oil domestically instead of private palmolein import"
+Pulses,import,~Rs 31,000 cr,~80,~20,"NAFED/NCCF buffer imports + G2G (Mozambique tur); price-stabilisation fund","expand NAFED buffer + PACS dal-milling to supply PDS pulses from domestic+buffer stock, shrinking private import"
+Cotton,domestic+export,~Rs 5 MMT lint,~70,~30,"CCI procures at MSP (7.3M of ~25M bales MY24-25)","link CCI-procured cotton's COTTONSEED to public/coop oil crush -> domestic edible oil (parallels FCI paddy->bran->RBO)"
+Sugar,export,quota-regulated,~100,~0,"private mills under govt export quota (MAEQ) = regulated-private","ethanol-blending mandate already diverts cane; extend the offtake-mandate model to processed-grain oil/pulses"
