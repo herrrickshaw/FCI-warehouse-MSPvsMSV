@@ -59,19 +59,48 @@ minus trough) actually churns.
 | **Static base (LIFO-trapped)** | **~298** | never cycles; ages, deteriorates, becomes feed/ethanol/write-off |
 | Peak-season surplus (above norm ~411) | variable | slow-moving; the disposal (OMSS) problem |
 
-**The implication for the biorefinery thesis:** the ~298 LMT static base and the above-norm surplus are
-*exactly* the grain that should be diverted to **processing** rather than left to age. FIFO discipline (issue
-oldest first) plus routing the static base into value-addition — RBO from milled paddy, fortification, OMSS
-feedstock — converts a deteriorating, carry-bleeding dead layer into a value stream. **The dead layer is not
-a storage problem to solve with more godowns; it is a feedstock waiting for a processing offtake.**
+## Reality check — FCI *does* follow FIFO, and spoilage is negligible
+
+An important correction from the primary source ([Rajya Sabha UQ-2435, 17-Dec-2024, "Protection of Food
+Grains"](https://sansad.in)): **FCI officially follows FIFO** — the answer states *"The principle of
+'First in First Out' (FIFO) is followed so as to avoid longer storage of foodgrains in godowns,"* backed by
+scientific storage, fumigation, and Damage Monitoring Cells at District/Regional/Zonal levels. And the
+result shows it works — **damaged/non-issuable grain is a rounding error:**
+
+| Year | Non-issuable accrued (LMT) | Off-take (LMT) | Non-issuable % of off-take |
+|---|---:|---:|---:|
+| 2019-20 | 0.019 | 455.1 | 0.004% |
+| 2020-21 | 0.018 | 688.6 | 0.003% |
+| 2021-22 | 0.017 | 766.1 | 0.002% |
+| 2022-23 | 0.016 | 675.8 | 0.002% |
+| 2023-24 | 0.103 | 470.7 | 0.022% |
+
+So the LIFO "dead-layer rots" scenario is the **counterfactual FIFO avoids, not current reality** — actual
+spoilage is **0.002–0.022% of off-take.** (The off-take series also confirms the model: 455–766 LMT/yr,
+averaging ~611 LMT — the ~610 LMT assumption above is spot-on; the 766 LMT peak is the PMGKAY surge.)
+
+## The corrected implication for the biorefinery thesis
+
+This sharpens — not weakens — the case, by moving it off the wrong argument:
+
+- **Not "the grain is rotting"** — it isn't; FCI's FIFO + damage control keeps loss negligible.
+- **It's "the static ~298 LMT base bleeds carrying cost while not being consumed"** — held at ~₹5.6/kg/yr
+  ([holding-economics](holding-economics.md)), a ~298 LMT base is **~₹16,700 cr/yr of carry** on grain that
+  the off-take cycle never draws down. The problem is **opportunity cost, not deterioration.**
+
+So the ~298 LMT static base and the above-norm surplus are the grain to divert to **processing** — RBO from
+milled paddy, fortification, OMSS feedstock — **not because it would otherwise spoil, but because processing
+converts a carry-bleeding idle base into value.** The dead layer is not a storage or spoilage problem; it is
+**a feedstock waiting for a processing offtake, and a carrying-cost line waiting to be retired.**
 
 ## Recommendations
 
-1. **Enforce FIFO issue discipline + depot-level stock ageing transparency** (the IISFM/DOS plumbing exists;
-   [publication doesn't](iisfm-depot-coverage.md)) — surface the LIFO-trapped lots.
-2. **Route the ~298 LMT static base + above-norm surplus to processing**, not indefinite storage — the
-   clearest use of the [World's Largest Grain Storage Plan](national-fci-fpo-food-processing-psu.md)'s
-   PACS processing units.
+1. **Publish depot-level stock ageing** (FIFO is followed and the IISFM/DOS plumbing exists;
+   [publication doesn't](iisfm-depot-coverage.md)) — transparency on the age profile would confirm the
+   static base and target it for diversion.
+2. **Route the ~298 LMT static base + above-norm surplus to processing** — not to retire a spoilage risk
+   (negligible) but to **stop the ~₹16,700 cr/yr of carrying cost** on an idle base and convert it to value
+   via the [World's Largest Grain Storage Plan](national-fci-fpo-food-processing-psu.md)'s PACS processing units.
 3. **Size owned/cooperative capacity to the average (~542 LMT), hire for the peak (~910)** — stop paying to
    own capacity for a 101% event that lasts weeks.
 
@@ -82,6 +111,7 @@ LMT is a mid-period covered+CAP approximation (851→918 LMT over the window —
 [storage-scenario](../dashboard/storage-scenario.html)). Offtake ~610 LMT is the 2024-25 *allocation*
 (actual lifting runs slightly lower). FIFO residence and LIFO dead-layer are **inventory-accounting models
 applied to aggregate stock**, not lot-level depot data (which is login-gated in IISFM/DOS) — they bound the
-behaviour, they don't track individual lots. "LIFO" here is the physical worst case (oldest grain stranded),
-not an accounting election. Turnover/residence are all-India aggregates; individual depots vary widely.
+behaviour, they don't track individual lots. "LIFO" here is the counterfactual worst case (oldest grain stranded); FCI officially follows FIFO
+(RS UQ-2435) and actual spoilage is 0.002-0.022% of off-take, so the dead-layer argument is about
+carrying cost, not deterioration. Turnover/residence are all-India aggregates; individual depots vary widely.
 Research synthesis, not an operational audit.
