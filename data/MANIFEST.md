@@ -232,3 +232,12 @@ Karnataka (~₹360 cr dal + oil-in-Indira-kit), Gujarat/AP/Maharashtra/Telangana
 on state civil-supplies portals, per-commodity ₹ not published = n/p), and the NAFED central pulse channel
 (5.5 LMT to 11 states; chana ₹6,999 cr free 2020). Sources: TNCSC PDS page, state portals, NAFED via
 Business Standard, press 2024-25. Feeds pitch slide 13 + report/msp-crops-refined-oil-source.md.
+
+## fiscal_ledger_procurement_vs_processing.csv
+The whole-system fiscal ledger: COST side (MSP procurement ~₹2.32 lakh cr to ~1.3 cr farmers — paddy
+~₹1.7L + wheat ₹62,156 cr RMS25-26; food subsidy ₹2.05 lakh cr; oil+pulse imports ~₹2.0 lakh cr;
+excess-stock carry ~₹18,000 cr on ~330 LMT over buffer; bran giveaway ₹7,650 cr) vs RECOVER side
+(import substitution ₹21,087 cr via processing, byproduct ₹7,650 cr, processing-margin 3-5x). No-double-
+count noted (procurement sits inside subsidy). Sources: PIB/FCI procurement, PRS food subsidy, DGCI&S
+imports, FCI stock 738 LMT (1 May 2025). Feeds report/fiscal-rationalisation-procurement-vs-processing.md
++ pitch slide 14.

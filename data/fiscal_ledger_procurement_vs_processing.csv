@@ -1,0 +1,13 @@
+block,line_item,amount_rs_cr,basis,source
+COST — procurement,Paddy MSP paid to farmers (KMS full season),~170000,"~520 LMT rice = ~776 LMT paddy x Rs2300/qtl; PIB KMS24-25 Rs65,695 cr by Dec (partial)","PIB / global-agriculture 2024-25"
+COST — procurement,Wheat MSP paid to farmers (RMS 2025-26),62156,"256.31 LMT, 21.03 lakh farmers",PIB/FCI RMS 2025-26
+COST — procurement,Combined MSP outgo to ~1.3 cr farmers,~232000,paddy + wheat,derived
+COST — holding,FCI central pool stock (1 May 2025),0,"738.19 LMT (wheat 358 + rice 377); buffer norm ~410 LMT -> ~330 LMT excess",igrain/FACTLY/PIB
+COST — holding,Carrying cost of excess stock (~330 LMT),~18000,"~Rs5.6/kg/yr DFPD buffer carry x 330 LMT excess",DFPD carry rate x excess (holding-economics.md)
+COST — subsidy,Central food subsidy FY24-25,205250,"economic cost minus ~Rs0 issue price; free grain to ~80 cr (NFSA+PMGKAY)",PRS Demand for Grants 2024-25
+COST — imports,Edible oil imports,168000,"168 LMT; US$19.3bn",DGCI&S/DFPD/SEA
+COST — imports,Pulses imports,~31000,"~6.7 MT; $3.74bn FY24",DGCI&S / stability-layer
+COST — imports,Total imports of MSP-crop-derivable goods,~199000,oil + pulses,derived
+RECOVER — substitution,Import-substitution via food processing,21087,"RBO 7,544 + pulses ~7,000 + cottonseed 1,975 + starch/silica/protein",consolidated_savings_by_crop.csv
+RECOVER — byproduct,Rice bran given away free under CMR,7650,"~65 LMT bran handed to millers free",omss-processing-returns.md
+RECOVER — margin,Processing margin uplift (branded vs raw),0,"branded staple processing 11-12% EBITDA vs 2-4% raw trading (3-5x)",omss-processing-returns.md
