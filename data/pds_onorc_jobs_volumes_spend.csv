@@ -1,0 +1,16 @@
+dimension,item,value,unit,note,source
+expenditure,Central food subsidy FY24-25,205250,Rs crore,"free rice/wheat to ~80 cr under NFSA+PMGKAY",PRS Demand for Grants 2024-25 (Food & PD)
+expenditure,FPS dealer margin + intra-state movement,7075,Rs crore,assistance to states,PRS 2024-25
+expenditure,Tamil Nadu special-PDS palmolein+tur dal,3800,Rs crore,"palmolein sold Rs25/L on ~Rs65/L subsidy (imported)",TNCSC / press 2024-25
+expenditure,NFSA issue price rice/wheat,3/2,Rs per kg,"nominal; free under PMGKAY since Jan-2024 (5-yr)",DFPD/NFSA
+volume,Rice procurement (central pool),~520,LMT,"~52 MT/yr",DFPD/FCI
+volume,Wheat procurement RMS 2025-26,300.35,LMT,"~30 MT",DFPD/PIB
+volume,Paddy milled per year,~850,LMT,"~85 MT throughput of rice-milling industry",DCMSME / industry
+volume,Domestic edible oil output,122,LMT,44% of demand,NITI 2024
+volume,Edible oil imports,168,LMT,"57% of demand; US$19.3bn / Rs1.68 lakh cr",DGCI&S/DFPD/SEA
+volume,Rice bran oil output,~10,LMT,India world #1,USDA/SEA
+volume,Oilseed production 2025-26,40.99,MT,9 cultivated oilseeds (2nd AE),DFPD edible-oil scenario
+jobs,Fair Price Shops,5.43,lakh,"5.41 lakh ePoS-automated; dealer+staff livelihoods",DFPD/PIB 2024
+jobs,Rice mills,75000-100000,mills,"10-50 workers each; TN 3,399 / AP 1,913 / WB 1,873 lead",DCMSME / industry
+jobs,Solvent extraction plants,~350,plants,"875 SEA members; 30 MT processing capacity",SEA of India
+jobs,NFSA beneficiaries / ration cards,80 cr / 20.54 cr,persons/cards,"ONORC live in all 36 States/UTs",DFPD/PIB

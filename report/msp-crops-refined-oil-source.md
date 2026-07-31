@@ -231,6 +231,26 @@ rice bran oil → back into the PDS as the edible-oil ration.** Import substitut
 put on the ration shelf — from feedstock the PDS operation *already generates and currently gives
 away.*
 
+### The scale that already exists — jobs, volumes, expenditure
+
+The PDS is not a system to be built; it is one to be *redirected*. What the state already runs
+([`data/pds_onorc_jobs_volumes_spend.csv`](../data/pds_onorc_jobs_volumes_spend.csv)):
+
+| | | |
+|---|---|---|
+| **Expenditure** | Central food subsidy FY25 | **₹2.05 lakh cr** (free grain to ~80 cr) + ₹7,075 cr FPS margins |
+| | Tamil Nadu special-PDS oil+dal | **₹3,800 cr** — palmolein ₹25/L on ~₹65/L subsidy, *on an import* (AP/KA/TG/WB run their own) |
+| **Volumes** | Rice / wheat procured | ~520 LMT / 300 LMT · **~850 LMT paddy milled/yr** |
+| | Rice bran oil output | ~10 LMT (India #1) · domestic edible oil 122 LMT vs 168 LMT imported |
+| **Jobs** | Fair Price Shops | **5.43 lakh** (99.8% ePoS) — dealer + staff livelihoods in every district |
+| | Rice mills / solvent-extraction plants | **75k–100k** mills (10–50 workers each) · **~350** solvent plants (30 MT capacity) |
+| **Reach** | ONORC coverage | **36/36 States/UTs**, 20.54 cr cards, ~80 cr people — portable, deduplicated |
+
+The point of the table: **every rupee of PDS *oil* subsidy currently redirected to imported palmolein
+could instead flow to the 75k–100k rice mills, ~350 solvent plants and the oilseed farms that make
+domestic oil** — import substitution *and* employment, on demand infrastructure (₹2 lakh cr, 5.43
+lakh shops, 80 cr beneficiaries) that already exists and that ONORC has already unified.
+
 ### Why One Nation One Ration Card is the enabler — added to its benefits
 
 ONORC's usual benefits are stated in migrant-welfare terms (portability — collect your ration

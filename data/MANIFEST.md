@@ -215,3 +215,12 @@ Source: DGCI&S TradeStat EIDB commodity-wise (value + quantity files, generated 
 value ÷ quantity for unit prices, ~₹87/US$). Totals: US$19.3 bn / 168 LMT / ₹1.68 lakh cr,
 weighted-avg landed crude ~₹100/kg. Cross-checks DFPD (US$19.2 bn FY24) and SEA (16.3 MT /
 ₹1.61 lakh cr MY24-25). Consumed by report/msp-crops-refined-oil-source.md.
+
+## pds_onorc_jobs_volumes_spend.csv
+The scale of India's PDS/ONORC system that a domestic-RBO-for-PDS shift would redirect: state/central
+expenditure (central food subsidy ₹2.05 lakh cr FY25; TN special-PDS oil+dal ₹3,800 cr), production/
+procurement volumes (rice ~520 LMT, wheat 300 LMT, ~850 LMT paddy milled, RBO ~10 LMT, edible oil
+122 LMT domestic vs 168 LMT imported), and jobs (5.43 lakh Fair Price Shops, 75k-100k rice mills,
+~350 solvent-extraction plants), plus ONORC reach (36/36 States/UTs, ~80 cr beneficiaries). Sources:
+PRS Demand-for-Grants 2024-25, DFPD/PIB Year-End 2024, TNCSC, DCMSME, SEA of India. Feeds pitch deck
+slide 12 and report/msp-crops-refined-oil-source.md.
