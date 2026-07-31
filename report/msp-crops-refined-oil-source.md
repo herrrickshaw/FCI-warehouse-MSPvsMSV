@@ -180,6 +180,90 @@ the loose version of this argument makes is claiming domestic oilseeds will unde
 the shelf. They won't. What they will do is cut the *volume* imported and keep the money, the cake,
 and the security at home.
 
+## The import-substitution savings estimate
+
+Putting numbers to the tiers — what FCI/CMR stock reutilisation and oilseed procurement can actually
+save against the ₹1.68 lakh-cr import bill:
+
+| Tier | Stream | Mechanism | Vol (LMT) | ₹/kg edge | Savings ₹cr/yr | Confidence |
+|---|---|---|---|---|---|---|
+| **A** | **Rice bran oil** | capture CMR bran (state owns the feedstock) | 7.7 | 45 | **7,544** | High |
+| **A** | **Cottonseed oil** | crush margin + oil-cake, from an MSP crop | 2.0 | ~10 | **1,975** | Med-High |
+| **B** | Soy/sunflower crush | buffer oilseed → domestic crush; cake credit + forex | at parity | system | ~1,500 | Directional |
+| | **Capturable now (Tier A + B system)** | | | | **~₹11,000 cr/yr** | |
+| **C** | Mustard/groundnut | production growth (NMEO-OS 39→69.7 MT) | multi-yr | premium | *ceiling below* | Lever |
+
+**Two honest headline numbers:**
+
+1. **~₹11,000 cr/yr is capturable now** — dominated by rice-bran-oil capture (₹7,544 cr), on
+   feedstock the state *already procures and currently gives away*. This is real, per-kg-cheaper,
+   and needs no new acreage — only a change in how CMR bran is treated. It is ~6.5% of the total
+   oil import bill from byproduct oils alone.
+2. **~₹84,000 cr is the production-lever ceiling** — if NMEO-OS's oilseed target lands and domestic
+   oil output closes even *half* the 168-LMT import gap (~84 LMT × ~₹100/kg), that volume of imports
+   is replaced over 5–7 years. This is the *volume/self-sufficiency* prize, not an in-year saving,
+   and it depends on the oilseed MSV binding (next section). It is a ceiling, quoted as such.
+
+The gap between the two — ₹11,000 cr you can bank now vs ₹84,000 cr you can build toward — is the
+whole strategic point: **start with the byproduct oil the state already holds, use the proceeds and
+the processing base to fund the production lever that closes the rest.**
+
+## The PDS comparison — and why One Nation One Ration Card makes domestic RBO the natural PDS oil
+
+Set the oil economics against what the state already sells through the ration system:
+
+| PDS commodity | What the beneficiary pays | What it costs the state | Sourced from |
+|---|---|---|---|
+| **Rice (NFSA/PMGKAY)** | **₹0 — free** since Jan 2023 | ~₹40/kg economic cost (GoI) | domestic procurement |
+| **Wheat (NFSA/PMGKAY)** | **₹0 — free** | ~₹27/kg economic cost (GoI) | domestic procurement |
+| **PDS edible oil** (TN, AP etc., a *state* special-PDS item) | **~₹25/litre** | **subsidy risen ₹20→₹65/litre (2007→Jun 2024)** | **imported palmolein** |
+
+The contrast is the whole point. **India procures grain domestically and gives it away free; but the
+one PDS item it does *not* source at home — edible oil — is an imported palmolein the state
+subsidises by ~₹65/litre.** Tamil Nadu's special-PDS tur-dal + palmolein bill alone is **~₹3,800 cr
+for 2024-25** ([sources below]). The state is subsidising an *import*, when the paddy it mills for
+that same free PDS rice throws off the bran to make a **cheaper, healthier domestic oil (RBO ₹60/kg
+ex-mill vs the ~₹95–105/kg palmolein it imports).**
+
+**The loop closes on itself:** FCI/state agencies mill paddy → free PDS rice → **bran byproduct →
+rice bran oil → back into the PDS as the edible-oil ration.** Import substituted at both ends, the
+₹45/kg edge banked against the subsidy bill, and the healthiest mass oil (γ-oryzanol, tocotrienols)
+put on the ration shelf — from feedstock the PDS operation *already generates and currently gives
+away.*
+
+### Why One Nation One Ration Card is the enabler — added to its benefits
+
+ONORC's usual benefits are stated in migrant-welfare terms (portability — collect your ration
+anywhere on one card). But it also does something this thesis needs: **it turns the PDS into a
+single, deduplicated, portable national demand signal** — and that is exactly the *contractable
+captive offtake* a domestic-RBO-for-PDS supply chain requires:
+
+1. **A unified ~81-crore addressable offtake.** ONORC standardises entitlements into one national
+   system, so a domestic PDS edible oil (RBO) would have a nationwide, predictable demand backbone —
+   not 36 fragmented state schemes. That scale is what justifies building domestic RBO/fortification
+   capacity against a *contract*, the demand certainty the whole [markets case](demand-and-exports-highmargin.md)
+   is built on.
+2. **Deduplication tightens the contract.** Aadhaar-seeded ONORC removed crores of duplicate/bogus
+   cards — so the demand estimate a supplier contracts against is *real*, not inflated. A cleaner
+   denominator makes a state RBO-offtake agreement bankable.
+3. **Portability enables a national fortified-oil standard.** Because the entitlement moves with the
+   beneficiary, PDS oil can be a *single national fortified product* rather than state-specific SKUs
+   — and RBO is a natural fortification carrier (already Vitamin-E rich; a Vit-A/D fortified PDS-RBO
+   rides the [FRK fortification precedent](demand-and-exports-highmargin.md)). ONORC is the delivery
+   rail; domestic fortified RBO is the ideal cargo.
+4. **It converts a subsidy-on-imports into a subsidy-on-domestic-value.** Every litre of PDS oil
+   shifted from imported palmolein to domestic RBO keeps the ₹65/litre subsidy circulating as farm
+   income, milling wages and forex retained — the same rupee, spent at home — while the portable
+   national system makes that shift administrable at scale.
+
+**Honest caveats:** PDS edible oil is today a *state* special-PDS item (Tamil Nadu, Andhra Pradesh,
+etc.), not a central NFSA entitlement — making it national is a policy-and-fiscal choice, not a given.
+And total domestic RBO output (~10 LMT) cannot alone supply a full national PDS oil ration yet; RBO
+would substitute the *premium/health* slice and the states already running oil-PDS, with cottonseed
+and the oilseed production lever filling the rest over time. The ONORC point is directional: it makes
+domestic PDS oil *administrable and contractable at national scale* — it does not by itself create the
+supply.
+
 ## The mechanism: MSP → a binding MSV as the production catalyst
 
 The reason domestic oil output is stuck at 44% of demand is not agronomy — it is that the oilseed
@@ -227,7 +311,13 @@ oilseed production 40.99 MT and the crop→oil taxonomy are [DFPD's edible-oil s
 (2nd AE, 10.03.2026); the 16.3 MT / ₹1.61 lakh cr oil-year import totals and palm-vs-soft-oil shares
 are [SEA](https://seaofindia.com/) (MY2024-25). Oil-year (Nov–Oct) and fiscal-year (Apr–Mar) totals
 differ slightly by construction; both are cited as reported.
-Rice-bran-oil functional/health and cooking-property claims are from the International Association of
+PDS issue prices (free grain under NFSA/PMGKAY since Jan 2023), FCI economic cost (rice ~₹40, wheat
+~₹27/kg) are DFPD/FCI; the Tamil Nadu special-PDS palmolein at ₹25/litre, the ₹20→₹65/litre subsidy
+rise (2007→Jun 2024) and the ~₹3,800 cr TN tur-dal+palmolein bill (2024-25) are TNCSC / press
+([gleaf.in](https://www.gleaf.in/news/price-rise-tamil-nadu-govt-may-rejig-pds-of-oil),
+[TNCSC PDS](https://tncsc.tn.gov.in/en/PDS.html)); ONORC coverage (~81 cr, Aadhaar-seeded portability)
+is DFPD/PIB — treat state-scheme figures as reported. Rice-bran-oil functional/health and
+cooking-property claims are from the International Association of
 Rice Bran Oil (ICRBO 2016, Tokyo) and [Shirai & Tsushita, *Am J Lifestyle Medicine* 2024](https://doi.org/10.1177/15598276241234012)
 (user-supplied) — reported nutritional-research findings, not medical or dietary advice.
 **This is research synthesis, not investment or policy advice.** The central honest claim — Tier-A
