@@ -267,3 +267,10 @@ Sourced volume/savings chain for the import-substitution argument: OMSS(D) 2023-
 1.62 LMT rice sold, PIB 2000937); Ethanol EBP (38->661 cr L, 20% blend Mar-2025, Rs1.36 lakh cr forex
 saved, PIB 2113234); RBO (40-98 LMT bran -> 6.4-15.7 LMT oil -> Rs6,698-16,464 cr import displaced,
 rbo_savings_scenarios.py). Feeds report/omss-ethanol-rbo-import-substitution.md.
+
+## cag_fci_audit_findings.csv
+Audited findings from CAG Report No. 20 of 2023 (Performance Audit on FCI storage & movement, 2017-22)
+that independently validate the project's storage-inefficiency critique: avoidable hiring Rs62.76 cr +
+carry-over Rs170.26 cr (despite own vacant CAP), augmentation shortfall (12.25 of 34.50 LMT), LTTC
+freight-rebate lapse Rs1,736.11 cr, blocked Sangrur silo stock, Jharkhand railhead-issue Rs158.88 cr,
+FSSAI-testing gap. ~Rs2,383 cr quantified. Feeds report/cag-audit-fci-findings.md.

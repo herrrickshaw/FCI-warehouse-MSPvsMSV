@@ -111,7 +111,9 @@ converts a carry-bleeding idle base into value.** The dead layer is not a storag
    (negligible) but to **stop the ~₹16,700 cr/yr of carrying cost** on an idle base and convert it to value
    via the [World's Largest Grain Storage Plan](national-fci-fpo-food-processing-psu.md)'s PACS processing units.
 3. **Size owned/cooperative capacity to the average (~542 LMT), hire for the peak (~910)** — stop paying to
-   own capacity for a 101% event that lasts weeks.
+   own capacity for a 101% event that lasts weeks. *(The [CAG (Report 20 of 2023)](cag-audit-fci-findings.md)
+   audited exactly this waste: ₹62.76 cr of avoidable hiring in Punjab/Haryana **despite own vacant CAP**, plus
+   ₹170.26 cr in avoidable carry-over charges.)*
 
 ## Caveats
 
