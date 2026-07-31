@@ -1,0 +1,7 @@
+year,phase,fci_lmt,fci_state_covered_cap_lmt,total_ag_storage_lmt,coop_added_lmt,peak_stock_lmt,pib_source
+2018,historical,360,851.54,,0,700,"PIB PRID 1564065 (31-12-2018: 851.54 LMT = 724.79 covered + 126.75 CAP, FCI+CWC+State)"
+2021,historical,362,880,,0,907,"stock: DFPD Foodgrain Bulletin (record central-pool ~907 LMT, Jul-2021)"
+2023,historical,371.93,900,1450,0,559,"PIB PRID 1945170 (01-07-2023: FCI 1,923 warehouses, 371.93 LMT); storage-plan baseline total ~1,450 LMT"
+2025,historical,372,917.83,,60,615,"PIB PRID 2172351 (01-07-2025: FCI+State 917.83 LMT covered+CAP); PRID 2086345/2210211 Year-End Reviews"
+2028,scenario_plan,375,1150,1800,400,650,"World's Largest Grain Storage Plan ramp (PIB PRID 2080612): +700 LMT coop over 5 yrs; silos 100 LMT PPP + Punjab 21 LMT"
+2031,scenario_full,380,1400,2150,700,700,"plan-complete (PIB PRID 2080612): +700 LMT cooperative -> total ag storage 1,450 -> 2,150 LMT; hiring falls as owned+coop rise"

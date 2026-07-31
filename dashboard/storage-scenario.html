@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FCI Storage Scenario — historical capacity, stock, and the road to 2,150 LMT</title>
+<style>
+  :root{--paper:#f7f5ef;--panel:#fffefb;--ink:#1b2019;--ink-2:#54604f;--ink-3:#8a917f;--hair:#e2ddd0;
+    --green:#2f7a4f;--green-d:#1f5637;--gold:#b7791f;--coop:#c8952a;--stock:#3b6ea5;--band:#efece2;}
+  @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--paper:#12140f;--panel:#191c15;
+    --ink:#eef0e8;--ink-2:#aab19c;--ink-3:#79806d;--hair:#2a2e22;--green:#4ea877;--green-d:#7cc79c;
+    --gold:#d6a24a;--coop:#d6a24a;--stock:#6aa0d6;--band:#1b1e16;}}
+  :root[data-theme="dark"]{--paper:#12140f;--panel:#191c15;--ink:#eef0e8;--ink-2:#aab19c;--ink-3:#79806d;
+    --hair:#2a2e22;--green:#4ea877;--green-d:#7cc79c;--gold:#d6a24a;--coop:#d6a24a;--stock:#6aa0d6;--band:#1b1e16;}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--band);color:var(--ink);font:15px/1.5 "Iowan Old Style",Palatino,Georgia,serif;padding:24px 16px 60px}
+  .wrap{max-width:960px;margin:0 auto}
+  h1{font-size:clamp(21px,3.2vw,29px);font-weight:600;margin-bottom:4px}
+  .sub{color:var(--ink-2);margin-bottom:14px;max-width:82ch}
+  .mono{font-family:"SF Mono",Menlo,monospace}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;font-family:"SF Mono",Menlo,monospace;font-size:12px;color:var(--ink-2);margin:8px 0 6px}
+  .legend .sw{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:5px;vertical-align:-2px}
+  .chart{background:var(--panel);border:1px solid var(--hair);border-radius:10px;padding:14px 10px 8px;overflow-x:auto}
+  svg{display:block;width:100%;height:auto;min-width:640px}
+  .gl{stroke:var(--hair);stroke-width:1}
+  .axlab{fill:var(--ink-3);font-family:"SF Mono",Menlo,monospace;font-size:11px}
+  .yr{fill:var(--ink);font-family:"SF Mono",Menlo,monospace;font-size:12px;font-weight:700;text-anchor:middle}
+  .phase{fill:var(--ink-3);font-family:"SF Mono",Menlo,monospace;font-size:9.5px;text-anchor:middle;text-transform:uppercase;letter-spacing:.04em}
+  .val{fill:var(--ink);font-family:"SF Mono",Menlo,monospace;font-size:10.5px;text-anchor:middle}
+  .note{border-left:3px solid var(--gold);padding:4px 0 4px 14px;color:var(--ink-2);font-size:14px;margin:14px 0}
+  footer{margin-top:16px;padding-top:12px;border-top:1px solid var(--hair);color:var(--ink-3);font-size:11.5px;font-family:"SF Mono",Menlo,monospace}
+  a{color:var(--stock)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>FCI storage scenario — from 851 LMT to the 2,150 LMT plan</h1>
+  <p class="sub">India's grain-storage system has grown slowly (851→918 LMT, FCI+State, 2018→2025) while
+  central-pool <b>stock</b> swings 300–900 LMT with the crop cycle. The <b>World's Largest Grain Storage
+  Plan</b> (2023, ₹1 lakh cr) now adds <b>+700 LMT of cooperative (PACS) capacity</b> to lift total
+  agri-storage from 1,450 to <b>2,150 LMT</b>. Each figure is PIB-sourced (below).</p>
+  <div class="legend">
+    <span><span class="sw" style="background:var(--green)"></span>FCI + State covered+CAP (LMT)</span>
+    <span><span class="sw" style="background:var(--coop);opacity:.55"></span>+ cooperative / total agri-storage (plan)</span>
+    <span><span class="sw" style="background:var(--stock)"></span>peak central-pool stock (LMT)</span>
+    <span><span class="sw" style="background:transparent;border:1px dashed var(--ink-3)"></span>2,150 LMT target</span>
+  </div>
+  <div class="chart"><svg id="svg" viewBox="0 0 900 470"></svg></div>
+  <div class="note"><b>The scenario story:</b> in mid-2021 stock hit a record <b>~907 LMT</b> — brushing
+  the covered-godown ceiling and spilling into open CAP/hired space (FCI is <b>70% hired</b>, only ~147 LMT
+  owned). The cooperative plan fixes this at the <b>village level</b> (PACS godowns, 1,000 MT each; 2,000 MT
+  hubs) — turning rented, centralised, over-stretched storage into owned, distributed capacity that doubles
+  as procurement centres, Fair Price Shops and <b>processing units</b> — the feedstock node for the biorefinery.</div>
+  <footer>
+  Sources — 2018: <a href="https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1564065">PIB PRID 1564065</a> (851.54 LMT, 31-12-2018).
+  2023: <a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1945170">PIB PRID 1945170</a> (FCI 1,923 warehouses / 371.93 LMT, 01-07-2023).
+  2025: <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2172351">PIB PRID 2172351</a> (FCI+State 917.83 LMT covered+CAP, 01-07-2025) + Year-End Reviews
+  <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2086345">2024</a>/<a href="https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2210211&reg=3&lang=2">2025</a>.
+  Plan: <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2080612">PIB PRID 2080612</a> (+700 LMT cooperative → 2,150 LMT).
+  Stock: DFPD Foodgrain Bulletin monthly series. Data: data/fci_storage_scenario.csv. Scenario years (2028/2031) are plan-ramp illustrations, not official forecasts.</footer>
+</div>
+<script>
+// year, phase, fciState(green), totalAg(faint gold, 0=none shown), peakStock
+const D=[
+ ["2018","historical",851,0,700],
+ ["2021","historical",880,0,907],
+ ["2023","historical",900,1450,559],
+ ["2025","historical",918,0,615],
+ ["2028","plan (ramp)",1150,1800,650],
+ ["2031","plan (full)",1400,2150,700],
+];
+const W=900,H=470,ML=52,MR=20,MT=24,MB=54, YMAX=2200;
+const x0=ML, x1=W-MR, y0=H-MB, y1=MT;
+const y=v=>y0-(v/YMAX)*(y0-y1);
+const n=D.length, band=(x1-x0)/n, bw=band*0.42;
+const svg=document.getElementById("svg");
+let s="";
+// gridlines + y labels
+[0,500,1000,1450,2150,2000].forEach(v=>{
+  s+=`<line class="gl" x1="${x0}" y1="${y(v)}" x2="${x1}" y2="${y(v)}"/>`;
+  s+=`<text class="axlab" x="${x0-8}" y="${y(v)+3}" text-anchor="end">${v}</text>`;
+});
+// 2150 target dashed
+s+=`<line x1="${x0}" y1="${y(2150)}" x2="${x1}" y2="${y(2150)}" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="6 4"/>`;
+// bars
+D.forEach((d,i)=>{
+  const [yr,ph,fs,tot,st]=d;
+  const cx=x0+band*i+band/2;
+  // faint total-ag bar (behind)
+  if(tot){ s+=`<rect x="${cx-bw*0.7}" y="${y(tot)}" width="${bw*1.4}" height="${y0-y(tot)}" fill="var(--coop)" opacity="0.28" rx="3"/>`;
+    s+=`<text class="val" x="${cx}" y="${y(tot)-4}" fill="var(--coop)">${tot}</text>`; }
+  // FCI+State bar
+  s+=`<rect x="${cx-bw/2}" y="${y(fs)}" width="${bw}" height="${y0-y(fs)}" fill="var(--green)" rx="3"/>`;
+  s+=`<text class="val" x="${cx}" y="${y(fs)-4}">${fs}</text>`;
+  // stock dot
+  s+=`<circle cx="${cx}" cy="${y(st)}" r="4.5" fill="var(--stock)"/>`;
+  s+=`<text class="val" x="${cx+16}" y="${y(st)+3}" fill="var(--stock)" text-anchor="start">${st}</text>`;
+  // year + phase
+  s+=`<text class="yr" x="${cx}" y="${y0+18}">${yr}</text>`;
+  s+=`<text class="phase" x="${cx}" y="${y0+32}">${ph}</text>`;
+});
+// stock line connecting dots
+s+=`<polyline points="${D.map((d,i)=>`${x0+band*i+band/2},${y(d[4])}`).join(' ')}" fill="none" stroke="var(--stock)" stroke-width="1.4" opacity="0.55"/>`;
+// axis title
+s+=`<text class="axlab" x="${x0-40}" y="${MT+2}" transform="rotate(-90 ${x0-40} ${MT+2})" text-anchor="end">Lakh Metric Tonnes (LMT)</text>`;
+svg.innerHTML=s;
+</script>
+</body>
+</html>
