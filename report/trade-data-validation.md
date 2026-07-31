@@ -4,7 +4,7 @@
 DGCI&S TradeStat EIDB commodity-wise (user-supplied, "Values in US$ Million", FY2024-25 &
 FY2025-26 provisional, generated 30 Jul 2026). July 2026.*
 
-## Result: the parity data is confirmed; one unit-label error was found and fixed
+## Result: parity + rice + wheat confirmed; one unit-label error found and fixed
 
 ### 1. `trade_price_parity.csv` — CONFIRMED ✓
 
@@ -29,7 +29,39 @@ figure cited in [demand-and-exports-highmargin.md](demand-and-exports-highmargin
 parity dataset the earlier agent built by reverse-engineering the APEDA/DGCI&S APIs is validated
 against the primary customs source — no revision needed.
 
-### 2. `wheat_products_trade_dgcis.csv` — unit error found & FIXED
+### 2. Rice export figures — CONFIRMED ✓
+
+The rice figures in [demand-and-exports-highmargin.md](demand-and-exports-highmargin.md) tie out
+exactly to TradeStat (FY2024-25, US$ mn):
+
+| Rice | Report | TradeStat | Match |
+|---|---|---|---|
+| Basmati export | $5.94 bn (₹50,000 cr) | $5,944 mn | ✓ |
+| Non-basmati export | $6.53 bn (₹55,408 cr) | $6,528 mn | ✓ |
+| All rice export | ~$12.5 bn | $12,472 mn | ✓ |
+
+**Data-continuity note:** in FY2025-26 DGCI&S *restructured the rice HS-8 codes* — the old
+`10063020` (basmati) / `10063010` (parboiled) / `10063090` (other) show zero, replaced by new
+granular codes (`10063012` parboiled basmati $2,814 mn, `10063019` parboiled other $3,555 mn,
+`10063092` basmati $2,859 mn, `10063099` others $1,650 mn). Any rice export *time series* must
+map old→new codes across the FY25/FY26 boundary or it will show a false cliff. The aggregate
+(~$12 bn) is continuous; the code-level split is not.
+
+### 3. Wheat trade — CONFIRMED ✓ (and it confirms the export ban)
+
+| Wheat | TradeStat FY24-25 | FY25-26 | Reading |
+|---|---|---|---|
+| Export | $2.0 mn | $10.3 mn | **near-zero — the May-2022 export ban still binds** |
+| Import | $43.5 mn | $27.6 mn | small, deficit-year grain |
+
+India's wheat *export* is a rounding error ($2–10 mn) — confirming the export-ban context used
+throughout the [diplomacy](rice-diplomacy-history.md) and [new-markets](new-markets-evaluation.md)
+reports. Wheat *procurement* (300.35 LMT, RMS 2025-26) and *production* figures are DFPD/PIB/
+Economic Survey series, not trade — separately cross-validated against ES Table 26
+([data manifest](../data/MANIFEST.md)); TradeStat neither confirms nor contradicts them (different
+domain).
+
+### 4. `wheat_products_trade_dgcis.csv` — unit error found & FIXED
 
 The wheat-products file was initially labelled **₹ crore**; the TradeStat header states
 **"Values in US$ Million"**. The *numbers* were correct (60.7, 63.0, …) but the *unit* was
