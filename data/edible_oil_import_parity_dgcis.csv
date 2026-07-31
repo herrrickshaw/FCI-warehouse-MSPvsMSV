@@ -1,0 +1,13 @@
+hs_code,commodity,import_value_usd_mn_25_26,import_volume_lmt_25_26,unit_usd_per_tonne,landed_rs_per_kg,note
+15111000,Crude palm oil,9052.9,81.75,1107,96.3,largest single import; Indonesia/Malaysia
+15119020,RBD palmolein,371.9,3.43,1086,94.5,collapsed from $1797mn FY24-25 on duty change
+15119090,Other refined palm,90.7,0.73,1242,108.0,
+15071000,Soyabean crude oil,5256.8,47.11,1116,97.1,Argentina/Brazil
+15079010,Soyabean oil edible,949.6,6.52,1457,126.8,
+15121110,Sunflower crude oil,3254.8,26.82,1214,105.6,Russia/Ukraine/Argentina
+15121910,Sunflower oil edible,66.4,0.43,1532,133.3,
+15132110,Crude palm kernel oil,143.5,0.77,1866,162.3,
+15132910,Refined palm kernel oil,33.9,0.16,2088,181.6,
+15141120,Crude rape oil,37.4,0.32,1167,101.5,
+15149190,Crude rapeseed oil,10.5,0.07,1464,127.4,
+TOTAL,All edible oils,19268.4,168.11,1146,99.7,"US$19.3bn = Rs 1.68 lakh cr; weighted-avg landed crude Rs ~100/kg (CIF, pre-27.5% duty, pre-refining margin)"

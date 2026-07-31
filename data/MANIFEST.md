@@ -207,3 +207,11 @@ PML interest, loss norms) are cited in `report/holding-economics.md`.
 - **farmer_income_dfi.csv** — farmer income (SAS ₹6,426→10,218; NAFIS ₹8,059→13,661) + DFI goal (Dalwai real-doubling by 2022-23, 10.4% CAGR needed) + progress (nominal +57-70%, real doubling missed) + income composition. Sources: PIB/NSSO/NABARD.
 - **real_farm_income_index.csv** + **rfii_monitor.py** — Real Farm Income Index (RFII): nominal income ÷ CPI-AL, base 2016-17=100, doubling target=200. Last measured 130.9 (2021-22); ~a third of the way, ~2030 at current pace. Refresh: CPI-AL monthly (MoSPI CPIALRL), income per SAS/NAFIS survey. Latest CPI-AL 1320 (+52% since 2015-16).
 - **wheat_products_trade_dgcis.csv** — DGCI&S TradeStat EIDB exact 8-digit HS trade (₹cr, FY24-25 & FY25-26) for pasta/biscuits/cereals/gluten/semolina/flour; pasta net-export ₹63cr but imports +24%, gluten imports +35%, biscuits export ₹686cr. Source: user-supplied TradeStat files.
+
+## edible_oil_import_parity_dgcis.csv
+India's edible-oil imports by 8-digit HS, FY2025-26 (provisional): value (US$ mn), volume (LMT),
+and derived unit price (US$/tonne, ₹/kg landed CIF) for palm/soy/sunflower/palm-kernel/rape oils.
+Source: DGCI&S TradeStat EIDB commodity-wise (value + quantity files, generated 30 Jul 2026;
+value ÷ quantity for unit prices, ~₹87/US$). Totals: US$19.3 bn / 168 LMT / ₹1.68 lakh cr,
+weighted-avg landed crude ~₹100/kg. Cross-checks DFPD (US$19.2 bn FY24) and SEA (16.3 MT /
+₹1.61 lakh cr MY24-25). Consumed by report/msp-crops-refined-oil-source.md.
