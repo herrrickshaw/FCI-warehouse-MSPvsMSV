@@ -49,9 +49,10 @@
 <div class="wrap">
   <h1>India — where the grain, the storage, and the farmers are</h1>
   <p class="sub">Schematic state map (approximate geography, not to scale). Each tile: lead grain/feedstock
-  (left-border colour), <b style="color:var(--green)">FCI+hired storage</b> (green bar, LMT) and
-  <b style="color:var(--gold)">SFAC FPOs</b> (gold bar, count). The point: the storage belt and the
-  FPO belt are <b>different states</b> — Madhya Pradesh is the one with both.</p>
+  (left-border colour), <b style="color:var(--green)">covered storage</b> (green bar, LMT · S) ·
+  <b style="color:var(--gold)">SFAC FPOs</b> (gold bar · F) · <b>FCI depots</b> (owned+hired warehouse
+  count · D). The point: the storage belt and the FPO belt are <b>different states</b> — Madhya Pradesh
+  is the one with both, and Punjab has <b>569 FCI depots</b> but only 78 FPOs.</p>
   <div class="legend">
     <span><span class="sw" style="background:var(--wheat)"></span>wheat-led</span>
     <span><span class="sw" style="background:var(--paddy)"></span>paddy-led</span>
@@ -60,48 +61,50 @@
     <span style="margin-left:auto"><span class="bar s" style="width:24px;display:inline-block"></span> storage LMT &nbsp; <span class="bar f" style="width:24px;display:inline-block"></span> FPOs</span>
   </div>
   <div class="grid" id="grid"></div>
-  <footer>Storage: DFPD Foodgrain Bulletin Nov-2024 (FCI-owned + hired CWC/SWC/PEG/private, ~841 LMT all-India).
-  FPOs: SFAC state-wise 10,000-FPO registry 24-02-2025 (3,649 — SFAC channel only; NABARD/NCDC add more; India ~45,000 total).
-  Bars scaled to the max in each series (storage max 200 LMT = MP; FPO max 758 = UP). Schematic layout — data/national_fci_fpo_by_state.csv.</footer>
+  <footer>Storage (S): DFPD Foodgrain Bulletin Nov-2024 — all covered storage (FCI-owned + hired CWC/SWC/PEG/private), ~841 LMT all-India.
+  FCI depots (D): FCI owned+hired warehouse count, Rajya Sabha UQ-398 (01-11-2022) — 1,918 warehouses (566 owned + 1,352 hired), 362.71 LMT FCI-scope.
+  FPOs (F): SFAC 10,000-FPO registry 24-02-2025 (3,649 — SFAC channel only; NABARD/NCDC add more; India ~45,000 total).
+  Note: S (all-agency capacity) and D (FCI depot count) are different scopes — MP has huge hired/PEG capacity but few FCI-owned depots.
+  Bars scaled to series max (storage 200 LMT=MP; FPO 758=UP). Schematic layout — data/national_fci_fpo_by_state.csv.</footer>
 </div>
 <script>
-// [name, gridCol, gridRow, storageLMT, fpos, cropClass, cropLabel]
+// [name, gridCol, gridRow, storageLMT, fpos, cropClass, cropLabel, fciDepots]
 const D=[
- ["J&K",3,1,2.3,0,"mixed","mixed"],
- ["Punjab",2,2,175,78,"wheat","wheat·paddy"],
- ["Uttarakhand",4,2,3.5,43,"mixed","mixed"],
- ["Arunachal",8,2,0.4,39,"paddy","paddy"],
- ["Haryana",2,3,100,119,"wheat","wheat·paddy"],
- ["Delhi",3,3,3.3,9,"mixed","mixed"],
- ["Uttar Pradesh",4,3,47,758,"wheat","wheat·paddy·cane"],
- ["Bihar",5,3,21,312,"paddy","paddy·wheat·pulses"],
- ["Assam",7,3,5.3,176,"paddy","paddy·mustard"],
- ["Nagaland",8,3,0.7,8,"paddy","paddy"],
- ["Rajasthan",1,4,16,225,"oilseed","mustard·pulses·bajra"],
- ["Madhya Pradesh",3,4,200,348,"oilseed","wheat·soy·pulses"],
- ["Jharkhand",5,4,6.3,93,"paddy","paddy·pulses"],
- ["West Bengal",6,4,20,156,"paddy","paddy·oilseeds"],
- ["Meghalaya",7,4,0.5,13,"paddy","paddy"],
- ["Manipur",8,4,0.7,10,"paddy","paddy"],
- ["Gujarat",1,5,9.8,141,"oilseed","groundnut·cotton"],
- ["Maharashtra",2,5,24,213,"oilseed","soy·tur·cotton"],
- ["Chhattisgarh",4,5,36,68,"paddy","paddy"],
- ["Odisha",5,5,13,164,"paddy","paddy"],
- ["Tripura",7,5,1.4,36,"paddy","paddy"],
- ["Mizoram",8,5,0.7,14,"paddy","paddy"],
- ["Goa",1,6,0.2,11,"mixed","mixed"],
- ["Telangana",3,6,24,116,"paddy","paddy·groundnut"],
- ["Andhra Pradesh",4,6,25,247,"paddy","paddy·groundnut"],
- ["Karnataka",2,7,9.7,52,"oilseed","pulses·oilseed·millet"],
- ["Tamil Nadu",3,7,21,90,"paddy","paddy·groundnut·pulses"],
- ["Kerala",2,8,7.9,50,"mixed","coconut·rice bran"],
- ["Himachal",3,2,1.0,60,"mixed","mixed"],
+ ["J&K",3,1,2.3,0,"mixed","mixed",25],
+ ["Punjab",2,2,175,78,"wheat","wheat·paddy",569],
+ ["Uttarakhand",4,2,3.5,43,"mixed","mixed",20],
+ ["Arunachal",8,2,0.4,39,"paddy","paddy",16],
+ ["Haryana",2,3,100,119,"wheat","wheat·paddy",262],
+ ["Delhi",3,3,3.3,9,"mixed","mixed",6],
+ ["Uttar Pradesh",4,3,47,758,"wheat","wheat·paddy·cane",198],
+ ["Bihar",5,3,21,312,"paddy","paddy·wheat·pulses",81],
+ ["Assam",7,3,5.3,176,"paddy","paddy·mustard",39],
+ ["Nagaland",8,3,0.7,8,"paddy","paddy",6],
+ ["Rajasthan",1,4,16,225,"oilseed","mustard·pulses·bajra",77],
+ ["Madhya Pradesh",3,4,200,348,"oilseed","wheat·soy·pulses",32],
+ ["Jharkhand",5,4,6.3,93,"paddy","paddy·pulses",47],
+ ["West Bengal",6,4,20,156,"paddy","paddy·oilseeds",27],
+ ["Meghalaya",7,4,0.5,13,"paddy","paddy",6],
+ ["Manipur",8,4,0.7,10,"paddy","paddy",9],
+ ["Gujarat",1,5,9.8,141,"oilseed","groundnut·cotton",37],
+ ["Maharashtra",2,5,24,213,"oilseed","soy·tur·cotton",85],
+ ["Chhattisgarh",4,5,36,68,"paddy","paddy",78],
+ ["Odisha",5,5,13,164,"paddy","paddy",35],
+ ["Tripura",7,5,1.4,36,"paddy","paddy",7],
+ ["Mizoram",8,5,0.7,14,"paddy","paddy",6],
+ ["Goa",1,6,0.2,11,"mixed","mixed",2],
+ ["Telangana",3,6,24,116,"paddy","paddy·groundnut",50],
+ ["Andhra Pradesh",4,6,25,247,"paddy","paddy·groundnut",25],
+ ["Karnataka",2,7,9.7,52,"oilseed","pulses·oilseed·millet",61],
+ ["Tamil Nadu",3,7,21,90,"paddy","paddy·groundnut·pulses",41],
+ ["Kerala",2,8,7.9,50,"mixed","coconut·rice bran",24],
+ ["Himachal",3,2,1.0,60,"mixed","mixed",21],
 ];
 const SMAX=200, FMAX=758, W=88;
 const col={wheat:"var(--wheat)",paddy:"var(--paddy)",oilseed:"var(--oilseed)",mixed:"var(--mixed)"};
 const g=document.getElementById("grid");
 D.forEach(d=>{
-  const [nm,c,r,s,f,cc,cl]=d;
+  const [nm,c,r,s,f,cc,cl,w]=d;
   const el=document.createElement("div");
   el.className="tile";
   el.style.gridColumn=c; el.style.gridRow=r; el.style.borderLeftColor=col[cc];
@@ -109,6 +112,7 @@ D.forEach(d=>{
    <div class="bars">
      <div class="barrow"><span class="lab">S</span><span class="bar s" style="width:${Math.max(2,s/SMAX*W)}px"></span><span class="val">${s>=10?Math.round(s):s}</span></div>
      <div class="barrow"><span class="lab">F</span><span class="bar f" style="width:${Math.max(2,f/FMAX*W)}px"></span><span class="val">${f}</span></div>
+     <div class="barrow"><span class="lab">D</span><span style="color:var(--ink-3)">FCI depots</span><span class="val">${w}</span></div>
    </div>`;
   g.appendChild(el);
 });

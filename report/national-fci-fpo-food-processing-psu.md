@@ -38,6 +38,30 @@ registry, 24-02-2025):
 all-India. SFAC FPOs are the SFAC channel of the 10,000-FPO scheme only — 3,649 nationally; NABARD/
 NCDC/other CBBOs register more, and India has ~45,000 FPOs in total.)*
 
+## FCI depot count per state — the "locations" dimension
+
+Storage *capacity* (above) and the *number of FCI depots* are different lenses. Per the Rajya Sabha
+answer UQ-398 (as on 01-11-2022), **FCI operates 1,918 warehouses — 566 owned + 1,352 hired — of
+362.71 LMT** (the FCI-scope figure; the ~841 LMT above is the broader all-agency covered capacity):
+
+| State | FCI depots (owned+hired) | State | FCI depots |
+|---|---:|---|---:|
+| **Punjab** | **569** | Karnataka | 61 |
+| **Haryana** | 262 | Telangana | 50 |
+| **Uttar Pradesh** | 198 | Jharkhand | 47 |
+| Maharashtra | 85 | Tamil Nadu | 41 |
+| Bihar | 81 | Assam | 39 |
+| Chhattisgarh | 78 | Gujarat | 37 |
+| Rajasthan | 77 | **Madhya Pradesh** | **32** |
+
+The depot count sharpens the map: **Punjab has 569 FCI depots** (the procurement heartland), while
+**MP's 200 LMT of capacity runs through just 32 FCI-owned depots** — because MP's storage is mostly
+*hired/PEG* space, not FCI-owned godowns. So "FCI locations" and "FCI capacity" tell different siting
+stories: Punjab/Haryana are dense with FCI-run depots (co-location easy); MP is capacity-rich but
+depot-light (processing would sit alongside hired/PEG/cooperative storage, not FCI godowns). FCI is
+**70% hired** nationally — reinforcing that a processing build-out plugs into a largely *rented* network,
+not a state-owned one.
+
 ## The finding: storage and farmer-aggregation are in *different* states
 
 The map exposes a structural mismatch the national plan must design around:
