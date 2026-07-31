@@ -274,3 +274,9 @@ that independently validate the project's storage-inefficiency critique: avoidab
 carry-over Rs170.26 cr (despite own vacant CAP), augmentation shortfall (12.25 of 34.50 LMT), LTTC
 freight-rebate lapse Rs1,736.11 cr, blocked Sangrur silo stock, Jharkhand railhead-issue Rs158.88 cr,
 FSSAI-testing gap. ~Rs2,383 cr quantified. Feeds report/cag-audit-fci-findings.md.
+
+## ethanol_fci_40pct_clause.csv
+The BPCL/OMC ethanol tender's FCI-rice clause, ESY 2024-25 vs 2025-26: the NEW (25-26) mandatory floor that
+FCI surplus rice be >=40% of grain-based ethanol (A>=40%x(A+B+C)), with 'sufficient grain' safeguards (52 LMT
+cap -> ~234 cr L, sunset 30-Jun-2026, Q4 barred). FCI rice Rs2,320/qtl -> ethanol Rs60.32/L, ~Rs5.8/kg below
+OMSS rice reserve. Feeds report/ethanol-fci-40pct-clause-evaluation.md.
