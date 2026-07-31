@@ -24,7 +24,7 @@
   .slide{background:var(--paper);border:1px solid var(--hair);border-radius:14px;
     padding:44px 48px;margin-bottom:20px;min-height:540px;position:relative;
     box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column}
-  .slide::before{content:attr(data-n)" / 17";position:absolute;top:20px;right:26px;
+  .slide::before{content:attr(data-n)" / 18";position:absolute;top:20px;right:26px;
     font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--ink-3);letter-spacing:.1em}
   .eyebrow{font-family:"SF Mono",Menlo,monospace;font-size:12px;letter-spacing:.16em;
     text-transform:uppercase;color:var(--green)}
@@ -367,8 +367,35 @@
   <div class="foot">Sources: PRS Demand-for-Grants 2024-25 (Food &amp; PD) · DFPD/PIB Year-End 2024 · TNCSC · DCMSME · SEA of India · data/pds_onorc_jobs_volumes_spend.csv</div>
 </section>
 
-<!-- 12 MODEL -->
+<!-- 13 PER-STATE PDS OIL & PULSE -->
 <section class="slide" data-n="13">
+  <div class="eyebrow">Per-state · who already subsidises oil &amp; pulses in the ration</div>
+  <h2>The oil subsidy is real, state-run, and spent on imports</h2>
+  <table>
+    <tr><th>State</th><th>Oil in PDS</th><th>Pulse in PDS</th><th>Card price</th><th class="n">Spend ₹cr/yr</th></tr>
+    <tr class="hl"><td><strong>Tamil Nadu</strong></td><td>Palmolein 1 L/card</td><td>Tur dal 1 kg</td><td>oil ₹25/L · dal ₹30/kg</td><td class="n">3,800</td></tr>
+    <tr><td>Karnataka</td><td>Palm oil + Indira kit</td><td>Tur/moong 1 kg</td><td>dal ~₹38/kg</td><td class="n">~360*</td></tr>
+    <tr><td>Gujarat</td><td>Edible oil + sugar</td><td>Chana + tur dal</td><td>subsidised</td><td class="n">n/p</td></tr>
+    <tr><td>Andhra Pradesh</td><td>—</td><td>Tur dal 500 g</td><td>subsidised</td><td class="n">n/p</td></tr>
+    <tr><td>Maharashtra</td><td>—</td><td>Chana + urad</td><td>₹35/kg</td><td class="n">n/p</td></tr>
+    <tr><td>Telangana</td><td>—</td><td>Red gram dal</td><td>subsidised</td><td class="n">n/p</td></tr>
+    <tr><td>Kerala (Supplyco)</td><td>Oil (below-mkt)</td><td>Pulses</td><td>ltd subsidy</td><td class="n">n/p</td></tr>
+    <tr><td>Centre (NAFED)</td><td>—</td><td>5.5 LMT → 11 states</td><td>varies</td><td class="n">6,999†</td></tr>
+  </table>
+  <div class="grid3" style="margin-top:10px">
+    <div class="card"><div class="k">TN palmolein bought</div><div class="v accent">156 lakh L</div><div class="s">+ 20,000 MT tur dal/yr — all imported oil</div></div>
+    <div class="card"><div class="k">States running oil-PDS</div><div class="v accent">4 major</div><div class="s">TN · Karnataka · Gujarat · Kerala</div></div>
+    <div class="card"><div class="k">States taking NAFED pulses</div><div class="v accent">11+</div><div class="s">pulses far more widespread than oil</div></div>
+  </div>
+  <div class="note gold" style="border-color:var(--green)"><strong>Tamil Nadu is the flagship:</strong> ₹3,800 cr
+  a year, almost entirely on <em>imported</em> palmolein — the single largest identifiable state oil subsidy a
+  domestic-RBO switch would redirect. *Karnataka figure is dal-only (oil delivered in-kit); <strong>n/p</strong> =
+  scheme confirmed on state portals but per-commodity spend not published — not zero. †NAFED chana, free to states, 2020.</div>
+  <div class="foot">Sources: TNCSC PDS scale · state civil-supplies portals · NAFED via Business Standard · press 2024-25 · data/pds_state_oil_pulse_expenditure.csv</div>
+</section>
+
+<!-- 12 MODEL -->
+<section class="slide" data-n="14">
   <div class="eyebrow">The model · why government-cooperative-PPP</div>
   <h2>Ring-fence the commercial arm; contract the offtake</h2>
   <div class="grid2">
@@ -389,7 +416,7 @@
 </section>
 
 <!-- 12 THE ASK -->
-<section class="slide" data-n="14">
+<section class="slide" data-n="15">
   <div class="eyebrow">Illustrative pilot</div>
   <h2>One integrated complex, in an operational food park</h2>
   <div class="grid3">
@@ -407,7 +434,7 @@
 </section>
 
 <!-- 13 FARMER INCOME / RFII -->
-<section class="slide" data-n="15">
+<section class="slide" data-n="16">
   <div class="eyebrow">Why it matters · Doubling Farmers' Income</div>
   <h2>Real farm income is ~a third of the way to doubling</h2>
   <div class="grid2">
@@ -434,7 +461,7 @@
 </section>
 
 <!-- 14 CBG LOOP / FUEL -->
-<section class="slide" data-n="16">
+<section class="slide" data-n="17">
   <div class="eyebrow">The farm-side loop · fuel choice</div>
   <h2>Diesel→CNG + residue: the inflation-proof income lever</h2>
   <div class="grid3">
@@ -449,7 +476,7 @@
 </section>
 
 <!-- 15 CLOSE -->
-<section class="slide cover" data-n="17" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
+<section class="slide cover" data-n="18" style="background:linear-gradient(150deg,#1f5637,#2f7a4f)">
   <div class="eyebrow">The one-line case</div>
   <h1 style="font-size:clamp(26px,4.6vw,42px)">Stop gifting the byproduct.<br>Contract the demand. Capture the cascade.</h1>
   <p class="lead" style="color:#eaf3ec;max-width:62ch">India is the world's #1 producer of the raw byproduct and a net importer

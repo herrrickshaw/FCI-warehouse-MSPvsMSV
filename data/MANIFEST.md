@@ -224,3 +224,11 @@ procurement volumes (rice ~520 LMT, wheat 300 LMT, ~850 LMT paddy milled, RBO ~1
 ~350 solvent-extraction plants), plus ONORC reach (36/36 States/UTs, ~80 cr beneficiaries). Sources:
 PRS Demand-for-Grants 2024-25, DFPD/PIB Year-End 2024, TNCSC, DCMSME, SEA of India. Feeds pitch deck
 slide 12 and report/msp-crops-refined-oil-source.md.
+
+## pds_state_oil_pulse_expenditure.csv
+Per-state PDS edible-oil & pulse subsidy schemes (state special-PDS, only partly published): Tamil Nadu
+(palmolein ₹25/L + tur dal ₹30/kg, ₹3,800 cr/yr, 156 lakh L oil + 20,000 MT dal — official TNCSC scale),
+Karnataka (~₹360 cr dal + oil-in-Indira-kit), Gujarat/AP/Maharashtra/Telangana/Kerala (schemes confirmed
+on state civil-supplies portals, per-commodity ₹ not published = n/p), and the NAFED central pulse channel
+(5.5 LMT to 11 states; chana ₹6,999 cr free 2020). Sources: TNCSC PDS page, state portals, NAFED via
+Business Standard, press 2024-25. Feeds pitch slide 13 + report/msp-crops-refined-oil-source.md.

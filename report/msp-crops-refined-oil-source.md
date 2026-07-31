@@ -251,6 +251,34 @@ could instead flow to the 75k–100k rice mills, ~350 solvent plants and the oil
 domestic oil** — import substitution *and* employment, on demand infrastructure (₹2 lakh cr, 5.43
 lakh shops, 80 cr beneficiaries) that already exists and that ONORC has already unified.
 
+### Per-state PDS oil & pulse expenditure
+
+Edible oil and pulses in the PDS are *state* special-PDS schemes, so spend is set state-by-state and
+only partly published. What the official state civil-supplies portals and budgets show
+([`data/pds_state_oil_pulse_expenditure.csv`](../data/pds_state_oil_pulse_expenditure.csv)):
+
+| State | Oil in PDS | Pulse in PDS | Card price | Annual spend (₹cr) |
+|---|---|---|---|---|
+| **Tamil Nadu** | Palmolein 1 L/card | Tur dal 1 kg | **oil ₹25/L · dal ₹30/kg** | **₹3,800** (oil+dal) |
+| **Karnataka** | Palm oil + Indira kit | Tur/moong dal 1 kg | dal ~₹38/kg | **~₹360** (dal) + oil-in-kit |
+| **Gujarat** | Edible oil + sugar | Chana + tur dal | subsidised | *not published* (75 L cards) |
+| **Andhra Pradesh** | — (rice-focused) | Tur dal 500 g/card | subsidised | *not published* (30k FPS) |
+| **Maharashtra** | — | Chana + urad dal | ₹35/kg | *not published* |
+| **Telangana** | — | Red gram dal | subsidised | *not published* |
+| **Kerala** (Supplyco) | Oil (below-market) | Pulses | limited subsidy | *not published* |
+| **Centre (NAFED)** | — | 5.5 LMT pulses → 11 states | varies | **₹6,999** (chana, free, 2020) |
+
+**Reading the table honestly:** only **Tamil Nadu** publishes a clean combined oil-plus-dal figure
+(₹3,800 cr — official TNCSC scale: palmolein ₹25/L, tur dal ₹30/kg, on purchases of 156 lakh litres
+oil + 20,000 MT dal/yr); **Karnataka** publishes a dal figure (~₹360 cr) and delivers oil inside its
+Indira nutrition kit. The other states *run* oil and/or pulse PDS (confirmed on their civil-supplies
+portals) but do **not** break out per-commodity rupee spend, so those cells are marked *not published*
+rather than estimated. Two patterns are clear regardless: **pulses in PDS are far more widespread than
+oil** (11+ states take NAFED subsidised pulses; only TN/Karnataka/Gujarat/Kerala run standing oil-PDS),
+and **Tamil Nadu is the flagship oil-PDS state** — the ₹3,800 cr it spends is almost entirely on
+*imported* palmolein, the single largest identifiable state oil-subsidy that a domestic-RBO switch
+would redirect.
+
 ### Why One Nation One Ration Card is the enabler — added to its benefits
 
 ONORC's usual benefits are stated in migrant-welfare terms (portability — collect your ration
