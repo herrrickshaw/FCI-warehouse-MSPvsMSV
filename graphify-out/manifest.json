@@ -1,0 +1,494 @@
+{
+  "dashboard/dashboard_data.json": {
+    "mtime": 1784820538.149827,
+    "seen": 1789193280.72629,
+    "ast_hash": "d73a1ec2bfd334a4187c26a9a0683cfd",
+    "semantic_hash": ""
+  },
+  "data/biodiesel_blending_scenarios.py": {
+    "mtime": 1784854946.5313096,
+    "seen": 1789193280.726294,
+    "ast_hash": "13d167d4769386fe3143db2dc33c9690",
+    "semantic_hash": ""
+  },
+  "data/build_trade_parity.py": {
+    "mtime": 1784819386.2878802,
+    "seen": 1789193280.726295,
+    "ast_hash": "d5050df7fb9ef39e59e2ab8aa8bd5fb9",
+    "semantic_hash": ""
+  },
+  "data/consolidated_savings_by_crop.py": {
+    "mtime": 1784857172.492215,
+    "seen": 1789193280.726296,
+    "ast_hash": "ead861c4b1e4244d940740043aac9f3c",
+    "semantic_hash": ""
+  },
+  "data/holding_economics.py": {
+    "mtime": 1784820345.3366117,
+    "seen": 1789193280.7262971,
+    "ast_hash": "78052004f9afc84db6095bb62744f055",
+    "semantic_hash": ""
+  },
+  "data/omss_processing_model.py": {
+    "mtime": 1784852100.3510535,
+    "seen": 1789193280.726298,
+    "ast_hash": "fa8a8095c9ca641928618ee534e00a0d",
+    "semantic_hash": ""
+  },
+  "data/raw/cacp_msp.json": {
+    "mtime": 1784820300.0183582,
+    "seen": 1789193280.7262988,
+    "ast_hash": "1c79f3cfba70704e738ac9ea7c1afaaa",
+    "semantic_hash": ""
+  },
+  "data/raw_trade/export_statement.json": {
+    "mtime": 1784819180.9543822,
+    "seen": 1789193280.7262988,
+    "ast_hash": "cf55ff1808d399f46e8a3a1bf282a09d",
+    "semantic_hash": ""
+  },
+  "data/raw_trade/import_pulses_hs.json": {
+    "mtime": 1784819180.9555728,
+    "seen": 1789193280.7263,
+    "ast_hash": "cc062a83456e983a5715ab9acf35db72",
+    "semantic_hash": ""
+  },
+  "data/raw_trade/import_statement_APEDA.json": {
+    "mtime": 1784819180.9550693,
+    "seen": 1789193280.726301,
+    "ast_hash": "29b7b177f21e7befa082685cec1a8974",
+    "semantic_hash": ""
+  },
+  "data/raw_trade/import_vegoils.json": {
+    "mtime": 1784819180.9560513,
+    "seen": 1789193280.726301,
+    "ast_hash": "da6b335652c0f57f5c7657b8271aea49",
+    "semantic_hash": ""
+  },
+  "data/raw_trade/tradestat_oils_raw.json": {
+    "mtime": 1784819180.956563,
+    "seen": 1789193280.726302,
+    "ast_hash": "11fc2bdd504e7c7a39bedc21953bbc85",
+    "semantic_hash": ""
+  },
+  "data/rbo_savings_scenarios.py": {
+    "mtime": 1784855731.4145482,
+    "seen": 1789193280.7263029,
+    "ast_hash": "11ae84933d9517efcc69ac61f13e77b1",
+    "semantic_hash": ""
+  },
+  "data/rfii_monitor.py": {
+    "mtime": 1785450398.328698,
+    "seen": 1789193280.7263029,
+    "ast_hash": "5127b8fdb255301ec74c0369e60e66e3",
+    "semantic_hash": ""
+  },
+  "data/tn_madurai_dindigul_mandi_20260724.json": {
+    "mtime": 1784868267.4111905,
+    "seen": 1789193280.726304,
+    "ast_hash": "d662b6a47be60ba7d52dbe1d0ee29f00",
+    "semantic_hash": ""
+  },
+  "GLOSSARY.md": {
+    "mtime": 1784864718.1380873,
+    "seen": 1789193280.726305,
+    "ast_hash": "528a143c0489510b7d948f9fff21f446",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789402247.9289477,
+    "seen": 1789968625.333605,
+    "ast_hash": "2f1a11b1bdd0ee9617b1a72a94409e3b",
+    "semantic_hash": ""
+  },
+  "dashboard/index.html": {
+    "mtime": 1785450662.9850342,
+    "seen": 1789193280.726306,
+    "ast_hash": "169d3b8a0f4de3a523eeccc595c42622",
+    "semantic_hash": ""
+  },
+  "dashboard/national-map.html": {
+    "mtime": 1785469396.9102993,
+    "seen": 1789193280.7263072,
+    "ast_hash": "c22953e4075a15082714e6cb505b406c",
+    "semantic_hash": ""
+  },
+  "dashboard/storage-scenario.html": {
+    "mtime": 1785469833.0973132,
+    "seen": 1789193280.7263072,
+    "ast_hash": "844a0decb5d7eb18bbb58350698de8e5",
+    "semantic_hash": ""
+  },
+  "data/MANIFEST.md": {
+    "mtime": 1785471588.4144592,
+    "seen": 1789193280.726308,
+    "ast_hash": "ce34e73a8ef6a5f27002395d3672739e",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1785471588.4084115,
+    "seen": 1789193280.726309,
+    "ast_hash": "57d4f8dd113ff09ae134f179efabe098",
+    "semantic_hash": ""
+  },
+  "pitch/grain-value-loop-deck.html": {
+    "mtime": 1785473035.029555,
+    "seen": 1789193280.7263098,
+    "ast_hash": "fa687fced56c9fe2095172dc501d6e1c",
+    "semantic_hash": ""
+  },
+  "report/agri-trader-playbook.md": {
+    "mtime": 1784820855.2146397,
+    "seen": 1789193280.7263098,
+    "ast_hash": "ae0eb168ce783fb3f837bed150540f1e",
+    "semantic_hash": ""
+  },
+  "report/biodiesel-blending-scenarios.md": {
+    "mtime": 1784854996.6822011,
+    "seen": 1789193280.726311,
+    "ast_hash": "a5dc412dbd9fa24150f7c942f08e61c4",
+    "semantic_hash": ""
+  },
+  "report/byproduct-product-tree.md": {
+    "mtime": 1784856761.879491,
+    "seen": 1789193280.726312,
+    "ast_hash": "cad79a93268662f47e1430e269c7b7e1",
+    "semantic_hash": ""
+  },
+  "report/cag-audit-fci-findings.md": {
+    "mtime": 1785471124.6071732,
+    "seen": 1789193280.726312,
+    "ast_hash": "b3d95c18955022d6b7c763f62a7bb1d5",
+    "semantic_hash": ""
+  },
+  "report/company-financials-notes.md": {
+    "mtime": 1784852072.7378662,
+    "seen": 1789193280.7263129,
+    "ast_hash": "44c209cf2b984f561154adbdb8b42cef",
+    "semantic_hash": ""
+  },
+  "report/comparative-farm-support-models.md": {
+    "mtime": 1784853656.1614327,
+    "seen": 1789193280.726314,
+    "ast_hash": "4df5fc0c9f75404300160239e2e8d142",
+    "semantic_hash": ""
+  },
+  "report/consolidated-savings-by-crop.md": {
+    "mtime": 1784857223.3296566,
+    "seen": 1789193280.726314,
+    "ast_hash": "11fef05dbf987afafd2d6c5a0a4c5b82",
+    "semantic_hash": ""
+  },
+  "report/demand-and-exports-highmargin.md": {
+    "mtime": 1784864396.4044647,
+    "seen": 1789193280.726315,
+    "ast_hash": "09d9326d1f4bb3725273f38ece04fb45",
+    "semantic_hash": ""
+  },
+  "report/diesel-cng-cost-of-production.md": {
+    "mtime": 1785449019.3874748,
+    "seen": 1789193280.726316,
+    "ast_hash": "065c67f43f740eb0fa5e92226ab797f9",
+    "semantic_hash": ""
+  },
+  "report/domestic-procurement-stability-layer.md": {
+    "mtime": 1784853766.225436,
+    "seen": 1789193280.726316,
+    "ast_hash": "6f38ab77c82d4683783de46dee94dec2",
+    "semantic_hash": ""
+  },
+  "report/doubling-farmers-income-progress.md": {
+    "mtime": 1785450414.875761,
+    "seen": 1789193280.7263172,
+    "ast_hash": "32e3e904382177fed21277ba443c3cec",
+    "semantic_hash": ""
+  },
+  "report/ethanol-fci-40pct-clause-evaluation.md": {
+    "mtime": 1785472355.4564044,
+    "seen": 1789193280.7263181,
+    "ast_hash": "887825e576429be9186b7a97bb2b43fb",
+    "semantic_hash": ""
+  },
+  "report/executive-summary.md": {
+    "mtime": 1785469484.5743198,
+    "seen": 1789193280.7263181,
+    "ast_hash": "4df970c45e2675c14541ef15e929fe93",
+    "semantic_hash": ""
+  },
+  "report/fertiliser-and-cost-of-production.md": {
+    "mtime": 1784826483.359812,
+    "seen": 1789193280.726319,
+    "ast_hash": "5b6af5eee5b046f98141ac877e018b64",
+    "semantic_hash": ""
+  },
+  "report/fiscal-rationalisation-procurement-vs-processing.md": {
+    "mtime": 1785467708.885935,
+    "seen": 1789193280.72632,
+    "ast_hash": "b4d833347cba0be67778bcc6f27dab85",
+    "semantic_hash": ""
+  },
+  "report/fpo-processing-partners-tamilnadu.md": {
+    "mtime": 1785468031.286476,
+    "seen": 1789193280.726321,
+    "ast_hash": "0c27f95b2fb446be4af9a0ac7adb7f53",
+    "semantic_hash": ""
+  },
+  "report/fuel-vs-food-security.md": {
+    "mtime": 1785470920.9649491,
+    "seen": 1789193280.726321,
+    "ast_hash": "9d7f6c82d7c63f15cafc69662bad8aa5",
+    "semantic_hash": ""
+  },
+  "report/haryana-food-processing-linkages.md": {
+    "mtime": 1784816887.074338,
+    "seen": 1789193280.726322,
+    "ast_hash": "142a37b5c805118b12baa2e111c4d20f",
+    "semantic_hash": ""
+  },
+  "report/holding-economics.md": {
+    "mtime": 1784820495.0076213,
+    "seen": 1789193280.726323,
+    "ast_hash": "b5708fcf859eae3499e64869a01057cc",
+    "semantic_hash": ""
+  },
+  "report/iisfm-depot-coverage.md": {
+    "mtime": 1784817702.1016822,
+    "seen": 1789193280.726323,
+    "ast_hash": "07d8e20aee4ba617f444d3f8738c0183",
+    "semantic_hash": ""
+  },
+  "report/import-arm-evaluation.md": {
+    "mtime": 1784853463.0659072,
+    "seen": 1789193280.726325,
+    "ast_hash": "9ff5afac9047dc0ef3defa770f1ebbb7",
+    "semantic_hash": ""
+  },
+  "report/msp-crops-refined-oil-source.md": {
+    "mtime": 1785467443.8924775,
+    "seen": 1789193280.726325,
+    "ast_hash": "53777c9d2786b1b23f66fdd7b05df033",
+    "semantic_hash": ""
+  },
+  "report/msp-vs-msv-main-report.md": {
+    "mtime": 1784816870.545852,
+    "seen": 1789193280.726326,
+    "ast_hash": "2d8a2f622225eb3dd980606fd2dd1e2a",
+    "semantic_hash": ""
+  },
+  "report/national-fci-fpo-food-processing-psu.md": {
+    "mtime": 1785469430.4584389,
+    "seen": 1789193280.726327,
+    "ast_hash": "c889ba8e736ac9b4d6ab2be91fc6844a",
+    "semantic_hash": ""
+  },
+  "report/new-markets-evaluation.md": {
+    "mtime": 1784853398.431602,
+    "seen": 1789193280.726327,
+    "ast_hash": "1524cc69fb5e73698684eeb17a82c25c",
+    "semantic_hash": ""
+  },
+  "report/oilseed-msp-case.md": {
+    "mtime": 1784855398.1616135,
+    "seen": 1789193280.7263281,
+    "ast_hash": "f4e8662a4ab04f29204a9458bc6e9f80",
+    "semantic_hash": ""
+  },
+  "report/oilseeds-biodiesel-consumption.md": {
+    "mtime": 1784854663.7475555,
+    "seen": 1789193280.726329,
+    "ast_hash": "f04b98bbbd7eeeaf03abe80824e3a851",
+    "semantic_hash": ""
+  },
+  "report/omss-ethanol-rbo-import-substitution.md": {
+    "mtime": 1785470543.5448093,
+    "seen": 1789193280.726329,
+    "ast_hash": "095b15459fcf1517f6a940a285942674",
+    "semantic_hash": ""
+  },
+  "report/omss-processing-returns.md": {
+    "mtime": 1784852138.806019,
+    "seen": 1789193280.72633,
+    "ast_hash": "f469f90e58e6018a8380923987fcc155",
+    "semantic_hash": ""
+  },
+  "report/patanjali-pds-model.md": {
+    "mtime": 1784852607.4074516,
+    "seen": 1789193280.726331,
+    "ast_hash": "95e357ae1fd83db0332d939c3cde0f7b",
+    "semantic_hash": ""
+  },
+  "report/ppp-rice-mills.md": {
+    "mtime": 1784855441.9668655,
+    "seen": 1789193280.726331,
+    "ast_hash": "eb1bd9faa48080dac50342141e2fc42c",
+    "semantic_hash": ""
+  },
+  "report/pricing-msp-msv-published.html": {
+    "mtime": 1784820702.7743158,
+    "seen": 1789193280.726332,
+    "ast_hash": "37bf6e5e78944aee089acc3230dacb1c",
+    "semantic_hash": ""
+  },
+  "report/product-diversification-strategy.md": {
+    "mtime": 1784852386.9530358,
+    "seen": 1789193280.726333,
+    "ast_hash": "af750b9162056640275c4cc857dcd470",
+    "semantic_hash": ""
+  },
+  "report/product-margins-ranked.md": {
+    "mtime": 1784863710.117018,
+    "seen": 1789193280.726333,
+    "ast_hash": "c4877960a1b72170c531a253ef7e0096",
+    "semantic_hash": ""
+  },
+  "report/psu-agri-ventures-history.md": {
+    "mtime": 1784853076.0820415,
+    "seen": 1789193280.7263339,
+    "ast_hash": "44db775f90dd3989a5984ea078d1cb62",
+    "semantic_hash": ""
+  },
+  "report/rbo-savings-scenarios.md": {
+    "mtime": 1784855812.003556,
+    "seen": 1789193280.726335,
+    "ast_hash": "5be22c2b1e81416cb8c86008b37de0b1",
+    "semantic_hash": ""
+  },
+  "report/rice-diplomacy-history.md": {
+    "mtime": 1784821253.426817,
+    "seen": 1789193280.726335,
+    "ast_hash": "6306d8f7d443a09a1de696d7c4455648",
+    "semantic_hash": ""
+  },
+  "report/rice-mill-business-model.md": {
+    "mtime": 1784855105.706899,
+    "seen": 1789193280.726336,
+    "ast_hash": "63564ebd5d48a8548100cccc1f8a176f",
+    "semantic_hash": ""
+  },
+  "report/sugarcane-frp-analysis.md": {
+    "mtime": 1784817057.9001174,
+    "seen": 1789193280.726337,
+    "ast_hash": "06360ce537ce8a40392690ef1ff9603a",
+    "semantic_hash": ""
+  },
+  "report/trade-data-validation.md": {
+    "mtime": 1785458002.4282668,
+    "seen": 1789193280.726337,
+    "ast_hash": "b3598d7d348a60186cf666c96e2114e5",
+    "semantic_hash": ""
+  },
+  "report/trade-price-parity.md": {
+    "mtime": 1784819377.5133636,
+    "seen": 1789193280.7263381,
+    "ast_hash": "0a921142deec515471fed92fcc1f56a4",
+    "semantic_hash": ""
+  },
+  "report/trade-public-private-split.md": {
+    "mtime": 1785470073.4958377,
+    "seen": 1789193280.726339,
+    "ast_hash": "75fe47a942d20b4380b9527060316a86",
+    "semantic_hash": ""
+  },
+  "report/warehouse-utilisation-fifo-lifo.md": {
+    "mtime": 1785471148.2950454,
+    "seen": 1789193280.726339,
+    "ast_hash": "cfd96e192bc4e2bb8e7e54ed03055c60",
+    "semantic_hash": ""
+  },
+  "report/wheat-value-added-products.md": {
+    "mtime": 1785453954.2915103,
+    "seen": 1789193280.72634,
+    "ast_hash": "6235d1c31ed9c925b852b1867b307532",
+    "semantic_hash": ""
+  },
+  "data/raw/msp_statement.pdf": {
+    "mtime": 1784820300.0157688,
+    "seen": 1789193280.726341,
+    "ast_hash": "011b585edd6f9a493bbdae88f6a40d64",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/coverage_gap.png": {
+    "mtime": 1784813427.3883095,
+    "seen": 1789193280.726346,
+    "ast_hash": "9d73c109499e9065cb68566461203bbb",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/full_dark.png": {
+    "mtime": 1784813428.0884378,
+    "seen": 1789193280.726346,
+    "ast_hash": "ff60c5c08d5fd7181a0db8adcee0d4fb",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/full_light.png": {
+    "mtime": 1784813428.3760543,
+    "seen": 1789193280.726347,
+    "ast_hash": "a7f5c4a57d57dcdfba00592f28585fac",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/offtake_and_states.png": {
+    "mtime": 1784813427.6541538,
+    "seen": 1789193280.726348,
+    "ast_hash": "7636d33e171834a27cf9c58ed1af9cb4",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/storage_capacity.png": {
+    "mtime": 1784813427.7487807,
+    "seen": 1789193280.726349,
+    "ast_hash": "94b682aa18e9cae2af85ef670f6eb633",
+    "semantic_hash": ""
+  },
+  "dashboard/screenshots/trend_and_stocks.png": {
+    "mtime": 1784813427.5202608,
+    "seen": 1789193280.726349,
+    "ast_hash": "9905bdb4497c6d5fd837560ca718df7b",
+    "semantic_hash": ""
+  },
+  ".github/workflows/quality-gates.yml": {
+    "mtime": 1789577561.4465942,
+    "seen": 1789968625.3335922,
+    "ast_hash": "510f7e392c07f0574ba8a559ba2cdf12",
+    "semantic_hash": ""
+  },
+  "data/raw/cwc_commodity_tariff_2425.md": {
+    "mtime": 1789389444.22996,
+    "seen": 1789968625.333632,
+    "ast_hash": "e5e8eb79bd42ea42c8b7c6fc26cfbdc8",
+    "semantic_hash": ""
+  },
+  "data/raw/msp_statement.md": {
+    "mtime": 1789389439.0780516,
+    "seen": 1789968625.3336372,
+    "ast_hash": "3f344fb5d91c3b95e210892c567400b0",
+    "semantic_hash": ""
+  },
+  "data/ref_icra_edible_oil_thematic_2022.md": {
+    "mtime": 1789386595.1366856,
+    "seen": 1789968625.333641,
+    "ast_hash": "46b91428b1051623d72abee7021415a3",
+    "semantic_hash": ""
+  },
+  "data/ref_rice_mill_dpr_ncdc.md": {
+    "mtime": 1789386588.1853662,
+    "seen": 1789968625.333647,
+    "ast_hash": "ad3b13d25c5c02b443d0f6389e05c524",
+    "semantic_hash": ""
+  },
+  "pitch/Grain-Value-Loop-Pitch-Deck.md": {
+    "mtime": 1789386583.6658995,
+    "seen": 1789968625.333659,
+    "ast_hash": "b7db1bcc73a5f758bf543d577a1f8c65",
+    "semantic_hash": ""
+  },
+  "report/The-Price-of-Grain-MSP-vs-MSV.md": {
+    "mtime": 1789386584.6767027,
+    "seen": 1789968625.3336692,
+    "ast_hash": "4ee869957430bb76612a6190b5374445",
+    "semantic_hash": ""
+  },
+  "data/ref_rbo_extension_paper.md": {
+    "mtime": 1789386591.3987677,
+    "seen": 1789968625.333934,
+    "ast_hash": "ba9ecacbdaf9ac9f6dd154766a915b89",
+    "semantic_hash": ""
+  }
+}
