@@ -52,7 +52,8 @@ b5_need = DIESEL_CR_L*0.05
 oil_for_b5 = b5_need/BD_PER_LMT_ACID*ACID_FRAC  # nonsense via acid; compute direct oil
 
 print(f"  B5 needs ~{b5_need:.0f} cr L biodiesel = ~{b5_need/10.8:.0f} LMT of oil feedstock")
-print(f"    = ~1/3 of India's entire ~250 LMT edible-oil supply. Physically impossible from waste alone.")
+EDIBLE_OIL_SUPPLY_LMT = 250   # India edible-oil supply, ~250 LMT/yr [reported]
+print(f"    = ~{b5_need/10.8/EDIBLE_OIL_SUPPLY_LMT:.0%} of India's entire ~{EDIBLE_OIL_SUPPLY_LMT} LMT edible-oil supply. Physically impossible from waste alone.")
 
 # ---- HUSK: energy enabler, NOT a blending feedstock ----
 print("\n--- Husk (energy lever, does NOT blend into diesel) ---")
