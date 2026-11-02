@@ -1,0 +1,8 @@
+WHEAT->ATTA OMSS-sourced: grain 2550 | revenue 2926 | gross 376 | EBITDA 196/qtl (6.7% margin)
+WHEAT->ATTA mandi-sourced: grain 2500 | revenue 2926 | gross 426 | EBITDA 246/qtl (8.4% margin)
+PADDY->RICE open-market: paddy 2385 | revenue 2520 | EBITDA -15/qtl (-0.6% margin)
+PADDY->RICE custom-milling(CMR): fee 15 + byproducts 242 = 257/qtl paddy (no price risk, govt owns grain)
+
+--- SCALE: 300 TPD flour mill (90,000 t/yr) ---
+throughput 900,000 qtl/yr | EBITDA/qtl 196 | annual EBITDA Rs 17.6 cr | revenue Rs 263 cr | margin 6.7%
+capital employed ~Rs 80 cr (capex 50 + WC 30) | ROCE ~22%
