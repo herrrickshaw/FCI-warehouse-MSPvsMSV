@@ -1,0 +1,23 @@
+crop/stream   product                   imp Rs/t subst LMT save Rscr  offtake
+------------------------------------------------------------------------------------------------------------------------
+Rice→bran     Rice bran oil (edible)      97,970      7.70     7,544  Food processing: frying/snacks/HoReCa (232C 
+Oilseeds      Mustard/groundnut oil       98,766      0.00         0  Branded premium retail + food processing ble
+Cotton→seed   Cottonseed oil              98,766      2.00     1,975  Food processing + Vanaspati/HoReCa
+Pulses-tur    Tur dal                     56,463      5.00     2,823  Dal millers (NAFEX auction) + PDS pulse pilo
+Pulses-urad   Urad dal                    74,163      3.00     2,225  Dal millers + food processing (papad/snack)
+Pulses-masur  Masur dal                   50,888      4.00     2,036  Dal millers + institutional
+Wheat         Vital wheat gluten         114,342      0.13       149  Food processing: bakery/meat-analogue/pet-fo
+Wheat         Wheat germ oil             442,500      0.02        88  Nutraceutical/cosmetic brands + export
+Wheat         Fortified atta (PDS)             0      0.00         0  Government PDS/ICDS (captive offtake)
+Rice→husk     Precipitated silica         86,730      1.00       867  Tyre/industrial (45% tyre demand); import su
+Rice→bran     Gamma oryzanol          10,620,000      0.01       531  Nutraceutical/cosmetic export + fortificatio
+Rice→bran     Tocotrienols/Vit-E      17,700,000      0.00       708  Fortification input (captive) + pharma
+Maize         Starch/HFCS/sorbitol        37,170      3.00     1,115  Food/pharma/paper processing
+Maize         Corn gluten meal            44,250      0.00         0  Feed export (already positive)
+Oilseeds      Soy lecithin (specialty)   115,050      0.20       230  Food processing emulsifier (captive)
+Oilseeds      Soy/pea protein isolate    265,500      0.30       796  Food processing + export
+------------------------------------------------------------------------------------------------------------------------
+TOTAL potential import-substitution savings (illustrative):    21,088 Rs cr/yr
+  (edible-oil block ~Rs 8,000 cr dominates; pulses dal-margin + wheat gluten + silica add the rest)
+
+written data/consolidated_savings_by_crop.csv

@@ -2,6 +2,15 @@
 
 Guidance for Claude Code sessions working in this repository.
 
+## Layout and commands
+- Models live in `fci_msv/` (one module per scenario: `biodiesel`, `rbo`, `omss`, `rfii`,
+  `consolidated_savings`, `trade_parity`, `holding`). `data/*.py` are thin entry points only.
+- Pattern per module: unit-suffixed constants with source comments -> pure compute functions ->
+  `render()` returning lines -> `main()` that prints/writes. Keep I/O in `main()` / `write_*`.
+- Verify with `ruff check .` and `pytest -q` (golden stdout + byte-identical CSV rebuilds in `tests/`).
+  Changing a model input legitimately changes a golden file; regenerate it deliberately, never by hand.
+- Do not edit the tracked CSVs or `data/MANIFEST.md` figures by hand; they are sourced data.
+
 <!-- source-fetch-toolkit:v1 (managed by ~/bin/add_source_fetch_section.py — edit there, not here) -->
 ## Source fetching for data collection & literature surveys
 
