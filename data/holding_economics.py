@@ -141,7 +141,9 @@ def main():
                             'carry_cost_pct': round(carry, 2),
                             'storage_component_pct': round(storage_pct, 2),
                             'net_annual_pct': round(g - carry, 2),
-                            'verdict': 'HOLD PAYS' if g - carry > 0 else 'CARRY EXCEEDS APPRECIATION'})
+                            'verdict': ('INSUFFICIENT HISTORY' if pd.isna(g)
+                                        else 'HOLD PAYS' if g - carry > 0
+                                        else 'CARRY EXCEEDS APPRECIATION')})
         for m in (12, 24, 36):
             hr = horizon_returns(s, MODEL[c][3], m)
             if hr.empty:
