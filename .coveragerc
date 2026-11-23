@@ -1,0 +1,5 @@
+[run]
+source =
+    data
+omit =
+    tests/*
